@@ -151,6 +151,10 @@ footer a {
 	padding-right: 16px;
 }
 
+.verticalcenter {
+	justify-content: center;
+}
+
 /* using flexbox to auto-math the column widths. .column needs to be wrapped in .row before it works.*/
 /* the land */
 .row {
