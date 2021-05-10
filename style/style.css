@@ -1,0 +1,177 @@
+/* browser defaults reset; setting expectations */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
+/* defining color variables to make theming easier */
+:root {
+	--linkColor: #FF0059;
+	/* don't forget to change the "stroke" color in the a:hover selector, broskie */
+	--textColor: #E0E0E0;
+	--footerColor: #B2B2B2;
+	--textHover: #fff;
+	--bgColor: #212121;
+}
+
+/* continued expectations setting; establishing healthy boundaries */
+body {
+	max-width: 720px;
+	margin: 0 auto;
+	padding-left: 16px;
+	padding-right: 16px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: var(--textColor);
+	background-color: var(--bgColor);
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Archivo Black', sans-serif;
+	letter-spacing: -0.04em;
+	padding-bottom: 8px;
+}
+
+h1 {
+	font-size: 36px;
+
+}
+
+h2 {
+	font-size: 24px;
+	float: left;
+	margin-right: 48px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+p {
+	font-size: 18px;
+	margin-bottom: 16px;
+}
+
+/* 96% of link hover effect courtesy Geoff Graham -- https://codepen.io/geoffgraham */
+a {
+	background: linear-gradient(to bottom, var(--linkColor) 0%, var(--linkColor) 100%);
+	background-position: 0 100%;
+	background-repeat: repeat-x;
+	background-size: 3px 3px;
+	color: var(--textColor);
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+/* someone told me once that I dance like a noodle */
+/* match the last six characters in 'stroke' with the hex code in --linkColor, bromie lee curtis  */
+a:hover {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23FF0059' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+	background-position: 0 100%;
+	background-size: auto 6px;
+	background-repeat: repeat-x;
+	text-decoration: none;
+	color: var(--textHover);
+	transition: 0.2s;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	margin-bottom: 16px;
+}
+
+.quote {
+	font-style: italic;
+	border-left: 1px solid var(--footerColor);
+	padding-left: 16px;
+}
+
+.avatar {
+	border-radius: 50%;
+	border: 3px solid var(--textColor);
+	max-width: 128px;
+	max-height: 128px;
+	float: left;
+	margin-right: 36px;
+}
+
+iframe {
+	margin-top: 8px;
+	margin-bottom: 24px;
+}
+
+#greeting {
+	margin-top: 176px;
+	margin-bottom: 176px;
+}
+
+header {
+	margin-top: 16px;
+}
+
+section {
+	margin-bottom: 112px;
+}
+
+article {
+	margin-bottom: 40px;
+
+}
+
+footer {
+	margin-top: 64px;
+	margin-bottom: 32px;
+	text-align: left;
+}
+
+footer p,
+footer a {
+	font-size: 14px;
+	color: var(--footerColor);
+}
+
+/* do better on this selector name, brophamet */
+.rightalign {
+	text-align: right;
+	padding-right: 16px;
+}
+
+/* using flexbox to auto-math the column widths. .column needs to be wrapped in .row before it works.*/
+/* the land */
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+/* the trailer (or *caravan* for you overseas folks */
+.column {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+}
+
+/* the double-wide */
+.double-column {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 2;
+}
