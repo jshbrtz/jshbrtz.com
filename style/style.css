@@ -1,16 +1,14 @@
 /* defining color variables to make theming easier */
 :root {
-	--link-color: #FF0059;
-	/* don't forget to change the "stroke" color in the a:hover selector, broskie */
+	--link-color: #FF0059; /* don't forget to change the "stroke" color in the a:hover selector, broskie */
 	--text-hover: #fff;
 	--text-color: #E0E0E0;
-	--text-caption-color: rgba(224, 224, 224, 0.5);
+	--text-caption-color: rgba(224, 224, 224, 0.75); /* paragraphs, bylines */
 	--footer-color: #B2B2B2;
 	--bg-color: #131313;
 	--font-accent: 'Archivo Black', sans-serif;
 	/* headers, captions, footers */
 	--font-primary: 'Open Sans', sans-serif;
-	/* paragraphs, bylines */
 }
 
 /* browser defaults reset; setting expectations */
@@ -72,6 +70,7 @@ h4 {
 .smallcaps {
 	color: var(--text-caption-color);
 	font-size: 0.75rem;
+	letter-spacing: -0.04em;
 	text-transform: uppercase;
 }
 
