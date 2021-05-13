@@ -1,12 +1,15 @@
 /* defining color variables to make theming easier */
 :root {
-	--link-color: #FF0059; /* don't forget to change the "stroke" color in the a:hover selector, broskie */
+	--link-color: #FF0059;
+	/* don't forget to change the "stroke" color in the a:hover selector, broskie */
 	--text-hover: #fff;
 	--text-color: #E0E0E0;
 	--footer-color: #B2B2B2;
 	--bg-color: #131313;
-	--font-accent: 'Archivo Black', sans-serif; /* headers, captions, footers */
-	--font-primary: 'Open Sans', sans-serif; /* paragraphs, bylines */
+	--font-accent: 'Archivo Black', sans-serif;
+	/* headers, captions, footers */
+	--font-primary: 'Open Sans', sans-serif;
+	/* paragraphs, bylines */
 }
 
 /* browser defaults reset; setting expectations */
@@ -60,6 +63,12 @@ h3 {
 }
 
 h4 {
+	font-size: 0.75rem;
+	text-transform: uppercase;
+}
+
+/* style for captions and some bylines */
+.smallcaps {
 	font-size: 0.75rem;
 	text-transform: uppercase;
 }
@@ -169,14 +178,14 @@ footer a {
 }
 
 /* for our iPhone SE friends */
-@media screen and (max-width: 20rem){
+@media screen and (max-width: 20rem) {
 	#greeting {
 		margin-top: 5rem;
 		margin-bottom: 5rem;
 	}
 }
 
-@media screen and (min-width: 50rem){
+@media screen and (min-width: 50rem) {
 
 	/* .column needs to be wrapped in .row before it works.*/
 	.row {
@@ -185,7 +194,7 @@ footer a {
 		flex-wrap: wrap;
 		width: 100%;
 	}
-	
+
 	/* splits all columns in one row with equal spacing */
 	.column {
 		display: flex;
@@ -193,7 +202,7 @@ footer a {
 		flex-basis: 100%;
 		flex: 1;
 	}
-	
+
 	/* gives a column the width of two columns in a row */
 	.double-column {
 		display: flex;
@@ -201,4 +210,5 @@ footer a {
 		flex-basis: 100%;
 		flex: 2;
 	}
-]
+
+	]
