@@ -3,7 +3,7 @@
 	--link-color: #FF0059; /* don't forget to change the "stroke" color in the a:hover selector, broskie */
 	--text-hover: #fff;
 	--text-color: #E0E0E0;
-	--text-caption-color: rgba(224, 224, 224, 0.75); /* paragraphs, bylines */
+	--text-caption-color: rgba(224, 224, 224, 0.5); /* paragraphs, bylines */
 	--footer-color: #B2B2B2;
 	--bg-color: #131313;
 	--font-accent: 'Archivo Black', sans-serif;
