@@ -121,7 +121,7 @@ a:hover {
 	background-repeat: repeat-x;
 	text-decoration: none;
 	color: var(--text-hover);
-	transition: 0.2s;
+	transition: 0.2s ease-in-out;
 }
 
 /* created to override link styles on buttons and button-like accessories */
@@ -206,33 +206,17 @@ iii. components
 	margin-bottom: 1.5rem;
 }
 
-button {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	background: none;
-	border-radius: 600px;
-	border: none;
-	text-decoration: none;
-	background-color: var(--text-color);
-	color: var(--bg-color);
-	margin: 0.3rem;
-	padding-left: 1rem;
-	padding-right: 1rem;
-	height: 1.7rem;
-	transition: 0.2s ease-in-out;
-}
-
 .btn {
 	background-color: none;
-	padding: 0.4rem 0.6rem;
-	border-radius: 4px;
+	padding: 0.3rem 0.5rem;
+	border-radius: 3px;
 	border: none;
+	transition: 0.1s ease-in;
 }
 
 .btn:hover {
 	background-color: var(--text-color-thin);
-	transition: 0.2s ease-in-out;
+	transition: 0.1s ease-in;
 }
 
 input,
