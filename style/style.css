@@ -16,8 +16,9 @@ i. global styles
 	--link-color: #FF0059;
 	/* don't forget to change the "stroke" color in the a:hover selector, broskie */
 	--text-hover: #fff;
-	--text-color: #E0E0E0;
+	--text-color: rgba(224, 224, 224, 1);
 	--text-caption-color: rgba(224, 224, 224, 0.5);
+	--text-color-thin: rgba(224, 224, 224, 0.1);
 	/* paragraphs, bylines */
 	--footer-color: #B2B2B2;
 	--bg-color: #131313;
@@ -56,7 +57,8 @@ h1,
 h2,
 h3,
 h4,
-.secondary-nav {
+.secondary-nav,
+.no-link-decor {
 	font-family: var(--font-accent);
 	letter-spacing: -0.04em;
 	padding-bottom: 0.5rem;
@@ -79,7 +81,8 @@ h3 {
 }
 
 h4,
-.secondary-nav {
+.secondary-nav,
+.no-link-decor {
 	font-size: 0.75rem;
 	text-transform: uppercase;
 }
@@ -118,7 +121,18 @@ a:hover {
 	background-repeat: repeat-x;
 	text-decoration: none;
 	color: var(--text-hover);
-	transition: 0.2s;
+	transition: 0.2s ease-in-out;
+}
+
+/* created to override link styles on buttons and button-like accessories */
+.no-link-decor {
+	text-decoration: none;
+	background-image: none;
+}
+
+.no-link-decor:hover {
+	text-decoration: none;
+	background-image: none;
 }
 
 footer p,
@@ -164,10 +178,11 @@ iii. components
 
 .secondary-nav {
 	text-align: center;
-	position: sticky;
+	position: fixed;
 	top: 0px;
 	width: 100%;
 	padding-top: 0.5rem;
+	
 	background-color: var(--bg-color);
 	z-index: 1000;
 }
@@ -191,55 +206,17 @@ iii. components
 	margin-bottom: 1.5rem;
 }
 
-.icon-button {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	background: none;
-	border-radius: 50%;
+.btn {
+	background-color: none;
+	padding: 0.3rem 0.5rem;
+	border-radius: 3px;
 	border: none;
-	text-decoration: none;
-	-webkit-text-stroke: 0.05rem;
-	-webkit-text-stroke-color: var(--bg-color);
-	background-color: var(--text-color);
-	color: var(--bg-color);
-	width: 1.7rem;
-	height: 1.7rem;
-	margin: 0.3rem;
-	transition: 0.2s ease-in-out;
+	transition: 0.1s ease-in;
 }
 
-button {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	background: none;
-	border-radius: 600px;
-	border: none;
-	text-decoration: none;
-	background-color: var(--text-color);
-	color: var(--bg-color);
-	margin: 0.3rem;
-	padding-left: 1rem;
-	padding-right: 1rem;
-	height: 1.7rem;
-	transition: 0.2s ease-in-out;
-}
-
-.icon-button:hover,
-button:hover {
-	color: var(--bg-color);
-	background-color: var(--text-hover);
-	background-image: none;
-	transform: scale(1.05);
-	transform-origin: center;
-	transition: 0.2s ease-in-out;
-	opacity: 100%;
-	cursor: pointer;
-}
-
-.secondary-nav .icon-button {
-	float: left;
+.btn:hover {
+	background-color: var(--text-color-thin);
+	transition: 0.1s ease-in;
 }
 
 input,
@@ -281,12 +258,10 @@ iv. layouts
 	min-width: 20rem;
 	padding-left: 2rem;
 	padding-right: 2rem;
-	padding-top: 0.5rem;
 }
 
 .greeting {
-	margin-top: 11rem;
-	margin-bottom: 11rem;
+	margin-top: 5rem;
 }
 
 header {
