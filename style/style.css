@@ -16,8 +16,9 @@ i. global styles
 	--link-color: #FF0059;
 	/* don't forget to change the "stroke" color in the a:hover selector, broskie */
 	--text-hover: #fff;
-	--text-color: #E0E0E0;
+	--text-color: rgba(224, 224, 224, 1);
 	--text-caption-color: rgba(224, 224, 224, 0.5);
+	--text-color-thin: rgba(224, 224, 224, 0.1);
 	/* paragraphs, bylines */
 	--footer-color: #B2B2B2;
 	--bg-color: #131313;
@@ -56,7 +57,8 @@ h1,
 h2,
 h3,
 h4,
-.secondary-nav {
+.secondary-nav,
+.no-link-decor {
 	font-family: var(--font-accent);
 	letter-spacing: -0.04em;
 	padding-bottom: 0.5rem;
@@ -79,7 +81,8 @@ h3 {
 }
 
 h4,
-.secondary-nav {
+.secondary-nav,
+.no-link-decor {
 	font-size: 0.75rem;
 	text-transform: uppercase;
 }
@@ -119,6 +122,17 @@ a:hover {
 	text-decoration: none;
 	color: var(--text-hover);
 	transition: 0.2s;
+}
+
+/* created to override link styles on buttons and button-like accessories */
+.no-link-decor {
+	text-decoration: none;
+	background-image: none;
+}
+
+.no-link-decor:hover {
+	text-decoration: none;
+	background-image: none;
 }
 
 footer p,
@@ -192,24 +206,6 @@ iii. components
 	margin-bottom: 1.5rem;
 }
 
-.icon-button {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	background: none;
-	border-radius: 50%;
-	border: none;
-	text-decoration: none;
-	-webkit-text-stroke: 0.05rem;
-	-webkit-text-stroke-color: var(--bg-color);
-	background-color: var(--text-color);
-	color: var(--bg-color);
-	width: 1.7rem;
-	height: 1.7rem;
-	margin: 0.3rem;
-	transition: 0.2s ease-in-out;
-}
-
 button {
 	display: inline-flex;
 	align-items: center;
@@ -227,21 +223,61 @@ button {
 	transition: 0.2s ease-in-out;
 }
 
-.icon-button:hover,
+/* .icon-button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background: none;
+	border-radius: 50%;
+	border: none;
+	font-size: 1rem;
+	text-decoration: none;
+	/* -webkit-text-stroke: 0.05rem;
+	-webkit-text-stroke-color: var(--text-color); */
+	background-color: var(--text-color-thin);
+	color: var(--text-color);
+	width: 1.7rem;
+	height: 1.7rem;
+	transition: 0.2s ease-in-out;
+} */
+
+.icon-button {
+	background-color: var(--text-color);
+	padding: 1rem;
+	border-radius: 25px;
+	border: none;
+}
+
+.btn {
+	background-color: none;
+	padding: 0.4rem 0.6rem;
+	border-radius: 4px;
+	border: none;
+}
+
+.btn:hover {
+	background-color: var(--text-color-thin);
+	transition: 0.2s ease-in-out;
+}
+
+/* .icon-button:hover,
 button:hover {
-	color: var(--bg-color);
-	background-color: var(--text-hover);
+	color: var(--bg-color-thin);
+	background-color: var(--link-color);
 	background-image: none;
 	transform: scale(1.05);
 	transform-origin: center;
 	transition: 0.2s ease-in-out;
 	opacity: 100%;
 	cursor: pointer;
-}
+} */
 
-.secondary-nav .icon-button {
+/* .secondary-nav .icon-button,
+.greeting .icon-button {
 	float: left;
-}
+	margin-top: 0.35rem;
+	margin-right: 1.5rem;
+} */
 
 input,
 textarea {
