@@ -223,31 +223,6 @@ button {
 	transition: 0.2s ease-in-out;
 }
 
-/* .icon-button {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	background: none;
-	border-radius: 50%;
-	border: none;
-	font-size: 1rem;
-	text-decoration: none;
-	/* -webkit-text-stroke: 0.05rem;
-	-webkit-text-stroke-color: var(--text-color); */
-	background-color: var(--text-color-thin);
-	color: var(--text-color);
-	width: 1.7rem;
-	height: 1.7rem;
-	transition: 0.2s ease-in-out;
-} */
-
-.icon-button {
-	background-color: var(--text-color);
-	padding: 1rem;
-	border-radius: 25px;
-	border: none;
-}
-
 .btn {
 	background-color: none;
 	padding: 0.4rem 0.6rem;
@@ -259,25 +234,6 @@ button {
 	background-color: var(--text-color-thin);
 	transition: 0.2s ease-in-out;
 }
-
-/* .icon-button:hover,
-button:hover {
-	color: var(--bg-color-thin);
-	background-color: var(--link-color);
-	background-image: none;
-	transform: scale(1.05);
-	transform-origin: center;
-	transition: 0.2s ease-in-out;
-	opacity: 100%;
-	cursor: pointer;
-} */
-
-/* .secondary-nav .icon-button,
-.greeting .icon-button {
-	float: left;
-	margin-top: 0.35rem;
-	margin-right: 1.5rem;
-} */
 
 input,
 textarea {
