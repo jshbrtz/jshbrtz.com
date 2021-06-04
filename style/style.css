@@ -22,7 +22,7 @@ i. global styles
 	/* paragraphs, bylines */
 	--footer-color: #B2B2B2;
 	--bg-color: #131313;
-	--bg-color-thin: rgba(19, 19, 19, 0);
+	--bg-color-thin: rgba(19, 19, 19, 0.5); /* being used on the secondary nav */
 	--font-accent: 'Archivo Black', sans-serif;
 	/* headers, captions, footers */
 	--font-primary: 'Open Sans', sans-serif;
@@ -254,17 +254,6 @@ textarea {
 	padding-bottom: 0.5rem;
 }
 
-.img-row {
-	position: relative;
-	margin: 0 auto;
-	display: flex;
-	flex-direction: row;
-	overflow-x: scroll;
-	max-width: 90rem;
-	scrollbar-color: var(--font-accent);
-	scrollbar-width: thin;
-}
-
 .img-row img {
 	max-height: 25rem;
 	object-fit: contain;
@@ -324,6 +313,18 @@ footer {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+}
+
+.img-row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	max-width: 90rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 
 /* for our iPhone SE friends */
