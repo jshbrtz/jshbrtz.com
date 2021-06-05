@@ -254,12 +254,6 @@ textarea {
 	padding-bottom: 0.5rem;
 }
 
-.img-row img {
-	max-height: 25rem;
-	object-fit: contain;
-	margin: 1.72rem;
-}
-
 /* ===================
 iv. layouts
 =================== */
@@ -315,6 +309,7 @@ footer {
 	width: 100%;
 }
 
+/* mobile scaling prevents images from rolling off the sides */
 .img-row {
 	display: flex;
 	flex-direction: row;
@@ -322,9 +317,17 @@ footer {
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
-	max-width: 90rem;
+	max-width: 100%;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
+}
+
+/* mobile scaling shows images with a little margin */
+.img-row img {
+	max-width: 90%;
+	max-height: 17rem;
+	object-fit: contain;
+	margin: 1.72rem;
 }
 
 /* for our iPhone SE friends */
@@ -333,6 +336,7 @@ footer {
 		margin-top: 5rem;
 		margin-bottom: 5rem;
 	}
+	
 }
 
 @media screen and (min-width: 40rem) {
@@ -361,6 +365,24 @@ footer {
 		flex-direction: column;
 		flex-basis: 100%;
 		flex: 2;
+	}
+	
+	.img-row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		max-width: 90rem;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	
+	.img-row img {
+		max-height: 25rem;
+		object-fit: contain;
+		margin: 1.72rem;
 	}
 	
 ]
