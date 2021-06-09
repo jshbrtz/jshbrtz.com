@@ -318,8 +318,6 @@ footer {
 	align-items: center;
 	margin: 0 auto;
 	max-width: 100%;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
 }
 
 /* mobile scaling shows images with a little margin */
@@ -327,7 +325,7 @@ footer {
 	max-width: 90%;
 	max-height: 17rem;
 	object-fit: contain;
-	margin: 1.72rem;
+	margin: 1.5rem;
 }
 
 /* for our iPhone SE friends */
@@ -362,6 +360,7 @@ footer {
 	/* gives a column the width of two columns in a row */
 	.double-column {
 		display: flex;
+		position: relative;
 		flex-direction: column;
 		flex-basis: 100%;
 		flex: 2;
@@ -375,14 +374,29 @@ footer {
 		align-items: center;
 		margin: 0 auto;
 		max-width: 90rem;
-		padding-top: 1rem;
-		padding-bottom: 1rem;
 	}
 	
 	.img-row img {
 		max-height: 25rem;
 		object-fit: contain;
-		margin: 1.72rem;
+		margin: 1.5rem;
 	}
 	
-]
+	/* these are for in-line content that I want to hang outside of the container bounds. it should only appear on desktop. none of this worked how I was hoping it to. not enough smarts. */
+	/* .hang-right {
+		align-self: flex-start;
+		margin-right: -50%;
+		margin-left: -5rem;
+	}
+	
+	.hang-left {
+		float: left;
+		margin-left: -20%;
+		margin-right: 1rem;
+	}
+	
+	.hang-right img,
+	.hanf-left img {
+		max-height: 20rem;
+		max-width: 20rem;
+	} */
