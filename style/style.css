@@ -176,26 +176,6 @@ li {
 iii. components
 =================== */
 
-.secondary-nav {
-	text-align: center;
-	position: fixed;
-	top: 0px;
-	width: 100%;
-	padding-top: 0.5rem;
-	
-	background-color: var(--bg-color);
-	z-index: 1000;
-}
-
-/* note to self: firefox 90 does not support this. remove once supported. */
-@supports ((-webkit-backdrop-filter: blur(1rem)) or (backdrop-filter: blur(1rem))) {
-	  .secondary-nav {
-		backdrop-filter: blur(1rem);
-		-webkit-backdrop-filter: blur(1em);
-		background-color: var(--bg-color-thin);
-	  }
-	}
-
 .avatar {
 	display: block;
 	border-radius: 50%;
@@ -204,48 +184,6 @@ iii. components
 	height: 8rem;
 	margin-right: 2.25rem;
 	margin-bottom: 1.5rem;
-}
-
-.btn {
-	background-color: none;
-	padding: 0.3rem 0.5rem;
-	border-radius: 3px;
-	border: none;
-	transition: 0.1s ease-in;
-}
-
-.btn:hover {
-	background-color: var(--text-color-thin);
-	transition: 0.1s ease-in;
-}
-
-input,
-textarea {
-	margin-left: 1rem;
-	padding: 0.5rem;
-	border-radius: 0.125rem;
-	border-style: none;
-}
-
-iframe {
-	margin-top: 0.5rem;
-	margin-bottom: 1.5rem;
-}
-
-form {
-	display: table;
-}
-
-form p {
-	display: table-row;
-}
-
-label,
-input,
-textarea {
-	display: table-cell;
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
 }
 
 /* ===================
@@ -269,17 +207,14 @@ header {
 }
 
 section {
-	padding-top: 2rem;
-	margin-bottom: 5rem;
+	margin-bottom: 2rem;
 }
 
 article {
 	margin-bottom: 2.5rem;
-
 }
 
 footer {
-	margin-top: 4rem;
 	margin-bottom: 2rem;
 	text-align: left;
 }
@@ -345,10 +280,6 @@ footer {
 		flex-direction: column;
 		flex-basis: 100%;
 		flex: 2;
-	}
-	
-	.greeting {
-		margin-top: 0rem;
 	}
 	
 ]
