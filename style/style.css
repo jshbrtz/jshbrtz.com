@@ -257,7 +257,8 @@ footer {
 	}
 	
 	.container {
-		min-width: 45rem;
+		min-width: 44rem;
+		max-width: 44rem;
 	}
 
 	/* .column needs to be wrapped in .row before it works.*/
