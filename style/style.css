@@ -255,6 +255,10 @@ footer {
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
+	
+	.container {
+		min-width: 45rem;
+	}
 
 	/* .column needs to be wrapped in .row before it works.*/
 	.row {
