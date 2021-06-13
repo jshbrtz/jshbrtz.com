@@ -251,6 +251,10 @@ iii. components
 	transition: 0.1s ease-in;
 }
 
+.l-align {
+	float: left;
+}
+
 .img-row img,
 .img-row video {
 	max-height: 25rem;
@@ -289,6 +293,13 @@ iv. layouts
 	min-width: 20rem;
 	padding-left: 2rem;
 	padding-right: 2rem;
+}
+
+#page-nav {
+	margin: 0 auto;
+	max-width: 55rem; /* this should match .container max-width */
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 
 .greeting {
