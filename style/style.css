@@ -221,16 +221,33 @@ iii. components
 	margin-bottom: 1.5rem;
 }
 
-.btn {
+.btn,
+.btn-icon {
 	background-color: none;
-	padding: 0.3rem 0.5rem;
 	border-radius: 3px;
 	border: none;
 	transition: 0.1s ease-in;
+	/* display: inline-block; */
 }
 
-.btn:hover {
+.btn {
+	padding: 0.3rem 0.5rem;
+}
+
+.btn-icon {
+	border-radius: 50%;
+	border: none;
+	width: 2rem;
+	height: 2rem;
+	display: inline-block;
+	transition: 0.1s ease-in;
+	vertical-align: center;
+}
+
+.btn:hover,
+.btn-icon:hover {
 	background-color: var(--text-color-thin);
+	color: var(--text-hover);
 	transition: 0.1s ease-in;
 }
 
