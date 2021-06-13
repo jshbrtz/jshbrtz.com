@@ -86,7 +86,7 @@ h4,
 	text-transform: uppercase;
 }
 
-.subsection {
+.subheading {
 	font-size: 1.125rem;
 }
 
@@ -193,7 +193,7 @@ iii. components
 =================== */
 
 .secondary-nav {
-	text-align: center;
+	text-align: left;
 	position: sticky;
 	top: 0px;
 	width: 100%;
@@ -242,6 +242,7 @@ iii. components
 	display: inline-block;
 	transition: 0.1s ease-in;
 	vertical-align: center;
+	text-align: center;
 }
 
 .btn:hover,
