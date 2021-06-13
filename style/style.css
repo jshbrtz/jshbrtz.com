@@ -197,7 +197,7 @@ iii. components
 	z-index: 1000;
 }
 
-/* note to self: firefox 90 does not support this. remove once supported. */
+/* note to self: firefox 90 (unreleased) does not support this. remove once supported. */
 @supports ((-webkit-backdrop-filter: blur(1rem)) or (backdrop-filter: blur(1rem))) {
 	  .secondary-nav {
 		backdrop-filter: blur(1rem);
@@ -232,6 +232,7 @@ iii. components
 .img-row img,
 .img-row video {
 	max-height: 24rem;
+	max-width: 100%;
 	object-fit: contain;
 }
 
