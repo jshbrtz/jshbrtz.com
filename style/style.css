@@ -109,7 +109,6 @@ ul {
 strong {
 	color: var(--text-hover);
 	font-weight: 600;
-	letter-spacing: -0.04em;
 }
 
 /* 96% of link hover effect courtesy Geoff Graham -- https://codepen.io/geoffgraham */
