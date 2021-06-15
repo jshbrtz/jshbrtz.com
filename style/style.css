@@ -107,6 +107,7 @@ ul {
 }
 
 strong {
+	color: var(--text-hover);
 	font-weight: 600;
 	letter-spacing: -0.04em;
 }
@@ -228,7 +229,7 @@ iii. components
 .btn,
 .btn-icon {
 	background-color: none;
-	border-radius: 3px;
+	border-radius: 0.188rem;
 	border: none;
 	transition: 0.1s ease-in;
 	/* display: inline-block; */
