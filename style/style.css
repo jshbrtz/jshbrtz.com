@@ -101,7 +101,7 @@ h4,
 p,
 ul {
 	font-size: 1.125rem;
-	line-height: 1.6rem;
+	line-height: 1.7rem;
 	margin-bottom: 1.3rem;
 }
 
@@ -124,7 +124,8 @@ a {
 
 /* someone told me once that I dance like a noodle */
 /* match the last six characters in 'stroke' with the hex code in --link-color, bromie lee curtis  */
-a:hover {
+a:hover,
+.showoff {
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-1.25rem);}}%3C/style%3E%3Cpath fill='none' stroke='%23FF0059' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
 	background-position: 0 100%;
 	background-size: auto 0.375rem;
@@ -164,7 +165,7 @@ ol {
 }
 
 li {
-	margin-bottom: 0.3rem;
+	margin-bottom: 0.6rem;
 }
 
 .no-list-decor {
@@ -201,6 +202,7 @@ iii. components
 	padding-top: 0.5rem;
 	background-color: var(--bg-color);
 	z-index: 1000;
+	min-height: 3rem;
 }
 
 /* note to self: firefox 90 (unreleased) does not support this. remove once supported. */
