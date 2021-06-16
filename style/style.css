@@ -270,16 +270,16 @@ iii. components
 
 figure {
 	display: table;
-	width: fit-content;
+	width: 711px;
 	caption-side: bottom;
 	margin: 1rem;
 }
 
-figcaption {
+/* figcaption {
 	display: table-caption;
 	caption-side: bottom;
 	text-align: left;
-}
+} */
 
 /* ===================
 iv. layouts
