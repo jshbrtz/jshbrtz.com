@@ -261,7 +261,8 @@ iii. components
 }
 
 .img-row img,
-.img-row video {
+.img-row video,
+.img-row figure {
 	max-height: 25rem;
 	max-width: 100%;
 	object-fit: contain;
@@ -270,6 +271,7 @@ iii. components
 figure {
 	display: table;
 	width: fit-content;
+	caption-side: bottom;
 	margin: 1rem;
 }
 
