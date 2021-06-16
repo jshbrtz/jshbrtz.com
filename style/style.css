@@ -37,7 +37,7 @@ i. global styles
 	box-sizing: border-box;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	text-rendering: optimizeLegibility;
+	text-rendering: auto;
 	-webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
 }
 
@@ -61,7 +61,7 @@ h4,
 .secondary-nav,
 .no-link-decor {
 	font-family: var(--font-accent);
-	letter-spacing: -0.04em;
+	/* letter-spacing: -0.01em; */
 	padding-bottom: 0.5rem;
 }
 
@@ -261,8 +261,7 @@ iii. components
 }
 
 .img-row img,
-.img-row video,
-.img-row figure {
+.img-row video {
 	max-height: 25rem;
 	max-width: 100%;
 	object-fit: contain;
@@ -270,16 +269,17 @@ iii. components
 
 figure {
 	display: table;
-	width: 711px;
-	caption-side: bottom;
 	margin: 1rem;
 }
 
-/* figcaption {
+figure video {
+	display: block;
+}
+
+figcaption {
 	display: table-caption;
 	caption-side: bottom;
-	text-align: left;
-} */
+}
 
 /* ===================
 iv. layouts
