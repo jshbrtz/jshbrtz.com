@@ -17,7 +17,7 @@ i. global styles
 	/* don't forget to change the "stroke" color in the a:hover selector, broskie */
 	--text-hover: #fff;
 	--text-color: rgba(224, 224, 224, 1);
-	--text-caption-color: rgba(224, 224, 224, 0.5);
+	--text-caption-color: rgba(224, 224, 224, 0.7);
 	--text-color-thin: rgba(224, 224, 224, 0.1);
 	/* paragraphs, bylines */
 	--footer-color: #B2B2B2;
@@ -277,6 +277,7 @@ figure video {
 }
 
 figcaption {
+	padding-top: 0.5rem;
 	display: table-caption;
 	caption-side: bottom;
 }

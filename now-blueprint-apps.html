@@ -35,11 +35,12 @@
 				<header>
 					<h1>Speed-redesigning app deployment</h1>
 					<p>Creating a better, future-proofed workflow that empowers administrators to view and choose the apps their co-workers need. Leaning on partnerships with Engineering, Product, and Support to build something customers will love.</p>
-					<div class="row space-evenly">
-						<div class="column">
+					<div class="row">
+						<div class="double-column">
 							<span class="smallcaps">Collaborators</span>
 							<ul class="no-list-decor">
 								<li>Ryan Rud, UI Engineer</li>
+								<li>Bartek Stolarek, UI Engineer</li>
 								<li>Gary Flavin, UX Designer</li>
 							</ul>
 						</div>
@@ -70,17 +71,17 @@
 					<h3 class="subheading">Jamf Now</h3>
 					<p>A cloud-based SaaS Apple device management platform for small business. More than <a href="https://www.imore.com/jamf-now-manages-20-million-apple-devices-around-world" target="_blank">20 million devices</a> are managed through Jamf &mdash; almost 500,000 of those are on <a href="https://www.jamf.com/products/jamf-now/" target="_blank">Jamf Now</a>.</p>
 					
-					<p>We offer Standard and Plus subscriptions, leveraging Plus as a set of entirely optional advanced features, which helps us avoid unnecessary upselling.</p>
+					<p>We offer Standard and Plus subscriptions, leveraging Plus as a set of entirely optional advanced features, intended to avoid unnecessary upselling.</p>
 
-					<h3 class="subheading">The user</h3>
-					<p>We've established five user personas at Jamf, spanning every level of technical proficiency, from the basics of using a Mac, to writing custom apps and building out company networks. Jamf Now is the <strong>only product at Jamf</strong> with all five personas represented in its base.</p>
+					<h3 class="subheading">User</h3>
+					<p>UX at Jamf has established five user personas, spanning every level of technical proficiency, from the basics of using a Mac, to writing custom apps and building out company networks. Jamf Now is the <strong>only product at Jamf</strong> with all five personas represented in its user base.</p>
 					
-					<p>The majority of our customers manage devices as a <strong>secondary or tertiary responsibility</strong>.</p>
+					<p>The majority of Jamf Now's customers manage devices as a <strong>secondary or tertiary responsibility</strong>.</p>
 					
 					<h3 class="subheading">My role</h3>
-					<p>As the designer for Jamf Now, my primary goal is to create consistent, reusable patterns, workflows, and improvements toward the quality of life across the entire platform.</p>
+					<p>As the UX designer for Jamf Now, my primary goal is advocating for and co-creating <strong>experience-driven roadmaps and strategies</strong>. I aim to design consistent, reusable patterns, workflows, and improvements toward the quality of life across the platform. We accomplish this with constant cross-team, cross-discipline collaboration and a culture of open, candid feedback.</p>
 					
-					<p>We put a huge effort into ensuring that anyone can feel confident with our product, regardless of technical proficiency.</p>
+					<p>We put a ton of focus on empowering anyone, regardless of technical proficiency, to feel confident with the product.</p>
 				</div>
 			</div>
 		</section>
@@ -89,21 +90,18 @@
 			<div class="row container">
 				<div class="column">
 					<header>
-						<h2>Problem</h2>
+						<h2>Problems</h2>
 					</header>
 				</div>
 				<div class="double-column">
-					<h3 class="subheading">Constrained UI</h3>
-					<p>We needed to integrate new functionality into a workflow that administrators use to assign apps to devices. The thing is, this workflow was already stretched to its limits.</p>
+					<h3 class="subheading">Thinking ahead</h3>
+					<p>There is only one decision to make today when deploying apps on Jamf Now -- install to all compatible devices, or don't install at all. A new, major roadmap initiative came with a new, major deployment option that would allow our admins to offer apps to their co-workers as a choice, but our existing UI wasn't having it.</p>
 
-					<h3 class="subheading">No space</h3>
-					<p>Literally. We ran out of space on desktop, and the mobile experience was so overcrowded that it became practically unusable. We had to come up with a new, better experience, and fast. Our engineers had a two-week window to fit this in before they had to move on.</p>
-					
-					<h3 class="subheading">Not enough visual feedback</h3>
-					<p>There were no cues as to which apps in the list were just added versus apps that had already been in the Blueprint.</p>
+					<h3 class="subheading">No room</h3>
+					<p>Literally. The existing desktop UI couldn't handle the addition of a second deployment option <strong>[fig.1]</strong>. It was too much visual noise in an overburdened modal. And our long-neglected mobile experience was already practically unusable <strong>[fig.2]</strong>. In order to add this per-app option, we realized that we needed to rethink the entire workflow.</p>
 
-					<h3 class="subheading">No time!</h3>
-					<p>Without time for an external usability study, we used lean methods to gather internal feedback from our customer-facing teams.</p>
+					<h3 class="subheading">No time</h3>
+					<p>Ryan and I had a two-week window to get this done. Without time for a usability study, we treated my mockups as digital paper prototypes to gather internal feedback from our customer-facing teams and Product stakeholders through Lean design practices.</p>
 				</div>
 			</div>
 
@@ -112,13 +110,13 @@
 					<video autoplay controls muted>
 						<source src="https://jshbrtz.s3.us-east-2.amazonaws.com/blue-apps/apps-modal-english.mp4" type="video/mp4">
 					</video>
-					<figcaption>The modal portrayed the action of adding from a different list, but there were no visual cues to see which apps you just added. We also literally boxed ourselves in, making adding functionality very challenging.</figcaption>
+					<figcaption><strong>[fig.1]</strong> The modal portrayed the action of adding from a different list, but there were no visual cues to see which apps you just added. We also literally boxed ourselves in, making adding functionality very challenging.</figcaption>
 				</figure>
 				<figure>
 					<video autoplay controls muted>
 						<source src="https://jshbrtz.s3.us-east-2.amazonaws.com/blue-apps/apps-modal-mobile.mp4" type="video/mp4">
 					</video>
-					<figcaption>On an iPhone 12, you'd be lucky to see an app and a half.</figcaption>
+					<figcaption><strong>[fig.2]</strong> On an iPhone 12, you'd be lucky to see an app and a half.</figcaption>
 				</figure>
 			</div>
 		</section>
