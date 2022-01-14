@@ -23,9 +23,10 @@ i. global styles
 	--footer-color: #B2B2B2;
 	--bg-color: #131313;
 	--bg-color-thin: rgba(19, 19, 19, 0.5); /* being used on the secondary nav */
-	--font-accent: 'Archivo Black', sans-serif;
+/* 	--font-accent: 'termina', sans-serif; */
+	--font-accent: 'manofa', sans-serif;
 	/* headers, captions, footers */
-	--font-primary: 'Open Sans', sans-serif;
+	--font-primary: 'aesthet-nova', sans-serif;
 }
 
 /* browser defaults reset; setting expectations */
@@ -61,23 +62,25 @@ h4,
 .secondary-nav,
 .no-link-decor {
 	font-family: var(--font-accent);
-	/* letter-spacing: -0.01em; */
-	padding-bottom: 0.5rem;
+	font-weight: 700;
+	font-style: normal;
 }
 
 h1 {
 	font-size: 2.25rem;
-
+	line-height: 2.25rem;
 }
 
 h2 {
 	font-size: 1.7rem;
 	margin-right: 3rem;
 	margin-bottom: 2rem;
+	line-height: 1.8rem;
 }
 
 h3 {
 	font-size: 1.5rem;
+	line-height: 1.5rem;
 }
 
 h4,
@@ -88,7 +91,7 @@ h4,
 }
 
 .subheading {
-	font-size: 1.125rem;
+	font-size: 1.2rem;
 	letter-spacing: -0.02em;
 }
 
@@ -101,7 +104,7 @@ h4,
 
 p,
 ul {
-	font-size: 1.125rem;
+	font-size: 1.2rem;
 	line-height: 1.7rem;
 	margin-bottom: 1.3rem;
 }
@@ -125,6 +128,7 @@ a {
 
 /* someone told me once that I dance like a noodle */
 /* match the last six characters in 'stroke' with the hex code in --link-color, bromie lee curtis  */
+/* .showoff is used exclusively on the colophon */
 a:hover,
 .showoff {
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-1.25rem);}}%3C/style%3E%3Cpath fill='none' stroke='%23FF0059' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
@@ -150,6 +154,7 @@ a:hover,
 
 footer p,
 footer a,
+.subnote,
 figcaption {
 	font-size: 0.95rem;
 	line-height: 1.3rem;
