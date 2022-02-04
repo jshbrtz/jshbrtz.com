@@ -3,3 +3,4 @@ style/.DS_Store
 .DS_Store
 .nova/Configuration.json
 .eleventy.js
+*.icloud
