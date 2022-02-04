@@ -71,9 +71,9 @@ h1 {
 /* 	line-height: 2.5rem; */
 }
 
-.landing-header {
+/* .landing-header {
 	line-height: 2.5rem;
-}
+} */
 
 h2 {
 	font-size: 1.7rem;
@@ -235,6 +235,7 @@ iii. components
 	height: 8rem;
 	margin-right: 2.25rem;
 	margin-bottom: 1.5rem;
+	margin-top: 0.6rem;
 }
 
 .btn,
