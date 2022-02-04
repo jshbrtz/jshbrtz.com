@@ -68,6 +68,11 @@ h4,
 
 h1 {
 	font-size: 2.25rem;
+/* 	line-height: 2.5rem; */
+}
+
+.landing-header {
+	line-height: 2.5rem;
 }
 
 h2 {
@@ -80,7 +85,8 @@ h2 {
 h3 {
 	font-family: var(--font-primary);
 	font-size: 1.5rem;
-	line-height: 1.8rem;
+	margin-bottom: 0.5rem;
+/* 	line-height: 1.5rem; */
 }
 
 h4,
@@ -106,12 +112,12 @@ p,
 ul {
 	font-size: 1.2rem;
 	line-height: 1.7rem;
-	margin-bottom: 1.3rem;
+	margin-bottom: 1.4rem;
 }
 
 strong {
 	color: var(--text-hover);
-	font-weight: 600;
+	font-weight: 500;
 }
 
 /* 96% of link hover effect courtesy Geoff Graham -- https://codepen.io/geoffgraham */
@@ -124,6 +130,7 @@ a {
 	text-decoration: none;
 	transition: 0.2s ease-in-out;
 	padding-bottom: 0.05rem;
+/* 	text-shadow: 0px 2px var(--bg-color); */
 }
 
 /* someone told me once that I dance like a noodle */
@@ -317,7 +324,7 @@ iv. layouts
 
 .greeting {
 	margin-top: 7rem;
-	margin-bottom: 6rem;
+	margin-bottom: 3rem;
 }
 
 header {
@@ -335,7 +342,7 @@ article {
 }
 
 footer {
-	margin-top: 4rem;
+	margin-top: -5rem;
 	margin-bottom: 2rem;
 	text-align: left;
 }
