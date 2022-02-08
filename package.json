@@ -1,0 +1,23 @@
+{
+  "name": "portfolio_2021",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "scripts": {
+    "start": "npx eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jshbrtz/portfolio_2021.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jshbrtz/portfolio_2021/issues"
+  },
+  "homepage": "https://github.com/jshbrtz/portfolio_2021#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.0"
+  }
+}
