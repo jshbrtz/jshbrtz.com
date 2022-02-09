@@ -1,4 +1,4 @@
 ---
-title: "Hello, I'm Josh"
+title: "Hello, I'm Josh."
 layout: 'layouts/home.html'
 ---
