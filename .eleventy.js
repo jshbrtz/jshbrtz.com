@@ -4,6 +4,7 @@ module.exports = function (eleventyConfig) {
 	// Add passthrough directories & files
 	eleventyConfig.addPassthroughCopy("./src/style/");
 	eleventyConfig.addPassthroughCopy("./src/img/");
+	eleventyConfig.addPassthroughCopy({ "./src/img/favicon": "/" });
 	
 	// Markdown-It 'markdownify' filter source: BradCoffield/kidlitconnection@e42a6de)
 	const md = require("markdown-it")({
