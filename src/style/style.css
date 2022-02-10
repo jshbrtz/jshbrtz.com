@@ -68,7 +68,6 @@ h4,
 
 h1 {
 	font-size: 2.25rem;
-	line-height: 2.25rem;
 /* 	line-height: 2.5rem; */
 }
 
@@ -86,7 +85,6 @@ h2 {
 h3 {
 	font-family: var(--font-primary);
 	font-size: 1.5rem;
-	line-height: 1.5rem;
 	margin-bottom: 0.5rem;
 /* 	line-height: 1.5rem; */
 }
@@ -114,13 +112,11 @@ p,
 ul {
 	font-size: 1.2rem;
 	line-height: 1.7rem;
-	margin-bottom: 1.3rem;
 	margin-bottom: 1.4rem;
 }
 
 strong {
 	color: var(--text-hover);
-	font-weight: 600;
 	font-weight: 500;
 }
 
