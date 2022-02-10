@@ -20,9 +20,7 @@
 		
 		<main>
 	
-		{% block content %}
-		<p>Looks like something's missing.</p>
-		{% endblock %}
+		{{ content | safe }}
 		
 		</main>
 		
