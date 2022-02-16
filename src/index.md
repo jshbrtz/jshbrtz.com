@@ -8,7 +8,7 @@ layout: 'layouts/base.html'
 		<img class="avatar" src="./img/profile-2.jpeg" alt="avatar" />
 		<div class="double-column">
 				<h1>{{ title }} <span class="smallcaps">he/him</span></h1>
-				<p>I'm <a href="https://open.spotify.com/playlist/4sZKvd9jtAVOyDgrXEsvX7?si=d4ac75325e84400e" target="_blank">making playlists</a>, cooking with butter, and pushing for ethical practices in tech. I make sure products, processes, and teams are better than how I found them.</p>
+				<p>I'm <a href="https://music.apple.com/us/playlist/2021-2022-winter/pl.u-AZDXGIdKxa1" target="_blank">making playlists</a>, cooking with butter, and pushing for ethical practices in tech. The metaverse, blockchain, NFTs and Web3 are not real things.</p>
 		</div>
 	</div>
 </section>
