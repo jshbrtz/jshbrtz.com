@@ -6,9 +6,9 @@ layout: 'layouts/base.html'
 <section id="intro" class="greeting">
 	<div class="row container-narrow">
 		<img class="avatar" src="./img/profile-2.jpeg" alt="avatar" />
-		<div class="double-column">
+		<div class="double-column verticalcenter">
 				<h1>{{ title }} <span class="smallcaps">he/him</span></h1>
-				<p>I'm <a href="https://open.spotify.com/playlist/4sZKvd9jtAVOyDgrXEsvX7?si=d4ac75325e84400e" target="_blank">making playlists</a>, cooking with butter, and pushing for ethical practices in tech. I make sure products, processes, and teams are better than how I found them.</p>
+				<p>I'm <a href="https://music.apple.com/us/playlist/2021-2022-winter/pl.u-AZDXGIdKxa1" target="_blank">making playlists</a>, cooking with butter, and pushing for ethical practices in tech and product design.</p>
 		</div>
 	</div>
 </section>

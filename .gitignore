@@ -8,6 +8,7 @@ Thumbs.db
 .sass-cache
 .env
 .cache
+.nova/
 
 # Node modules and output
 node_modules

@@ -13,13 +13,14 @@
     "url": "git+https://github.com/jshbrtz/jshbrtz.com.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Joshua Bartz",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jshbrtz/jshbrtz.com/issues"
   },
   "homepage": "https://github.com/jshbrtz/jshbrtz.com#readme",
   "dependencies": {
-    "@11ty/eleventy": "^1.0.0"
+    "@11ty/eleventy": "^1.0.0",
+    "markdownit": "12.3.2"
   }
 }
