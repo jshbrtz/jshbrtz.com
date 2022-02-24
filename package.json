@@ -21,6 +21,6 @@
   "homepage": "https://github.com/jshbrtz/jshbrtz.com#readme",
   "dependencies": {
     "@11ty/eleventy": "^1.0.0",
-    "markdownit": "12.3.2"
+    "markdown-it": "12.3.2"
   }
 }
