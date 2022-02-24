@@ -27,7 +27,7 @@ permalink: "colophon/"
 				</header>
 			</div>
 			<div class="double-column">
-				<p>Headings are in <a href="https://thenorthernblock.co.uk/fonts/p/manofa" target="_blank">Manofa</a>, body copy in <a href="https://thenorthernblock.co.uk/fonts/p/aesthet-nova" target="_blank">Aesthet Nova</a>. Both designed by <a href="https://www.behance.net/mariyapigoulevskaya" target="_blank">Mariya Pigoulevskaya</a> for <a href="https://thenorthernblock.co.uk" target="_blank">The Northern Block</a>. Piped in through <a href="https://fonts.adobe.com" target="_blank">Adobe Fonts</a>.</p>
+				<p>Headings are in <a href="https://www.daltonmaag.com/library/effra" target="_blank">Effra</a>, designed by Jonas Schudel for Dalton Maag. Body copy in <a href="https://thenorthernblock.co.uk/fonts/p/aesthet-nova" target="_blank">Aesthet Nova</a>, designed by <a href="https://www.behance.net/mariyapigoulevskaya" target="_blank">Mariya Pigoulevskaya</a> for <a href="https://thenorthernblock.co.uk" target="_blank">The Northern Block</a>. Piped in through <a href="https://fonts.adobe.com" target="_blank">Adobe Fonts</a>.</p>
 		</div>
 	</div>
 </section>
