@@ -16,18 +16,19 @@ i. global styles
 	--link-color: #FF0059;
 	/* don't forget to change the "stroke" color in the a:hover selector, broskie */
 	--text-hover: #fff;
-	--heading-color: #fff;
-	--text-color: rgba(219, 219, 219, 1);
+	--heading-color: rgba(237, 237, 237, 1);
+	--text-color: rgba(237, 237, 237, 1);
 	--text-caption-color: rgba(219, 219, 219, 0.7);
 	--text-color-thin: rgba(219, 219, 219, 0.1);
 	/* paragraphs, bylines */
 	--footer-color: rgba(203, 203, 203, 1);
+	--avatar-color: rgba(43, 25, 103, 1);
 	--bg-color: rgba(12, 7, 29, 1);
-	--bg-color-thin: rgba(10, 2, 25, 0.5); /* being used on the secondary nav */
+	--bg-color-thin: rgba(12, 7, 29, 0.5); /* being used on the secondary nav */
 /* 	--font-accent: 'termina', sans-serif; */
 	--font-accent: 'effra', sans-serif;
 	/* headers, captions, footers */
-	--font-primary: 'aesthet-nova', sans-serif;
+	--font-primary: 'effra', sans-serif;
 }
 
 /* browser defaults reset; setting expectations */
@@ -70,12 +71,7 @@ h4,
 
 h1 {
 	font-size: 2.25rem;
-/* 	line-height: 2.5rem; */
 }
-
-/* .landing-header {
-	line-height: 2.5rem;
-} */
 
 h2 {
 	font-size: 1.7rem;
@@ -88,7 +84,6 @@ h3 {
 	font-family: var(--font-primary);
 	font-size: 1.5rem;
 	margin-bottom: 0.5rem;
-/* 	line-height: 1.5rem; */
 }
 
 h4,
@@ -114,6 +109,7 @@ ul {
 	font-size: 1.2rem;
 	line-height: 1.7rem;
 	margin-bottom: 1.4rem;
+	font-weight: 300;
 }
 
 strong {
@@ -223,7 +219,7 @@ iii. components
 @supports ((-webkit-backdrop-filter: blur(1rem)) or (backdrop-filter: blur(1rem))) {
 	  .secondary-nav {
 		backdrop-filter: blur(1rem);
-		-webkit-backdrop-filter: blur(1em);
+		-webkit-backdrop-filter: blur(0.6em);
 		background-color: var(--bg-color-thin);
 	  }
 	}
@@ -231,7 +227,7 @@ iii. components
 .avatar {
 	display: block;
 	border-radius: 50%;
-	border: 0.188rem solid var(--text-color);
+	border: 0.188rem solid var(--avatar-color);
 	width: 7rem;
 	height: 7rem;
 	margin-right: 2.25rem;
@@ -303,7 +299,7 @@ iv. layouts
 /* used only on index page. save the real width for case studies. */
 .container-narrow {
 	margin: 0 auto;
-	max-width: 49rem;
+	max-width: 44rem;
 	min-width: 20rem;
 	padding-left: 2rem;
 	padding-right: 2rem;
@@ -355,7 +351,6 @@ footer {
 	padding-right: 1rem;
 }
 
-/* created for the footer */
 .verticalcenter {
 	justify-content: center;
 }

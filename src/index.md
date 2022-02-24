@@ -15,9 +15,11 @@ layout: 'layouts/base.html'
 
 <section id="obsessions" class="row">
 	<div class="row container-narrow">
-		<header class="column">
-			<h2>Current obsessions</h2>
-		</header>
+		<div class="column">
+			<header>
+				<h2>From the shelves</h2>
+			</header>
+		</div>
 		<div class="double-column">
 			<ul class="no-list-decor">
 				<li>📚&nbsp;&nbsp;Cal Flyn's hopeful <a href="https://www.calflyn.com/nonfiction-books/islands-of-abandonment-nature-rebounding-post-human-landscape" target="_blank">Islands of Abandonment</a>, on natural biomes appearing in post-human landscapes</li>
