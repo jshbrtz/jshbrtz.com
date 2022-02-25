@@ -5,10 +5,13 @@ layout: 'layouts/base.html'
 
 <section id="intro" class="greeting">
 	<div class="row container-narrow">
-		<img class="avatar" src="./img/profile-2.jpeg" alt="avatar" />
+		<div class="column">
+			<img class="avatar" src="./img/profile-2.jpeg" alt="avatar" />
+		</div>
 		<div class="double-column verticalcenter">
 				<h1>{{ title }} <span class="smallcaps">he/him</span></h1>
-				<p>I'm <a href="https://music.apple.com/us/playlist/2021-2022-winter/pl.u-AZDXGIdKxa1" target="_blank">making playlists</a>, cooking with butter, and pushing for ethical practices in tech and product design.</p>
+				<p>I'm an ethics-focused Product Designer who <a href="https://music.apple.com/us/playlist/2021-2022-winter/pl.u-AZDXGIdKxa1" target="_blank">makes playlists</a> and cooks with butter.
+				<a href="mailto:wave@brtz.me"><button class="available"><span class="status"></span>Open to work</button></a></p>
 		</div>
 	</div>
 </section>
@@ -17,7 +20,7 @@ layout: 'layouts/base.html'
 	<div class="row container-narrow">
 		<div class="column">
 			<header>
-				<h2>From the shelves</h2>
+				<h2>Interesting things</h2>
 			</header>
 		</div>
 		<div class="double-column">

@@ -16,15 +16,14 @@ i. global styles
 	--link-color: #FF0059;
 	/* don't forget to change the "stroke" color in the a:hover selector, broskie */
 	--text-hover: #fff;
-	--heading-color: rgba(237, 237, 237, 1);
-	--text-color: rgba(237, 237, 237, 1);
-	--text-caption-color: rgba(219, 219, 219, 0.7);
+	--heading-color: rgba(200, 200, 200, 1);
+	--text-color: rgba(226, 226, 226, 1);
+	--text-caption-color: rgba(200, 200, 200, 0.7);
 	--text-color-thin: rgba(219, 219, 219, 0.1);
 	/* paragraphs, bylines */
 	--footer-color: rgba(203, 203, 203, 1);
-	--avatar-color: rgba(43, 25, 103, 1);
-	--bg-color: rgba(12, 7, 29, 1);
-	--bg-color-thin: rgba(12, 7, 29, 0.5); /* being used on the secondary nav */
+	--bg-color: rgba(9, 5, 21, 1);
+	--bg-color-thin: rgba(9, 5, 21, 0.5); /* being used on the secondary nav */
 /* 	--font-accent: 'termina', sans-serif; */
 	--font-accent: 'effra', sans-serif;
 	/* headers, captions, footers */
@@ -70,11 +69,11 @@ h4,
 }
 
 h1 {
-	font-size: 2.25rem;
+	font-size: 1.8rem;
 }
 
 h2 {
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 	margin-right: 3rem;
 	margin-bottom: 2rem;
 	line-height: 1.8rem;
@@ -82,7 +81,7 @@ h2 {
 
 h3 {
 	font-family: var(--font-primary);
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	margin-bottom: 0.5rem;
 }
 
@@ -225,18 +224,18 @@ iii. components
 	}
 
 .avatar {
-	display: block;
+	display: flex;
+	align-self: center;
 	border-radius: 50%;
-	border: 0.188rem solid var(--avatar-color);
-	width: 7rem;
-	height: 7rem;
-	margin-right: 2.25rem;
+	border: 0.188rem solid var(--text-color);
+	width: 6.5rem;
+	height: 6.5rem;
 	margin-bottom: 1.5rem;
-	margin-top: 0.6rem;
 }
 
 .btn,
-.btn-icon {
+.btn-icon,
+.available {
 	background-color: none;
 	border-radius: 0.188rem;
 	border: none;
@@ -244,7 +243,8 @@ iii. components
 	/* display: inline-block; */
 }
 
-.btn {
+.btn,
+.available {
 	padding: 0.3rem 0.5rem;
 }
 
@@ -259,11 +259,32 @@ iii. components
 	text-align: center;
 }
 
+.available {
+	display: flex;
+	justify-content: center;
+	color: var(--text-color);
+	margin-top: 0.3rem;
+	font-size: 0.9rem;
+	background-color: transparent;
+}
+
+.status {
+	border-radius: 50%;
+	width: 0.4rem;
+	height: 0.4rem;
+	background-color: rgba(32, 247, 47, 0.8);
+	margin-top: 0.35rem;
+	margin-left: 0.01rem;
+	margin-right: 0.4rem;
+}
+
 .btn:hover,
-.btn-icon:hover {
+.btn-icon:hover,
+.available:hover {
 	background-color: var(--text-color-thin);
 	color: var(--text-hover);
 	transition: 0.1s ease-in;
+	cursor: pointer;
 }
 
 .l-align {
@@ -380,6 +401,11 @@ footer {
 		margin-bottom: 5rem;
 	}
 	
+	.avatar {
+		align-self: flex-start;
+		margin-bottom: 2.5rem;
+	}
+	
 }
 
 @media screen and (min-width: 40rem) {
@@ -419,6 +445,11 @@ footer {
 		align-items: flex-start;
 		margin: 0 auto;
 		max-width: 95rem;
+	}
+	
+	.avatar {
+		align-self: flex-start;
+		margin-bottom: 2.5rem;
 	}
 	
 	/* .img-row img {
