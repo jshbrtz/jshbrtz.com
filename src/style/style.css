@@ -230,7 +230,6 @@ iii. components
 	border: 0.188rem solid var(--text-color);
 	width: 6.5rem;
 	height: 6.5rem;
-	margin-bottom: 1.5rem;
 }
 
 .btn,
@@ -445,11 +444,6 @@ footer {
 		align-items: flex-start;
 		margin: 0 auto;
 		max-width: 95rem;
-	}
-	
-	.avatar {
-		align-self: flex-start;
-		margin-bottom: 2.5rem;
 	}
 	
 	/* .img-row img {
