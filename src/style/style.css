@@ -224,12 +224,11 @@ iii. components
 	}
 
 .avatar {
-	display: flex;
-	align-self: center;
 	border-radius: 50%;
-	border: 0.188rem solid var(--text-color);
+/* 	border: 0.188rem solid var(--text-color); */
 	width: 6.5rem;
 	height: 6.5rem;
+	margin-left: 1.5rem;
 }
 
 .btn,
@@ -394,7 +393,7 @@ footer {
 }
 
 /* for our iPhone SE friends */
-@media screen and (max-width: 20rem) {
+@media screen and (max-width: 26rem) {
 	.greeting {
 		margin-top: 5rem;
 		margin-bottom: 5rem;
@@ -403,6 +402,7 @@ footer {
 	.avatar {
 		align-self: flex-start;
 		margin-bottom: 2.5rem;
+		margin-left: 0rem;
 	}
 	
 }
