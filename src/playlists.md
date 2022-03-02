@@ -41,7 +41,7 @@ permalink: "playlists/"
 			</header>
 		</div>
 		<div class="double-column">
-			<ul class="no-list-decor">
+			<ul class="no-list-decor chrono-lists">
 				<li><img class="album" src="https://is2-ssl.mzstatic.com/image/thumb/a15ybwvgihiY5gRvMtoMxA/500x500cc.jpg" />
 				<h3 class="subheading">2021 fall - where we're going, we don't need snow</h3>
 					<ul class="no-list-decor">

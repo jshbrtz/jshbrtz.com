@@ -16,9 +16,9 @@ i. global styles
 	--link-color: #FF0059;
 	/* don't forget to change the "stroke" color in the a:hover selector, broskie */
 	--text-hover: #fff;
-	--heading-color: rgba(200, 200, 200, 1);
+	--heading-color: rgba(225, 225, 225, 1);
 	--text-color: rgba(226, 226, 226, 1);
-	--text-caption-color: rgba(200, 200, 200, 0.7);
+	--text-caption-color: rgba(225, 225, 225, 0.6);
 	--text-color-thin: rgba(219, 219, 219, 0.1);
 	/* paragraphs, bylines */
 	--footer-color: rgba(203, 203, 203, 1);
@@ -73,7 +73,7 @@ h1 {
 }
 
 h2 {
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	margin-right: 3rem;
 	margin-bottom: 2rem;
 	line-height: 1.8rem;
@@ -81,7 +81,7 @@ h2 {
 
 h3 {
 	font-family: var(--font-primary);
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	margin-bottom: 0.5rem;
 }
 
@@ -99,13 +99,13 @@ h4,
 /* style for captions and some bylines */
 .smallcaps {
 	color: var(--text-caption-color);
-	font-size: 0.9rem;
-/* 	text-transform: uppercase; */
+	font-size: 1rem;
+	font-weight: 400;
 }
 
 p,
 ul {
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	line-height: 1.7rem;
 	margin-bottom: 1.4rem;
 	font-weight: 300;
@@ -126,7 +126,6 @@ a {
 	text-decoration: none;
 	transition: 0.2s ease-in-out;
 	padding-bottom: 0.05rem;
-/* 	text-shadow: 0px 2px var(--bg-color); */
 }
 
 /* someone told me once that I dance like a noodle */
@@ -225,24 +224,21 @@ iii. components
 
 .avatar {
 	border-radius: 50%;
-/* 	border: 0.188rem solid var(--text-color); */
-	width: 6.5rem;
-	height: 6.5rem;
-	margin-left: 1.5rem;
+	border: 0.15rem solid var(--text-color);
+	width: 5rem;
+	height: 5rem;
+	margin-right: 2rem;
 }
 
 .btn,
-.btn-icon,
-.available {
+.btn-icon {
 	background-color: none;
 	border-radius: 0.188rem;
 	border: none;
 	transition: 0.1s ease-in;
-	/* display: inline-block; */
 }
 
-.btn,
-.available {
+.btn {
 	padding: 0.3rem 0.5rem;
 }
 
@@ -257,23 +253,15 @@ iii. components
 	text-align: center;
 }
 
-.available {
-	display: flex;
-	justify-content: center;
-	color: var(--text-color);
-	margin-top: 0.3rem;
-	font-size: 0.9rem;
-	background-color: transparent;
-}
-
 .status {
+	display: inline-block;
 	border-radius: 50%;
 	width: 0.4rem;
 	height: 0.4rem;
 	background-color: rgba(32, 247, 47, 0.8);
-	margin-top: 0.35rem;
 	margin-left: 0.01rem;
 	margin-right: 0.4rem;
+	margin-bottom: 0.1rem;
 }
 
 .btn:hover,
@@ -287,6 +275,10 @@ iii. components
 
 .l-align {
 	float: left;
+}
+
+.r-align{
+	float: right;
 }
 
 .img-row img,
@@ -311,6 +303,17 @@ figcaption {
 	caption-side: bottom;
 }
 
+.album {
+	width: 7rem;
+	height: 7rem;
+	float:left;
+	margin-right: 1rem;
+}
+
+.chrono-lists li{
+	margin-bottom: 4rem;
+}
+
 /* ===================
 iv. layouts
 =================== */
@@ -318,7 +321,7 @@ iv. layouts
 /* used only on index page. save the real width for case studies. */
 .container-narrow {
 	margin: 0 auto;
-	max-width: 44rem;
+	max-width: 42rem;
 	min-width: 20rem;
 	padding-left: 2rem;
 	padding-right: 2rem;
@@ -359,7 +362,7 @@ article {
 }
 
 footer {
-	margin-top: -5rem;
+	margin-top: -2rem;
 	margin-bottom: 2rem;
 	text-align: left;
 }
@@ -368,10 +371,6 @@ footer {
 .rightalign {
 	text-align: right;
 	padding-right: 1rem;
-}
-
-.verticalcenter {
-	justify-content: center;
 }
 
 /* mobile scaling will put everything into a single column */
@@ -400,9 +399,8 @@ footer {
 	}
 	
 	.avatar {
-		align-self: flex-start;
-		margin-bottom: 2.5rem;
-		margin-left: 0rem;
+/* 		align-self: flex-start; */
+		padding-bottom: 5.5rem;
 	}
 	
 }

@@ -37,9 +37,8 @@ permalink: "colophon/"
 				</header>
 			</div>
 			<div class="double-column">
-				<p>Built with HTML5 and CSS3 by yours truly, merged to a private GitHub repo, compiled with <a href="https://www.11ty.dev" target="_blank">Eleventy</a> and deployed automatically on <a href="https://www.netlify.com" target="_blank">Netlify</a>. Static sites make the rockin' &#127758; go 'round.</p>
+				<p>Built with HTML5 and CSS3 by yours truly, merged to a public <a href="https://github.com/jshbrtz/jshbrtz.com" target="_blank">Github</a> repo, compiled with <a href="https://www.11ty.dev" target="_blank">Eleventy</a> and deployed automatically on <a href="https://www.netlify.com" target="_blank">Netlify</a>.</p>
 				<p>The <span class="showoff">wiggle</span> is 90% written by <a href="https://codepen.io/geoffgraham" target="_blank">Geoff Graham</a>. Some attributes were tweaked, because I had to.</p>
-				<p>Geoff, we may never meet, but that wiggle effect felt like it was written specifically for me.</p>
 			</div>
 		</div>
 	</div>
@@ -50,7 +49,7 @@ permalink: "colophon/"
 		<div class="row">
 			<div class="column">
 				<header>
-					<h2>Colonialism is genocide</h2>
+					<h2>Made on colonized lands</h2>
 				</header>
 			</div>
 			<div class="double-column">
@@ -81,7 +80,7 @@ permalink: "colophon/"
 		<div class="row">
 			<div class="column">
 				<header>
-					<h2>Give me feedback</h2>
+					<h2>Feedback</h2>
 				</header>
 			</div>
 			<div class="double-column">
