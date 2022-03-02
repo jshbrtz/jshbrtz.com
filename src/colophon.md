@@ -4,11 +4,7 @@ layout: 'layouts/base.html'
 permalink: "colophon/"
 ---
 
-<div class="secondary-nav">
-	<nav id="page-nav">
-		<a href=".." class="l-align btn-icon no-link-decor" alt="back">&#8592;</a>
-	</nav>
-</div>
+{% include "partials/primary-nav.html" %}
 
 <div class="container-narrow">
 	<div class="row">
