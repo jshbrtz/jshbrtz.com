@@ -22,8 +22,8 @@ i. global styles
 	--text-color-thin: rgba(219, 219, 219, 0.1);
 	/* paragraphs, bylines */
 	--footer-color: rgba(203, 203, 203, 1);
-	--bg-color: rgba(9, 5, 21, 1);
-	--bg-color-thin: rgba(9, 5, 21, 0.5); /* being used on the secondary nav */
+	--bg-color: rgb(12, 7, 29);
+	--bg-color-thin: rgba(12, 7, 29, 0.5); /* being used on the secondary nav */
 /* 	--font-accent: 'termina', sans-serif; */
 	--font-accent: 'effra', sans-serif;
 	/* headers, captions, footers */
