@@ -243,6 +243,7 @@ iii. components
 	border-radius: 0.188rem;
 	border: none;
 	transition: 0.1s ease-in;
+	width: fit-content;
 }
 
 .btn {
@@ -254,18 +255,17 @@ iii. components
 	border: none;
 	width: 2rem;
 	height: 2rem;
-	display: inline-block;
 	transition: 0.1s ease-in;
 	vertical-align: center;
 	text-align: center;
 }
 
 .icon-back:before {
-  content: "\2b60";
-  align-content: center;
-  vertical-align: middle;
-  font-size: 0.5rem;
-  color: var(--text-color);
+	content: "\2b60";
+	align-content: center;
+	vertical-align: middle;
+	font-size: 0.5rem;
+	color: var(--text-color);
 }
 
 .status {
