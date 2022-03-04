@@ -237,6 +237,7 @@ iii. components
 	margin-right: 1.4rem;
 }
 
+ /* the next three classes are specific to the avatar, name, pronouns, and professional title on index */
 .name-block {
 	display: relative;
 	margin-bottom: 1.4rem;
@@ -248,6 +249,12 @@ iii. components
 	top: 50%;
 	transform: translateY(15%);
 }
+
+.header-modifier {
+	display: block;
+	margin-bottom: 2rem;
+}
+/* keep the above three classes together */
 
 .btn,
 .btn-icon {

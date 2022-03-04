@@ -9,8 +9,8 @@ layout: 'layouts/base.html'
 			<div class="name-block">
 			<img class="avatar" src="./img/profile-2.jpeg" alt="avatar" />
 				<div class="vertical-center">
-					<h1>{{ title }} <span class="small-caps">he/him</span></h1>
-					<p><span class="small-caps">Product design & strategy</span></p>
+					<h1>{{ title }} <span class="small-caps">he/him</span>
+					<span class="small-caps header-modifier">Product design & strategy</span></h1>
 				</div>
 			</div>
 			<p>I'm an ethics-focused Product Designer, making <a href="./playlists"> playlists</a>, design strategy, and cooking with butter. Most recently, I was the User Experience Designer for Jamf Now, a platform empowering small businesses with mobile device management.</p>
