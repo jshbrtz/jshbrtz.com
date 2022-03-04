@@ -9,7 +9,7 @@ layout: 'layouts/base.html'
 			<div class="name-block">
 			<img class="avatar" src="./img/profile-2.jpeg" alt="avatar" />
 				<div class="vertical-center">
-					<h1>{{ title }} <span class="small-caps">he/him</span>
+					<h1>{{ title }} <span class="small-caps pronouns">he/him</span>
 					<span class="small-caps header-modifier">Product design & strategy</span></h1>
 				</div>
 			</div>
