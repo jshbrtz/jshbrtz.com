@@ -176,6 +176,12 @@ li {
 	margin-bottom: 0.6rem;
 }
 
+/* used primarily on the playlists page */
+.chrono-lists li{
+	margin-bottom: 3rem;
+	height: 8rem;
+}
+
 .no-list-decor {
 	list-style-type: none;
 }
@@ -216,13 +222,14 @@ iii. components
 /* note to self: firefox 90 (unreleased) does not support this. remove once supported. */
 @supports ((-webkit-backdrop-filter: blur(1rem)) or (backdrop-filter: blur(1rem))) {
 	  .secondary-nav {
-		backdrop-filter: blur(1rem);
+		backdrop-filter: blur(0.8rem);
 		-webkit-backdrop-filter: blur(0.6em);
 		background-color: var(--bg-color-thin);
 	  }
 	}
 
 .avatar {
+	justify-content: flex-start;
 	border-radius: 50%;
 	border: 0.15rem solid var(--text-color);
 	width: 5rem;
@@ -251,6 +258,14 @@ iii. components
 	transition: 0.1s ease-in;
 	vertical-align: center;
 	text-align: center;
+}
+
+.icon-back:before {
+  content: "\2b60";
+  align-content: center;
+  vertical-align: middle;
+  font-size: 0.5rem;
+  color: var(--text-color);
 }
 
 .status {
@@ -304,14 +319,10 @@ figcaption {
 }
 
 .album {
-	width: 7rem;
-	height: 7rem;
-	float:left;
+	width: 8rem;
+	height: 8rem;
+	float: left;
 	margin-right: 1rem;
-}
-
-.chrono-lists li{
-	margin-bottom: 4rem;
 }
 
 /* ===================
@@ -400,7 +411,7 @@ footer {
 	
 	.avatar {
 /* 		align-self: flex-start; */
-		padding-bottom: 5.5rem;
+/* 		padding-bottom: 5.5rem; */
 	}
 	
 }

@@ -5,13 +5,11 @@ layout: 'layouts/base.html'
 
 <section id="intro" class="greeting">
 	<div class="row container-narrow">
-		<img class="avatar" src="./img/profile-2.jpeg" alt="avatar" />
-	</div>
-	<div class="row container-narrow">
-		<div class="double-column verticalcenter">
-				<h1>{{ title }} <span class="smallcaps">he/him</span></h1>
-				<p><span class="smallcaps">Product design & strategy</span></p>
-				<p>I'm an ethics-focused Product Designer, making <a href=",/playlists"> playlists</a>, design strategy, and cooking with butter. Most recently, I was the User Experience Designer for Jamf Now, a platform empowering small businesses with mobile device management.</p>
+		<div class="column verticalcenter">
+			<img class="avatar" src="./img/profile-2.jpeg" alt="avatar" />
+			<h1>{{ title }} <span class="smallcaps">he/him</span></h1>
+			<p><span class="smallcaps">Product design & strategy</span></p>
+				<p>I'm an ethics-focused Product Designer, making <a href="./playlists"> playlists</a>, design strategy, and cooking with butter. Most recently, I was the User Experience Designer for Jamf Now, a platform empowering small businesses with mobile device management.</p>
 				<p><a href="mailto:hello@brtz.me" class="btn no-link-decor"><span class="status"></span>Open to work</a></p>
 		</div>
 	</div>
