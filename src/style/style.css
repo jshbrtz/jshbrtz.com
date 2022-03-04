@@ -284,7 +284,6 @@ iii. components
 	align-content: center;
 	vertical-align: middle;
 	font-size: 0.5rem;
-	color: var(--text-color);
 }
 
 .status {
@@ -421,7 +420,7 @@ footer {
 	max-width: 100%;
 }
 
-/* for our iPhone SE friends */
+/* mobile for iPhone ~8 and larger */
 @media screen and (max-width: 26rem) {
 	.greeting {
 		margin-top: 5rem;
