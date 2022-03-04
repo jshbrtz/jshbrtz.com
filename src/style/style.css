@@ -97,7 +97,7 @@ h4,
 }
 
 /* style for captions and some bylines */
-.smallcaps {
+.small-caps {
 	color: var(--text-caption-color);
 	font-size: 1rem;
 	font-weight: 400;
@@ -229,12 +229,24 @@ iii. components
 	}
 
 .avatar {
-	justify-content: flex-start;
+	float:left;
 	border-radius: 50%;
 	border: 0.15rem solid var(--text-color);
 	width: 5rem;
 	height: 5rem;
-	margin-right: 2rem;
+	margin-right: 1.4rem;
+}
+
+.name-block {
+	display: relative;
+	margin-bottom: 1.4rem;
+}
+
+.vertical-center {
+	display: absolute;
+	align-self: center;
+	top: 50%;
+	transform: translateY(15%);
 }
 
 .btn,
@@ -410,8 +422,7 @@ footer {
 	}
 	
 	.avatar {
-/* 		align-self: flex-start; */
-/* 		padding-bottom: 5.5rem; */
+ 		padding-bottom: 5.5rem;
 	}
 	
 }
