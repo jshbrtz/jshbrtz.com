@@ -6,7 +6,7 @@ permalink: "jamf-now-blueprint-apps/"
 
 <div class="secondary-nav">
 	<nav id="page-nav">
-		<a href="/index.html" class="l-align btn-icon no-link-decor" alt="back">&#8592;</a>
+		<a href=".." class="l-align btn-icon icon-back no-link-decor" alt="back"></a>
 		<a href="#product" class="btn no-link-decor">Product</a>
 		<a href="#problems" class="btn no-link-decor">Problems</a>
 		<a href="#process" class="btn no-link-decor">Process</a>
