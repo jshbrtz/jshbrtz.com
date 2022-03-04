@@ -24,6 +24,7 @@ permalink: "colophon/"
 			</div>
 			<div class="double-column">
 				<p><a href="https://www.daltonmaag.com/library/effra" target="_blank">Effra</a>, designed by Jonas Schudel for Dalton Maag. Piped in through <a href="https://fonts.adobe.com" target="_blank">Adobe Fonts</a>.</p>
+				<p>The link <span class="showoff">wiggle</span> is by <a href="https://codepen.io/geoffgraham" target="_blank">Geoff Graham</a>. Site iconography designed by me and hosted on <a href="https://icomoon.io" target="_blank">IcoMoon</a>.</p>
 		</div>
 	</div>
 </section>
@@ -38,7 +39,6 @@ permalink: "colophon/"
 			</div>
 			<div class="double-column">
 				<p>Built with HTML5 and CSS3 by yours truly, merged to a public <a href="https://github.com/jshbrtz/jshbrtz.com" target="_blank">Github</a> repo, compiled with <a href="https://www.11ty.dev" target="_blank">Eleventy</a> and deployed automatically on <a href="https://www.netlify.com" target="_blank">Netlify</a>.</p>
-				<p>The <span class="showoff">wiggle</span> is 90% written by <a href="https://codepen.io/geoffgraham" target="_blank">Geoff Graham</a>. Some attributes were tweaked, because I had to.</p>
 			</div>
 		</div>
 	</div>
@@ -84,7 +84,7 @@ permalink: "colophon/"
 				</header>
 			</div>
 			<div class="double-column">
-				<p>The holiest ritual and gift of my practice is hearing feedback. Could I have done something better? <a href="mailto:hello@brtz.me">Email me</a>!</p>
+				<p>This site is born from a growing weariness of modern WYSIWYG, a passion for learning and a love for tinkering. Feedback is a gift. <a href="mailto:hello@brtz.me">Email me</a> and I will happily follow up.</p>
 			</div>
 		</div>
 	</div>
