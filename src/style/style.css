@@ -143,23 +143,18 @@ a:hover,
 	transition: 0.2s ease-in-out;
 }
 
-a:not([href*='jshbrtz.com']):not([href^='#']):not([href^='/']):not([href^='./']):not([href^='../']):not([href^='..']):after {
+a[href^="http://"]:after,
+a[href^="https://"]:after {
 	font-family: jshbrtz;
 	content: '\e803';
 	align-content: center;
 	vertical-align: top;
 	font-size: 0.5rem;
 	padding-left: 0.2rem;
-	background: unset;
-	background-image: unset;
 }
 
 /* created to override link styles on buttons and button-like accessories */
-.no-link-decor {
-	text-decoration: none;
-	background-image: none;
-}
-
+.no-link-decor,
 .no-link-decor:hover {
 	text-decoration: none;
 	background-image: none;
