@@ -143,6 +143,17 @@ a:hover,
 	transition: 0.2s ease-in-out;
 }
 
+a:not([href*='jshbrtz.com']):not([href^='#']):not([href^='/']):not([href^='./']):not([href^='../']):not([href^='..']):after {
+	font-family: jshbrtz;
+	content: '\e803';
+	align-content: center;
+	vertical-align: top;
+	font-size: 0.5rem;
+	padding-left: 0.2rem;
+	background: unset;
+	background-image: unset;
+}
+
 /* created to override link styles on buttons and button-like accessories */
 .no-link-decor {
 	text-decoration: none;
@@ -288,15 +299,15 @@ iii. components
 }
 
 .icon-back:before {
-	content: "\2b60";
-}
-
-.icon-back:before {
 	content: '\e800';
 }
 
 .icon-external:before {
 	content: '\e801';
+}
+
+.icon-external2:before {
+	content: '\e803';
 }
 
 .icon-forward:before {

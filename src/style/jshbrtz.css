@@ -36,4 +36,5 @@
 
 .icon-back:before { content: '\e800'; } /* '' */
 .icon-external:before { content: '\e801'; } /* '' */
+.icon-external2:before { content: '\e803'; } /* '' */
 .icon-forward:before { content: '\e802'; } /* '' */
