@@ -279,11 +279,28 @@ iii. components
 	text-align: center;
 }
 
-.icon-back:before {
-	content: "\2b60";
+.icon-back:before,
+.icon-external:before,
+.icon-forward:before {
 	align-content: center;
 	vertical-align: middle;
 	font-size: 0.5rem;
+}
+
+.icon-back:before {
+	content: "\2b60";
+}
+
+.icon-back:before {
+	content: '\e800';
+}
+
+.icon-external:before {
+	content: '\e801';
+}
+
+.icon-forward:before {
+	content: '\e802';
 }
 
 .status {

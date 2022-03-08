@@ -24,7 +24,7 @@ permalink: "colophon/"
 			</div>
 			<div class="double-column">
 				<p><a href="https://www.daltonmaag.com/library/effra" target="_blank">Effra</a>, designed by Jonas Schudel for Dalton Maag. Piped in through <a href="https://fonts.adobe.com" target="_blank">Adobe Fonts</a>.</p>
-				<p>The link <span class="showoff">wiggle</span> is by <a href="https://codepen.io/geoffgraham" target="_blank">Geoff Graham</a>. Site iconography designed by me and hosted on <a href="https://icomoon.io" target="_blank">IcoMoon</a>.</p>
+				<p>The link <span class="showoff">wiggle</span> is by <a href="https://codepen.io/geoffgraham" target="_blank">Geoff Graham</a>. Site iconography designed by me and generated through <a href="https://fontello.com" target="_blank">Fontello</a>.</p>
 		</div>
 	</div>
 </section>

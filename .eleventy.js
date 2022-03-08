@@ -14,6 +14,7 @@ module.exports = function (eleventyConfig) {
 		
 	eleventyConfig.addPassthroughCopy("./src/style/");
 	eleventyConfig.addPassthroughCopy("./src/img/");
+	eleventyConfig.addPassthroughCopy("./src/font/");
 	eleventyConfig.addPassthroughCopy("./_headers");
 	
 	// Markdown-It 'markdownify' filter source: BradCoffield/kidlitconnection@e42a6de)
