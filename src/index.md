@@ -21,12 +21,8 @@ layout: 'layouts/base.html'
 
 <section id="around-the-web" class="row">
 	<div class="container-narrow">
-		<div class="column">
-			<header>
-				<h2>Around the web</h2>
-			</header>
-		</div>
 		<div class="double-column">
+			<h2>Around the web</h2>
 			<ul class="no-list-decor">
 				<li>📚&nbsp;&nbsp;Cal Flyn's hopeful <a href="https://www.calflyn.com/nonfiction-books/islands-of-abandonment-nature-rebounding-post-human-landscape">Islands of Abandonment</a>, on natural biomes appearing in post-human landscapes</li>
 				<li>🍱&nbsp;&nbsp;<a href="https://lifeandthyme.com">Life & Thyme's</a> illuminating journalism on the politics of food</li>
