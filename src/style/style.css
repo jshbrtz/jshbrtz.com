@@ -108,7 +108,7 @@ ul {
 	font-size: 1.1rem;
 	line-height: 1.7rem;
 	margin-bottom: 1.4rem;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 strong {
@@ -131,6 +131,7 @@ a:hover {
 	transition: 0.2s ease-in-out;
 }
 
+/* adds external link icon to all outbound links */
 a[href^="http://"]:after,
 a[href^="https://"]:after,
 a[href^="mailto"]:after {
