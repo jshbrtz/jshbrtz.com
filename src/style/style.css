@@ -116,6 +116,7 @@ strong {
 	font-weight: 500;
 }
 
+/* accessibility accommodation to deliver a heavier weight for body text on low-dpi displays. */
 @media (-webkit-max-device-pixel-ratio: 1.24),
 (max-resolution: 123dpi) {
   p,
