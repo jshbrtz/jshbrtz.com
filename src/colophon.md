@@ -24,7 +24,7 @@ permalink: "colophon/"
 			</div>
 			<div class="double-column">
 				<p><a href="https://www.daltonmaag.com/library/effra" target="_blank">Effra</a>, designed by Jonas Schudel for Dalton Maag. Piped in through <a href="https://fonts.adobe.com" target="_blank">Adobe Fonts</a>.</p>
-				<p>The link <span class="showoff">wiggle</span> is by <a href="https://codepen.io/geoffgraham" target="_blank">Geoff Graham</a>. Site iconography designed by me and generated through <a href="https://fontello.com" target="_blank">Fontello</a>.</p>
+				<p>Site iconography designed by me and converted to a font through <a href="https://fontello.com" target="_blank">Fontello</a>.</p>
 		</div>
 	</div>
 </section>
@@ -69,7 +69,7 @@ permalink: "colophon/"
 			</div>
 			<div class="double-column">
 				<p>Tremendous thanks to Maggie Armstrong, Molly Rowan, <a href="https://brianchmiller.com" target="_blank">Brian Miller</a>, Ryan Rud, Craig Gieselman, <a href="http://www.michaelcullenbenson.com/index.html" target="_blank">Michael Cullen-Benson</a>, Kraig Schroth, and <a href="https://aeoneal.com/" target="_blank">Alex O'Neal</a> for feedback, support, troubleshooting, and inspo.</p>
-				<p>Profile &#128248; by Molly Rowan, at the <a href="https://whitewater.org" target="_blank">National Whitewater Center</a></p>
+				<p>Profile &#128248; by Molly Rowan, at the <a href="https://whitewater.org" target="_blank">National Whitewater Center</a>.</p>
 			</div>
 		</div>
 	</div>
