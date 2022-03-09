@@ -116,8 +116,6 @@ strong {
 	font-weight: 500;
 }
 
-
-
 a {
 	background-color: transparent;
 	color: inherit;
@@ -127,8 +125,7 @@ a {
 	transition: 0.2s ease-in-out;
 }
 
-a:hover,
-.showoff {
+a:hover {
 	color: var(--text-hover);
 	border-bottom: 0.05rem solid var(--text-hover);
 	transition: 0.2s ease-in-out;

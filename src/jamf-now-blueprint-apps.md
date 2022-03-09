@@ -54,7 +54,7 @@ permalink: "jamf-now-blueprint-apps/"
 		</div>
 		<div class="double-column">
 			<h3 class="subheading">Jamf Now</h3>
-			<p>A cloud-based SaaS Apple device management platform for small business. More than <a href="https://www.imore.com/jamf-now-manages-20-million-apple-devices-around-world" target="_blank">20 million devices</a> are managed through Jamf &mdash; almost 500,000 of those are on <a href="https://www.jamf.com/products/jamf-now/" target="_blank">Jamf Now</a>.</p>
+			<p>A cloud-based SaaS Apple device management platform for small business. More than <a href="https://www.imore.com/jamf-now-manages-20-million-apple-devices-around-world">20 million devices</a> are managed through Jamf &mdash; almost 500,000 of those are on <a href="https://www.jamf.com/products/jamf-now/">Jamf Now</a>.</p>
 			<p>We offer Standard and Plus subscriptions, leveraging Plus as a set of entirely optional advanced features, intended to avoid unnecessary upselling.</p>
 			<h3 class="subheading">User</h3>
 			<p>UX at Jamf has established five user personas, spanning every level of technical proficiency, from the basics of using a Mac, to writing custom apps and building out company networks. Jamf Now is the <strong>only product at Jamf</strong> with all five personas represented in its user base.</p>

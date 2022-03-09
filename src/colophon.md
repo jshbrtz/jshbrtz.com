@@ -23,8 +23,8 @@ permalink: "colophon/"
 				</header>
 			</div>
 			<div class="double-column">
-				<p><a href="https://www.daltonmaag.com/library/effra" target="_blank">Effra</a>, designed by Jonas Schudel for Dalton Maag. Piped in through <a href="https://fonts.adobe.com" target="_blank">Adobe Fonts</a>.</p>
-				<p>Site iconography designed by me and converted to a font through <a href="https://fontello.com" target="_blank">Fontello</a>.</p>
+				<p><a href="https://www.daltonmaag.com/library/effra">Effra</a>, designed by Jonas Schudel for Dalton Maag. Piped in through <a href="https://fonts.adobe.com">Adobe Fonts</a>.</p>
+				<p>Site iconography designed by me and converted to a font through <a href="https://fontello.com">Fontello</a>.</p>
 		</div>
 	</div>
 </section>
@@ -38,7 +38,7 @@ permalink: "colophon/"
 				</header>
 			</div>
 			<div class="double-column">
-				<p>Built with HTML5 and CSS3 by yours truly, merged to a public <a href="https://github.com/jshbrtz/jshbrtz.com" target="_blank">Github</a> repo, compiled with <a href="https://www.11ty.dev" target="_blank">Eleventy</a> and deployed automatically on <a href="https://www.netlify.com" target="_blank">Netlify</a>.</p>
+				<p>Built with HTML5 and CSS3 by yours truly, merged to a public <a href="https://github.com/jshbrtz/jshbrtz.com">Github</a> repo, compiled with <a href="https://www.11ty.dev">Eleventy</a> and deployed automatically on <a href="https://www.netlify.com">Netlify</a>.</p>
 			</div>
 		</div>
 	</div>
@@ -53,7 +53,7 @@ permalink: "colophon/"
 				</header>
 			</div>
 			<div class="double-column">
-				<p>This website was coded on <a href="https://native-land.ca" target="_blank">land</a> stolen from the <a href="https://www.catawba.com" target="_blank">Catawba Nation</a>, <a href="https://shakopeedakota.org" target="_blank">Sioux Nation</a>, and <a href="http://aktalakota.stjo.org" target="_blank">Lakota Nation</a>.</p>
+				<p>This website was coded on <a href="https://native-land.ca">land</a> stolen from the <a href="https://www.catawba.com">Catawba Nation</a>, <a href="https://shakopeedakota.org">Sioux Nation</a>, and <a href="http://aktalakota.stjo.org">Lakota Nation</a>.</p>
 			</div>
 		</div>
 	</div>
@@ -68,8 +68,8 @@ permalink: "colophon/"
 				</header>
 			</div>
 			<div class="double-column">
-				<p>Tremendous thanks to Maggie Armstrong, Molly Rowan, <a href="https://brianchmiller.com" target="_blank">Brian Miller</a>, Ryan Rud, Craig Gieselman, <a href="http://www.michaelcullenbenson.com/index.html" target="_blank">Michael Cullen-Benson</a>, Kraig Schroth, and <a href="https://aeoneal.com/" target="_blank">Alex O'Neal</a> for feedback, support, troubleshooting, and inspo.</p>
-				<p>Profile &#128248; by Molly Rowan, at the <a href="https://whitewater.org" target="_blank">National Whitewater Center</a>.</p>
+				<p>Tremendous thanks to Maggie Armstrong, Molly Rowan, <a href="https://brianchmiller.com">Brian Miller</a>, Ryan Rud, Craig Gieselman, <a href="http://www.michaelcullenbenson.com/index.html">Michael Cullen-Benson</a>, Kraig Schroth, and <a href="https://aeoneal.com/">Alex O'Neal</a> for feedback, support, troubleshooting, and inspo.</p>
+				<p>Profile &#128248; by Molly Rowan, at the <a href="https://whitewater.org">National Whitewater Center</a>.</p>
 			</div>
 		</div>
 	</div>
