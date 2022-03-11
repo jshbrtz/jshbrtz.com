@@ -460,6 +460,16 @@ footer {
 
 /* mobile for iPhone ~8 and larger */
 @media screen and (max-width: 26rem) {
+	.container-narrow {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	
+	.container {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	
 	.greeting {
 		margin-top: 5rem;
 		margin-bottom: 5rem;
@@ -476,6 +486,18 @@ footer {
 		align-self: center;
 		top: 50%;
 		transform: translateY(20%);
+	}
+	
+	.secondary-nav a {
+		margin-left: 0.2rem;
+		margin-right: 0.2rem;
+		line-height: 2rem;
+	}
+	
+	#page-nav {
+		margin: 0 auto;
+		padding-left: 0.1rem;
+		padding-right: 0.1rem;
 	}
 	
 	.header-modifier {
