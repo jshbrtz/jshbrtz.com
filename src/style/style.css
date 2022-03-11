@@ -545,6 +545,12 @@ footer {
 		flex-basis: 100%;
 		flex: 2;
 	}
+
+	/* .img-row img {
+		max-height: 25rem;
+		object-fit: contain;
+		margin: 1.5rem;
+	} */
 	
 	.img-row {
 		display: flex;
@@ -555,9 +561,5 @@ footer {
 		margin: 0 auto;
 		max-width: 95rem;
 	}
-	
-	/* .img-row img {
-		max-height: 25rem;
-		object-fit: contain;
-		margin: 1.5rem;
-	} */
+
+}
