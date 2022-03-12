@@ -151,7 +151,7 @@ a {
 	color: inherit;
 	text-decoration: none;
 	transition: background .15s cubic-bezier(.33,.66,.66,1);
-	border-bottom: 0.177rem solid var(--link-color);
+	border-bottom: 0.15rem solid var(--link-color);
 	transition: 0.2s ease-in-out;
 }
 
@@ -427,6 +427,7 @@ header {
 section {
 	padding-top: 2rem;
 	margin-bottom: 5rem;
+	scroll-margin-top: 1rem;
 }
 
 article {

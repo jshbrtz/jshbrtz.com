@@ -24,8 +24,8 @@ permalink: "playlists/"
 	</div>
 </section>
 
-<section>
-	<div id="2022" class="row container-narrow">
+<section id="2022">
+	<div class="row container-narrow">
 		<div class="column">
 			<header>
 				<h2>2022</h2>
@@ -42,7 +42,9 @@ permalink: "playlists/"
 			</ul>
 		</div>
 	</div>
-	<div id="2021" class="row container-narrow">
+</section>
+<section id="2021">
+	<div class="row container-narrow">
 		<div class="column">
 			<header>
 				<h2>2021</h2>
@@ -77,7 +79,9 @@ permalink: "playlists/"
 			</ul>
 		</div>
 	</div>
-	<div id="2020" class="row container-narrow">
+</section>
+<section id="2020">
+	<div class="row container-narrow">
 		<div class="column">
 			<header>
 				<h2>2020</h2>
@@ -112,7 +116,10 @@ permalink: "playlists/"
 			</ul>
 		</div>
 	</div>
-	<div id="2019" class="row container-narrow">
+</section>
+
+<section id="2019">
+	<div class="row container-narrow">
 		<div class="column">
 			<header>
 				<h2>2019</h2>
@@ -147,7 +154,10 @@ permalink: "playlists/"
 			</ul>
 		</div>
 	</div>
-	<div id="2018" class="row container-narrow">
+</section>
+
+<section id="2018">
+	<div class="row container-narrow">
 		<div class="column">
 			<header>
 				<h2>2018</h2>
