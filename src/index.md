@@ -13,16 +13,34 @@ layout: 'layouts/base.html'
 					<span class="small-caps header-modifier">Product design & strategy</span></h1>
 				</div>
 			</div>
-			<p>I'm an ethics-focused Product Designer, making <a href="./playlists"> playlists</a>, design strategy, and cooking with butter. Most recently, I was the User Experience Designer for Jamf Now, a platform empowering small businesses with mobile device management.</p>
-			<p><a href="mailto:hello@brtz.me" class="btn no-link-decor" role="button" alt="back"><span class="status"></span>Open to work</a></p>
+			<p>I'm an ethics-focused Product Designer, making design strategy, <a href="./playlists"> playlists</a>, and cooking with butter. On sabbatical from software design until the right project comes along.</p>
 		</div>
 	</div>
 </section>
 
-<section id="around-the-web" class="row">
-	<div class="container-narrow">
+<section>
+	<div id="about-me" class="row container-narrow">
+		<div class="column">
+			<h2>Reading</h2>
+			<p><em>Wintering</em>, by Katherine May</p>
+			<p><span class="subnote"><a href="">Previous books</a></span></p>
+		</div>
+		<div class="column">
+			<h2>Listening</h2>
+			<ul class="no-list-decor chrono-lists">
+				<li><img class="album" src="https://is4-ssl.mzstatic.com/image/thumb/m7qn9jC4lghgJKKg3sulKg/540x540cc.webp" />
+				<h3 class="subheading">2022 spring</h3>
+					<ul class="no-list-decor">
+						<li><a href="https://music.apple.com/us/playlist/2022-spring/pl.u-LRdYmsBA2KX">Apple Music</a>
+						<p><span class="subnote"><a href="">Previous playlists</a></span></p></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="good-finds" class="row container-narrow">
 		<div class="double-column">
-			<h2>Around the web</h2>
+			<h2>Good finds</h2>
 			<ul class="no-list-decor">
 				<li>📚&nbsp;&nbsp;Cal Flyn's hopeful <a href="https://www.calflyn.com/nonfiction-books/islands-of-abandonment-nature-rebounding-post-human-landscape">Islands of Abandonment</a>, on natural biomes appearing in post-human landscapes</li>
 				<li>🍱&nbsp;&nbsp;<a href="https://lifeandthyme.com">Life & Thyme's</a> illuminating journalism on the politics of food</li>

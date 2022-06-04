@@ -187,6 +187,7 @@ footer a,
 figcaption {
 	font-size: 0.9rem;
 	line-height: 1.3rem;
+	font-weight: 400;
 	color: var(--footer-color);
 }
 
@@ -381,8 +382,8 @@ figcaption {
 }
 
 .album {
-	width: 8rem;
-	height: 8rem;
+	width: 7rem;
+	height: 7rem;
 	float: left;
 	margin-right: 1rem;
 }

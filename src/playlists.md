@@ -33,6 +33,12 @@ permalink: "playlists/"
 		</div>
 		<div class="double-column">
 			<ul class="no-list-decor chrono-lists">
+				<li><img class="album" src="https://is4-ssl.mzstatic.com/image/thumb/m7qn9jC4lghgJKKg3sulKg/540x540cc.webp" />
+				<h3 class="subheading">2022 spring</h3>
+					<ul class="no-list-decor">
+						<li><a href="https://music.apple.com/us/playlist/2022-spring/pl.u-LRdYmsBA2KX">Apple Music</a></li>
+					</ul>
+				</li>
 				<li><img class="album" src="https://is2-ssl.mzstatic.com/image/thumb/a15ybwvgihiY5gRvMtoMxA/500x500cc.jpg" />
 				<h3 class="subheading">2021 - 2022 winter</h3>
 					<ul class="no-list-decor">
