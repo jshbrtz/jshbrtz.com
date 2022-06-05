@@ -13,7 +13,7 @@ layout: 'layouts/base.html'
 					<span class="small-caps header-modifier">Product design & strategy</span></h1>
 				</div>
 			</div>
-			<p>I'm an ethics-focused Product Designer, making design strategy, <a href="./playlists"> playlists</a>, and cooking with butter. On sabbatical from software design until the right project comes along.</p>
+			<p>Designing experiences and strategy for mobile, desktop and web apps, learning to code, making playlists <a href="./playlists">playlists</a>, and cooking with butter.</p>
 		</div>
 	</div>
 </section>
@@ -32,7 +32,7 @@ layout: 'layouts/base.html'
 				<h3 class="subheading">2022 spring</h3>
 					<ul class="no-list-decor">
 						<li><a href="https://music.apple.com/us/playlist/2022-spring/pl.u-LRdYmsBA2KX">Apple Music</a>
-						<p><span class="subnote"><a href="">Previous playlists</a></span></p></li>
+						<p><span class="subnote"><a href="./playlists">Previous playlists</a></span></p></li>
 					</ul>
 				</li>
 			</ul>

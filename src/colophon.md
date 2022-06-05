@@ -19,27 +19,14 @@ permalink: "colophon/"
 		<div class="row">
 			<div class="column">
 				<header>
-					<h2>Typography</h2>
+					<h2>Design & tech</h2>
 				</header>
 			</div>
 			<div class="double-column">
-				<p><a href="https://www.daltonmaag.com/library/effra">Effra</a>, designed by Jonas Schudel for Dalton Maag. Piped in through <a href="https://fonts.adobe.com">Adobe Fonts</a>.</p>
-				<p>Site iconography designed by me and converted to a font through <a href="https://fontello.com">Fontello</a>.</p>
-		</div>
-	</div>
-</section>
-
-<section id="tech">
-	<div class="container-narrow">
-		<div class="row">
-			<div class="column">
-				<header>
-					<h2>Tech & deployment</h2>
-				</header>
-			</div>
-			<div class="double-column">
-				<p>Built with HTML5 and CSS3 by yours truly, merged to a public <a href="https://github.com/jshbrtz/jshbrtz.com">Github</a> repo, compiled with <a href="https://www.11ty.dev">Eleventy</a> and deployed automatically on <a href="https://www.netlify.com">Netlify</a>.</p>
-			</div>
+				<p>Designed and built by yours truly in Minneapolis, Minnesota and Charlotte, North Carolina.</p>
+				<p>Coded in HTML5, CSS3, Markdown and Javascript using <a href="https://nova.app">Panic Nova</a>, and generated with <a href="https://www.11ty.dev">Eleventy</a>. Code hosted publicly on <a href="https://github.com/jshbrtz/jshbrtz.com">Github</a> and deployed automatically with <a href="https://www.netlify.com">Netlify</a>.</p>
+				<p>Iconography made on <a href="https://www.sketch.com">Sketch</a> and converted into a font with <a href="https://fontello.com">Fontello</a>. Typeface is <a href="https://www.daltonmaag.com/library/effra">Effra</a>, designed by Jonas Schudel for Dalton Maag, and hosted through <a href="https://fonts.adobe.com">Adobe Fonts</a>.</p>
+				<p>Profile &#128248; by Molly Rowan, at the <a href="https://whitewater.org">National Whitewater Center</a>.</p>
 		</div>
 	</div>
 </section>
@@ -49,7 +36,7 @@ permalink: "colophon/"
 		<div class="row">
 			<div class="column">
 				<header>
-					<h2>Made on colonized lands</h2>
+					<h2>Land acknowledgement</h2>
 				</header>
 			</div>
 			<div class="double-column">
@@ -68,23 +55,8 @@ permalink: "colophon/"
 				</header>
 			</div>
 			<div class="double-column">
-				<p>Tremendous thanks to Maggie Armstrong, Molly Rowan, <a href="https://brianchmiller.com">Brian Miller</a>, Ryan Rud, Craig Gieselman, <a href="http://www.michaelcullenbenson.com/index.html">Michael Cullen-Benson</a>, Kraig Schroth, and <a href="https://aeoneal.com/">Alex O'Neal</a> for feedback, support, troubleshooting, and inspo.</p>
-				<p>Profile &#128248; by Molly Rowan, at the <a href="https://whitewater.org">National Whitewater Center</a>.</p>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section id="feedback">
-	<div class="container-narrow">
-		<div class="row">
-			<div class="column">
-				<header>
-					<h2>Feedback</h2>
-				</header>
-			</div>
-			<div class="double-column">
-				<p>This site is born from a growing weariness of modern WYSIWYG, a passion for learning and a love for tinkering. Feedback is a gift. <a href="mailto:hello@brtz.me">Email me</a> and I will happily follow up.</p>
+				<p>Tremendous thanks to Maggie Armstrong, Molly Rowan, <a href="https://brianchmiller.com">Brian Miller</a>, Ryan Rud, Craig Gieselman, <a href="http://www.michaelcullenbenson.com/index.html">Michael Cullen-Benson</a>, Kraig Schroth, and <a href="https://aeoneal.com/">Alex O'Neal</a> for feedback, support, troubleshooting, and inspiration.</p>
+				<p><strong>&#127873; Feedback is a gift.</strong> Can the site be improved? <a href="mailto:hello@brtz.me">Email me</a> and I will gladly reply.</p>
 			</div>
 		</div>
 	</div>

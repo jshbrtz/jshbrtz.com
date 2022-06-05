@@ -115,6 +115,15 @@ strong {
 	font-weight: 500;
 }
 
+.thickest {
+	color: var(--text-hover);
+	font-weight: 700;
+}
+
+.thinnest {
+	font-weight: 400;
+}
+
 /* accessibility accommodation to deliver a heavier weight for body text on low-dpi displays. */
 @media (-webkit-max-device-pixel-ratio: 1.24),
 (max-resolution: 123dpi) {
@@ -260,15 +269,15 @@ iii. components
 	float:left;
 	border-radius: 50%;
 	border: 0.15rem solid var(--text-color);
-	width: 5rem;
-	height: 5rem;
+	width: 6.5rem;
+	height: 6.5rem;
 	margin-right: 1.4rem;
 }
 
  /* the next three classes are specific to the avatar, name, pronouns, and professional title on index */
 .name-block {
 	display: relative;
-	margin-bottom: 1.4rem;
+	margin-bottom: 1.6rem;
 }
 
 .vertical-center {
