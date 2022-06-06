@@ -41,6 +41,7 @@ i. global styles
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: auto;
 	-webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+	scroll-behavior: smooth;
 }
 
 /* continued expectations setting; establishing healthy boundaries */
@@ -256,6 +257,8 @@ iii. components
 	min-height: 3rem;
 }
 
+
+
 /* note to self: firefox 90 (unreleased) does not support this. remove once supported. */
 @supports ((-webkit-backdrop-filter: blur(1rem)) or (backdrop-filter: blur(1rem))) {
 	.secondary-nav {
@@ -269,22 +272,22 @@ iii. components
 	float:left;
 	border-radius: 50%;
 	border: 0.15rem solid var(--text-color);
-	width: 6.5rem;
-	height: 6.5rem;
+	width: 5rem;
+	height: 5rem;
 	margin-right: 1.4rem;
 }
 
  /* the next three classes are specific to the avatar, name, pronouns, and professional title on index */
 .name-block {
 	display: relative;
-	margin-bottom: 1.6rem;
+	margin-bottom: 1.5rem;
 }
 
 .vertical-center {
 	display: absolute;
 	align-self: center;
 	top: 50%;
-	transform: translateY(15%);
+	transform: translateY(18%);
 }
 
 .header-modifier {
@@ -485,6 +488,18 @@ footer {
 		margin-bottom: 5rem;
 	}
 	
+	.secondary-nav a {
+		margin-left: 0.2rem;
+		margin-right: 0.2rem;
+		line-height: 2rem;
+	}
+	
+	#page-nav {
+		margin: 0 auto;
+		padding-left: 0.1rem;
+		padding-right: 0.1rem;
+	}
+	
 	/* the next classes are specific to the avatar, name, pronouns, and professional title on index */
 	.name-block {
 		display: relative;
@@ -496,18 +511,6 @@ footer {
 		align-self: center;
 		top: 50%;
 		transform: translateY(20%);
-	}
-	
-	.secondary-nav a {
-		margin-left: 0.2rem;
-		margin-right: 0.2rem;
-		line-height: 2rem;
-	}
-	
-	#page-nav {
-		margin: 0 auto;
-		padding-left: 0.1rem;
-		padding-right: 0.1rem;
 	}
 	
 	.header-modifier {
@@ -537,6 +540,7 @@ footer {
 		width: 100%;
 		padding-top: 1rem;
 		padding-bottom: 1rem;
+		scroll-margin-top: 3rem;
 	}
 
 	/* splits all columns in one row with equal spacing */

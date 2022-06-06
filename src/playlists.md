@@ -15,7 +15,7 @@ permalink: "playlists/"
 	</nav>
 </div>
 
-<section id="intro" class="greeting">
+<section id="heading" class="greeting">
 	<div class="container-narrow">
 		<header>
 			<h1>Playlists</h1>

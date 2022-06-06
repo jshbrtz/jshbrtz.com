@@ -13,7 +13,7 @@ layout: 'layouts/base.html'
 					<span class="small-caps header-modifier">Product design & strategy</span></h1>
 				</div>
 			</div>
-			<p>Designing experiences and strategy for mobile, desktop and web apps, learning to code, making playlists <a href="./playlists">playlists</a>, and cooking with butter.</p>
+			<p>Designing experiences and strategy for mobile, desktop and web apps, learning to code, and cooking with butter.</p>
 		</div>
 	</div>
 </section>
