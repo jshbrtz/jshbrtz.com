@@ -7,13 +7,11 @@ layout: 'layouts/base.html'
 	<div class="row container-narrow">
 		<div class="column">
 			<div class="name-block">
-			<img class="avatar" src="./img/profile-2.jpeg" alt="avatar" />
-				<div class="vertical-center">
-					<h1>{{ title }} <span class="small-caps pronouns">he/him</span>
-					<span class="small-caps header-modifier">Product design & strategy</span></h1>
-				</div>
+				<img class="avatar" src="./img/profile-2.jpeg" alt="avatar" />
+				<h1 class="vertical-center">{{ title }}
+				<span class="small-caps header-modifier">Product design & strategy</span></h1>
 			</div>
-			<p>Designing experiences and strategy for mobile, desktop and web apps, learning to code, and cooking with butter.</p>
+			<p>I'm bringing ethical design to mobile, desktop, and web apps. Learning web development, making playlists, and cooking with butter.</p>
 		</div>
 	</div>
 </section>
@@ -23,7 +21,7 @@ layout: 'layouts/base.html'
 		<div class="column">
 			<h2>Reading</h2>
 			<p><em>Wintering</em>, by Katherine May</p>
-			<p><span class="subnote"><a href="">Previous books</a></span></p>
+			<!-- <p><span class="subnote"><a href="">Reading log</a></span></p> -->
 		</div>
 		<div class="column">
 			<h2>Listening</h2>
@@ -32,7 +30,7 @@ layout: 'layouts/base.html'
 				<h3 class="subheading">2022 spring</h3>
 					<ul class="no-list-decor">
 						<li><a href="https://music.apple.com/us/playlist/2022-spring/pl.u-LRdYmsBA2KX">Apple Music</a>
-						<p><span class="subnote"><a href="./playlists">Previous playlists</a></span></p></li>
+						<p><span class="subnote"><a href="./playlists">Past playlists</a></span></p></li>
 					</ul>
 				</li>
 			</ul>
@@ -40,7 +38,7 @@ layout: 'layouts/base.html'
 	</div>
 	<div id="good-finds" class="row container-narrow">
 		<div class="double-column">
-			<h2>Good finds</h2>
+			<h2>Great finds</h2>
 			<ul class="no-list-decor">
 				<li>📚&nbsp;&nbsp;Cal Flyn's hopeful <a href="https://www.calflyn.com/nonfiction-books/islands-of-abandonment-nature-rebounding-post-human-landscape">Islands of Abandonment</a>, on natural biomes appearing in post-human landscapes</li>
 				<li>🍱&nbsp;&nbsp;<a href="https://lifeandthyme.com">Life & Thyme's</a> illuminating journalism on the politics of food</li>

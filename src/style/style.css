@@ -272,27 +272,27 @@ iii. components
 	float:left;
 	border-radius: 50%;
 	border: 0.15rem solid var(--text-color);
-	width: 5rem;
-	height: 5rem;
-	margin-right: 1.4rem;
+	width: 4rem;
+	height: 4rem;
+	margin-right: 1rem;
 }
 
  /* the next three classes are specific to the avatar, name, pronouns, and professional title on index */
 .name-block {
-	display: relative;
-	margin-bottom: 1.5rem;
+	/* display: relative; */
+	margin-bottom: 0.8rem;
 }
 
 .vertical-center {
 	display: absolute;
 	align-self: center;
 	top: 50%;
-	transform: translateY(18%);
+	transform: translateY(5%);
 }
 
 .header-modifier {
 	display: block;
-	margin-bottom: 2rem;
+	margin-bottom: 0.4rem;
 }
 /* keep the above three classes together */
 
@@ -510,12 +510,12 @@ footer {
 		display: absolute;
 		align-self: center;
 		top: 50%;
-		transform: translateY(20%);
+		transform: translateY(6%);
 	}
 	
 	.header-modifier {
 		display: block;
-		margin-bottom: 2rem;
+		margin-bottom: 0.2rem;
 	}
 	
 	.avatar {
