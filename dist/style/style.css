@@ -1,0 +1,579 @@
+/* ===================
+table of contents
+
+i. global styles
+ii. typography
+iii. components
+iv. layouts
+=================== */
+
+
+/* ===================
+i. global styles
+=================== */
+
+:root {
+	--link-color: rgb(255, 0, 89);
+	/* don't forget to change the "stroke" color in the a:hover selector, broskie */
+	--text-hover: #fff;
+	--heading-color: rgba(225, 225, 225, 1);
+	--text-color: rgba(226, 226, 226, 1);
+	--text-caption-color: rgba(225, 225, 225, 0.6);
+	--text-color-thin: rgba(219, 219, 219, 0.1);
+	/* paragraphs, bylines */
+	--footer-color: rgba(203, 203, 203, 1);
+	--bg-color: rgb(12, 7, 29);
+	--bg-color-thin: rgba(12, 7, 29, 0.5); /* being used on the secondary nav */
+/* 	--font-accent: 'termina', sans-serif; */
+	--font-accent: 'effra', sans-serif;
+	/* headers, captions, footers */
+	--font-primary: 'effra', sans-serif;
+}
+
+/* browser defaults reset; setting expectations */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: auto;
+	-webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+	scroll-behavior: smooth;
+}
+
+/* continued expectations setting; establishing healthy boundaries */
+body {
+	font-family: var(--font-primary);
+	font-size: 1rem;
+	color: var(--text-color);
+	background-color: var(--bg-color);
+}
+
+
+/* ===================
+ii. typography
+=================== */
+
+h1,
+h2,
+h3,
+h4,
+.secondary-nav,
+.no-link-decor {
+	font-family: var(--font-accent);
+	font-weight: 700;
+	font-style: normal;
+	color: var(--heading-color);
+}
+
+h1 {
+	font-size: 1.8rem;
+}
+
+h2 {
+	font-size: 1.4rem;
+	margin-bottom: 0.6rem;
+	margin-right: 1rem;
+	line-height: 1.8rem;
+}
+
+h3 {
+	font-family: var(--font-primary);
+	font-size: 1.2rem;
+	margin-bottom: 0.5rem;
+}
+
+h4,
+.secondary-nav,
+.no-link-decor {
+	font-size: 0.9rem;
+}
+
+.subheading {
+	font-size: 1.2rem;
+	letter-spacing: -0.02em;
+}
+
+/* style for captions and some bylines */
+.small-caps {
+	color: var(--text-caption-color);
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+p,
+ul {
+	font-size: 1.1rem;
+	line-height: 1.7rem;
+	margin-bottom: 1.4rem;
+}
+
+strong {
+	color: var(--text-hover);
+	font-weight: 500;
+}
+
+.thickest {
+	color: var(--text-hover);
+	font-weight: 700;
+}
+
+.thinnest {
+	font-weight: 400;
+}
+
+/* accessibility accommodation to deliver a heavier weight for body text on low-dpi displays. */
+@media (-webkit-max-device-pixel-ratio: 1.24),
+(max-resolution: 123dpi) {
+  p,
+  ul,
+  ol {
+	font-weight: 400;
+  }
+  /* adds external link icon to all outbound links */
+  a[href^="http://"]:after,
+  a[href^="https://"]:after,
+  a[href^="mailto"]:after {
+  	font-size: 0.6rem;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 124dpi) {
+  p,
+  ul,
+  ol {
+	font-weight: 300;
+  }
+  /* adds external link icon to all outbound links */
+	a[href^="http://"]:after,
+	a[href^="https://"]:after,
+	a[href^="mailto"]:after {
+		font-size: 0.5rem;
+	}
+}
+
+a {
+	background-color: transparent;
+	color: inherit;
+	text-decoration: none;
+	transition: background .15s cubic-bezier(.33,.66,.66,1);
+	border-bottom: 0.177rem solid var(--link-color);
+	transition: 0.2s ease-in-out;
+}
+
+a:hover {
+	color: var(--text-hover);
+	border-bottom: 0.05rem solid var(--text-hover);
+	transition: 0.2s ease-in-out;
+}
+
+/* adds external link icon to all outbound links */
+a[href^="http://"]:after,
+a[href^="https://"]:after,
+a[href^="mailto"]:after {
+	font-family: jshbrtz;
+	content: '\e803';
+	align-content: center;
+	vertical-align: top;
+/* 	font-size: 0.5rem; */
+	padding-left: 0.25rem;
+}
+
+/* created to override link styles on buttons and button-like accessories */
+.no-link-decor,
+.no-link-decor:hover {
+	text-decoration: none;
+	background-image: none;
+	border: unset;
+}
+
+footer p,
+footer a,
+.subnote,
+figcaption {
+	font-size: 0.9rem;
+	line-height: 1.3rem;
+	font-weight: 400;
+	color: var(--footer-color);
+}
+
+ul {
+	list-style-type: round;
+}
+
+ol {
+	padding-left: 2.5rem;
+	color: var(--footer-color);
+}
+
+li {
+	margin-bottom: 0.6rem;
+}
+
+/* used primarily on the playlists page */
+.chrono-lists li{
+	margin-bottom: 3rem;
+	height: 8rem;
+}
+
+.no-list-decor {
+	list-style-type: none;
+}
+
+.secondary-nav a {
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	line-height: 2rem;
+}
+
+.quote,
+figcaption {
+	font-style: italic;
+	font-weight: 300;
+	font-family: var(--font-primary);
+}
+
+.quote {
+	border-left: 0.063rem solid var(--footer-color);
+	padding-left: 1rem;
+}
+
+/* ===================
+iii. components
+=================== */
+
+.secondary-nav {
+	text-align: left;
+	position: sticky;
+	top: 0px;
+	width: 100%;
+	padding-top: 0.5rem;
+	background-color: var(--bg-color);
+	z-index: 1000;
+	min-height: 3rem;
+}
+
+
+
+/* note to self: firefox 90 (unreleased) does not support this. remove once supported. */
+@supports ((-webkit-backdrop-filter: blur(1rem)) or (backdrop-filter: blur(1rem))) {
+	.secondary-nav {
+		backdrop-filter: blur(0.8rem);
+		-webkit-backdrop-filter: blur(0.6em);
+		background-color: var(--bg-color-thin);
+	}
+}
+
+.avatar {
+	float:left;
+	border-radius: 50%;
+	border: 0.15rem solid var(--text-color);
+	width: 4rem;
+	height: 4rem;
+	margin-right: 1rem;
+}
+
+ /* the next three classes are specific to the avatar, name, pronouns, and professional title on index */
+.name-block {
+	/* display: relative; */
+	margin-bottom: 0.8rem;
+}
+
+.vertical-center {
+	display: absolute;
+	align-self: center;
+	top: 50%;
+	transform: translateY(5%);
+}
+
+.header-modifier {
+	display: block;
+	margin-bottom: 0.4rem;
+}
+/* keep the above three classes together */
+
+.btn,
+.btn-icon {
+	background-color: none;
+	border-radius: 0.188rem;
+	border: none;
+	transition: 0.1s ease-in;
+	width: fit-content;
+}
+
+.btn {
+	padding: 0.3rem 0.5rem;
+}
+
+.btn-icon {
+	border-radius: 50%;
+	border: none;
+	width: 2rem;
+	height: 2rem;
+	transition: 0.1s ease-in;
+	vertical-align: center;
+	text-align: center;
+}
+
+.icon-back:before,
+.icon-external:before,
+.icon-forward:before {
+	align-content: center;
+	vertical-align: middle;
+	font-size: 0.5rem;
+}
+
+.icon-back:before {
+	content: '\e800';
+}
+
+.icon-external:before {
+	content: '\e801';
+}
+
+.icon-external2:before {
+	content: '\e803';
+}
+
+.icon-forward:before {
+	content: '\e802';
+}
+
+.status {
+	display: inline-block;
+	border-radius: 50%;
+	width: 0.4rem;
+	height: 0.4rem;
+	background-color: rgba(32, 247, 47, 0.8);
+	margin-left: 0.01rem;
+	margin-right: 0.4rem;
+	margin-bottom: 0.1rem;
+}
+
+.btn:hover,
+.btn-icon:hover,
+.available:hover {
+	background-color: var(--text-color-thin);
+	color: var(--text-hover);
+	transition: 0.1s ease-in;
+	cursor: pointer;
+}
+
+.l-align {
+	float: left;
+}
+
+.r-align{
+	float: right;
+}
+
+.img-row img,
+.img-row video {
+	max-height: 25rem;
+	max-width: 100%;
+	object-fit: contain;
+}
+
+figure {
+	display: table;
+	margin: 1rem;
+}
+
+figure video {
+	display: block;
+}
+
+figcaption {
+	padding-top: 0.5rem;
+	display: table-caption;
+	caption-side: bottom;
+}
+
+.album {
+	width: 7rem;
+	height: 7rem;
+	float: left;
+	margin-right: 1rem;
+}
+
+/* ===================
+iv. layouts
+=================== */
+
+/* used only on index page. save the real width for case studies. */
+.container-narrow {
+	margin: 0 auto;
+	max-width: 42rem;
+	min-width: 20rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 49rem;
+	min-width: 20rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+#page-nav {
+	margin: 0 auto;
+	max-width: 49rem; /* this should match .container max-width */
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+.greeting {
+	margin-top: 7rem;
+	margin-bottom: 3rem;
+}
+
+header {
+	width: 100%;
+}
+
+section {
+	padding-top: 2rem;
+	margin-bottom: 5rem;
+}
+
+article {
+	margin-bottom: 2.5rem;
+
+}
+
+footer {
+	margin-top: -2rem;
+	margin-bottom: 2rem;
+	text-align: left;
+}
+
+/* mobile scaling will put everything into a single column */
+.column {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+/* mobile scaling prevents images from rolling off the sides */
+.img-row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+/* mobile for iPhone ~8 and larger */
+@media screen and (max-width: 26rem) {
+	.container-narrow {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	
+	.container {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	
+	.greeting {
+		margin-top: 5rem;
+		margin-bottom: 5rem;
+	}
+	
+	.secondary-nav a {
+		margin-left: 0.2rem;
+		margin-right: 0.2rem;
+		line-height: 2rem;
+	}
+	
+	#page-nav {
+		margin: 0 auto;
+		padding-left: 0.1rem;
+		padding-right: 0.1rem;
+	}
+	
+	/* the next classes are specific to the avatar, name, pronouns, and professional title on index */
+	.name-block {
+		display: relative;
+		margin-bottom: 1.4rem;
+	}
+	
+	.vertical-center {
+		display: absolute;
+		align-self: center;
+		top: 50%;
+		transform: translateY(6%);
+	}
+	
+	.header-modifier {
+		display: block;
+		margin-bottom: 0.2rem;
+	}
+	
+	.avatar {
+		margin-right: 1rem;
+	}
+	
+	/* not proud of this, but until I learn more, I don't know how to fix a spacing bug I've created on mobile when they are visible */
+	.pronouns {
+		display: none;
+	}
+	/* keep the above classes together */
+	
+}
+
+@media screen and (min-width: 40rem) {
+
+	/* .column needs to be wrapped in .row before it works.*/
+	.row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		scroll-margin-top: 3rem;
+	}
+
+	/* splits all columns in one row with equal spacing */
+	.column {
+		display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+		flex: 1;
+	}
+
+	/* gives a column the width of two columns in a row */
+	.double-column {
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		flex-basis: 100%;
+		flex: 2;
+	}
+
+	/* .img-row img {
+		max-height: 25rem;
+		object-fit: contain;
+		margin: 1.5rem;
+	} */
+	
+	.img-row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+		margin: 0 auto;
+		max-width: 95rem;
+	}
+
+}
