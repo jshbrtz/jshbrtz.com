@@ -1,5 +1,5 @@
 ---
-title: "Joshua Bartz"
+title: "Home"
 layout: 'layouts/base.html'
 ---
 
@@ -8,7 +8,7 @@ layout: 'layouts/base.html'
 		<div class="column">
 			<div class="name-block">
 				<img class="avatar" src="./img/profile-2.jpeg" alt="avatar" />
-				<h1 class="vertical-center">{{ title }}
+				<h1 class="vertical-center">Joshua Bartz
 				<span class="small-caps header-modifier">Product design & strategy</span></h1>
 			</div>
 			<p>I'm bringing ethical design to mobile, desktop, and web apps. Learning web development, making playlists, and cooking with butter.</p>
