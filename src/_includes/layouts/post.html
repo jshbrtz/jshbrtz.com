@@ -1,5 +1,6 @@
 ---
 layout: layouts/base.html
+permalink: "posts/{{ page.date | urlDate }}-{{ title | slugify }}/index.html"
 ---
 
 {% include "partials/primary-nav.html" %}

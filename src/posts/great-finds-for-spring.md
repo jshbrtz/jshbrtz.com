@@ -1,7 +1,7 @@
 ---
 title: Great internet finds for Spring
 tags: post
-date: 2021-06-14
+date: 2022-05-14
 layout: layouts/post.html
 ---
 
@@ -28,5 +28,5 @@ If you're not following along with my <a href="./playlists">seasonal playlists</
 	</li>
 </ul>
 
-File this under "Things that are hilarious, but also, too true."
+File this under "Hilarious, but also, too true."
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">&quot;And then... I told the designer I need it by tomorrow&quot; <a href="https://t.co/g43lMfUb53">pic.twitter.com/g43lMfUb53</a></p>&mdash; Tommy Mason (@_TommyMason) <a href="https://twitter.com/_TommyMason/status/1538154698351464453?ref_src=twsrc%5Etfw">June 18, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

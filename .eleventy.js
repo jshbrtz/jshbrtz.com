@@ -3,8 +3,8 @@
 const { DateTime } = require('luxon');
 
 module.exports = function (eleventyConfig) {
-	// Add passthrough directories & files
 	
+	// Add passthrough directories & files
 	let env = process.env.ELEVENTY_ENV;
 	
 		if (env === "prod") {
@@ -20,11 +20,19 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("./_headers");
 	
 	// Luxon date parser filter source: moment.github.io/luxon/
+	// Pretty date (ex.: May 14, 2022) for pages
 	eleventyConfig.addFilter('readableDate', (dateObj) => {
 		return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat(
 		  'DDD'
 		);
-	  });
+	});
+	
+	//year-month-day date for blog post URLs
+	eleventyConfig.addFilter('urlDate', (dateObj) => {
+		return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat(
+			'yyyy-MM-dd'
+		);
+	});
 	
 	// Markdown-It 'markdownify' filter source: BradCoffield/kidlitconnection@e42a6de)
 	const md = require("markdown-it")({

@@ -12,23 +12,25 @@ layout: 'layouts/base.html'
 	<div class="row container-narrow">
 		<div class="double-column">
 			<h1>Hi! I'm Joshua Bartz.</h1>
-			<p>Yes, that is a real chicken on my back.</p>
+			<p>And that is a real chicken on my back.</p>
 		</div>
 	</div>
 	<div class="row container-narrow">
 		<div class="double-column">
 			<h2>I design and consult on inclusive products and processes.</h2>
-			<p>I'm on a mission to improve the lives of individuals ethically, economically, ecologically, and equitably. I build teams, refine strategies, champion accessibility and foster collaborative yes-and dynamics.</p>
+			<p>I'm on a mission to improve the lives of individuals ethically, economically, ecologically, and equitably. I build teams, refine strategies, champion accessibility, and foster collaborative yes-and dynamics.</p>
 		</div>
 	</div>
 	<div class="row container-narrow">
 		<div class="double-column">
+			<p class="subnote">Currently</p>
 			<h2>I'm open for work!</h2>
 			<p>After a cross-country move, I took a hard-earned sabbatical, and now I'm excited for some projects. Mac, iPadOS, and iOS apps, web apps, and websites.</p>
 			<p><a href="mailto:hello@brtz.me" class="btn no-link-decor" role="button" alt="back"><span class="status"></span>Let's talk</a></p>
 		</div>
 	</div>
 	<div class="row container-narrow">
+		<p class="row subnote">Previously</p>
 		<div class="column">
 			<p class="subnote">2017 - 2021</p>
 			<h2>I led design for <a href="https://www.jamf.com/support/jamf-now/">Jamf Now</a>.</h2>
@@ -46,29 +48,23 @@ layout: 'layouts/base.html'
 			<p>CrashPlan's support ticket metadata helped me prove that we didn't have to fish in the dark to identify our customers' problems, and the Support team helped me prove that we didn't have to jeopardize our secrecy to conduct usability testing.</p>
 		</div>
 	</div>
-</section>
-
-<section>
-	<div id="about-me" class="row container-narrow">
-		<div class="column">
-			<h2>Reading</h2>
+	<div class="row container-narrow">
+		<div class="double-column">
+			<p class="subnote">But also</p>
+			<h2>I love reading books and listening to music.</h2>
+			<p>Currently, I'm reading <a href="{{ books.currenturl }}"><em>{{ books.currenttitle }}</em></a> by {{ books.currentauthor }}, and I can't stop replaying my <a href="{{ playlists.currenturl }}"><em>{{ playlists.currenttitle }}</em></a> playlist on {{ playlists.playlisthost }}.</p>
+			<p>Check out my <a href="/playlists/">previous playlists</a>.</p>
+		</div>
+	</div>
+	<div class="row container-narrow">
+		<div class="double-column">
+			<h2>And I am known to write on occasion!</h2>
+			<p>Expect links from across the web, updates on real-world projects, and design and ethics talk. With an infrequent hot take on music, books, and cooking.</p>
 			<ul class="no-list-decor">
 			  {% for post in collections.post %}
-				<li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+				<li><span class="small-caps">{{ post.data.date | readableDate }} &#8212; </span><a href="{{ post.url }}">{{ post.data.title }}</a></li>
 			  {% endfor %}
 			 </ul>
-		</div>
-		<div class="column">
-			<h2>Listening</h2>
-			<ul class="no-list-decor">
-				<li><img class="album" src="https://is4-ssl.mzstatic.com/image/thumb/m7qn9jC4lghgJKKg3sulKg/540x540cc.webp" />
-				<h3 class="subheading">2022 spring</h3>
-					<ul class="no-list-decor">
-						<li><a href="https://music.apple.com/us/playlist/2022-spring/pl.u-LRdYmsBA2KX">Apple Music</a>
-						<p><span class="subnote"><a href="./playlists">Past playlists</a></span></p></li>
-					</ul>
-				</li>
-			</ul>
 		</div>
 	</div>
 </section>
