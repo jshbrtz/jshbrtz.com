@@ -13,20 +13,37 @@ i. global styles
 =================== */
 
 :root {
-	--link-color: rgb(255, 0, 89);
-	/* don't forget to change the "stroke" color in the a:hover selector, broskie */
-	--text-hover: #000;
-	--heading-color: rgba(33, 33, 33, 1);
-	--text-color: rgba(33, 33, 33, 1);
-	--text-caption-color: rgba(33, 33, 33, 0.6);
-	--text-color-thin: rgba(33, 33, 33, 0.1);
-	/* paragraphs, bylines */
-	--footer-color: rgba(33, 33, 33, 1);
-	--bg-color: rgb(255,255,255);
-	--bg-color-thin: rgba(33, 33, 33,, 0.5); /* being used on the secondary nav */
 	--font-accent: 'effra', sans-serif;
 	/* headers, captions, footers */
 	--font-primary: 'effra', sans-serif;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--link-color: rgb(255, 0, 89);
+		--text-hover: #000;
+		--heading-color: rgba(33, 33, 33, 1);
+		--text-color: rgba(33, 33, 33, 1);
+		--text-caption-color: rgba(33, 33, 33, 0.6);
+		--text-color-thin: rgba(33, 33, 33, 0.1);
+		--footer-color: rgba(33, 33, 33, 1);
+		--bg-color: rgb(255,255,255);
+		--bg-color-thin: rgba(33, 33, 33,, 0.5); /* being used on the secondary nav */
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--link-color: rgb(255, 0, 89);
+		--text-hover: #fff;
+		--heading-color: rgba(225, 225, 225, 1);
+		--text-color: rgba(226, 226, 226, 1);
+		--text-caption-color: rgba(225, 225, 225, 0.6);
+		--text-color-thin: rgba(219, 219, 219, 0.1);
+		--footer-color: rgba(203, 203, 203, 1);
+		--bg-color: rgb(12, 7, 29);
+		--bg-color-thin: rgba(12, 7, 29, 0.5); /* being used on the secondary nav */
+	}
 }
 
 /* browser defaults reset; setting expectations */
@@ -550,5 +567,4 @@ footer {
 		margin: 0 auto;
 		max-width: 95rem;
 	}
-
 }
