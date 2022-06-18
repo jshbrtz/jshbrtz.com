@@ -15,16 +15,15 @@ i. global styles
 :root {
 	--link-color: rgb(255, 0, 89);
 	/* don't forget to change the "stroke" color in the a:hover selector, broskie */
-	--text-hover: #fff;
-	--heading-color: rgba(225, 225, 225, 1);
-	--text-color: rgba(226, 226, 226, 1);
-	--text-caption-color: rgba(225, 225, 225, 0.6);
-	--text-color-thin: rgba(219, 219, 219, 0.1);
+	--text-hover: #000;
+	--heading-color: rgba(33, 33, 33, 1);
+	--text-color: rgba(33, 33, 33, 1);
+	--text-caption-color: rgba(33, 33, 33, 0.6);
+	--text-color-thin: rgba(33, 33, 33, 0.1);
 	/* paragraphs, bylines */
-	--footer-color: rgba(203, 203, 203, 1);
-	--bg-color: rgb(12, 7, 29);
-	--bg-color-thin: rgba(12, 7, 29, 0.5); /* being used on the secondary nav */
-/* 	--font-accent: 'termina', sans-serif; */
+	--footer-color: rgba(33, 33, 33, 1);
+	--bg-color: rgb(255,255,255);
+	--bg-color-thin: rgba(33, 33, 33,, 0.5); /* being used on the secondary nav */
 	--font-accent: 'effra', sans-serif;
 	/* headers, captions, footers */
 	--font-primary: 'effra', sans-serif;
@@ -70,12 +69,12 @@ h4,
 }
 
 h1 {
-	font-size: 1.8rem;
+	font-size: 1.9rem;
 }
 
 h2 {
 	font-size: 1.4rem;
-	margin-bottom: 0.6rem;
+	margin-bottom: 0.4rem;
 	margin-right: 1rem;
 	line-height: 1.8rem;
 }
@@ -146,13 +145,14 @@ strong {
   p,
   ul,
   ol {
-	font-weight: 300;
+	font-weight: 400;
   }
   /* adds external link icon to all outbound links */
 	a[href^="http://"]:after,
 	a[href^="https://"]:after,
 	a[href^="mailto"]:after {
-		font-size: 0.5rem;
+		font-size: 0.65rem;
+		font-weight: 300;
 	}
 }
 
@@ -179,7 +179,6 @@ a[href^="mailto"]:after {
 	content: '\e803';
 	align-content: center;
 	vertical-align: top;
-/* 	font-size: 0.5rem; */
 	padding-left: 0.25rem;
 }
 
@@ -199,6 +198,10 @@ figcaption {
 	line-height: 1.3rem;
 	font-weight: 400;
 	color: var(--footer-color);
+}
+
+.subnote {
+	margin-bottom: 0rem;
 }
 
 ul {
@@ -257,8 +260,6 @@ iii. components
 	min-height: 3rem;
 }
 
-
-
 /* note to self: firefox 90 (unreleased) does not support this. remove once supported. */
 @supports ((-webkit-backdrop-filter: blur(1rem)) or (backdrop-filter: blur(1rem))) {
 	.secondary-nav {
@@ -269,12 +270,11 @@ iii. components
 }
 
 .avatar {
-	float:left;
+	float: left;
 	border-radius: 50%;
-	border: 0.15rem solid var(--text-color);
-	width: 4rem;
-	height: 4rem;
-	margin-right: 1rem;
+	/* border: 0.2rem solid var(--text-color); */
+	width: 8rem;
+	height: 8rem;
 }
 
  /* the next three classes are specific to the avatar, name, pronouns, and professional title on index */
@@ -287,7 +287,7 @@ iii. components
 	display: absolute;
 	align-self: center;
 	top: 50%;
-	transform: translateY(5%);
+	transform: translateY(45%);
 }
 
 .header-modifier {
@@ -429,7 +429,11 @@ iv. layouts
 }
 
 .greeting {
-	margin-top: 7rem;
+	margin-top: 4rem;
+	margin-bottom: 3rem;
+}
+
+.greeting .double-column {
 	margin-bottom: 3rem;
 }
 
@@ -439,7 +443,7 @@ header {
 
 section {
 	padding-top: 2rem;
-	margin-bottom: 5rem;
+	margin-bottom: 2rem;
 }
 
 article {
@@ -448,7 +452,7 @@ article {
 }
 
 footer {
-	margin-top: -2rem;
+	margin-top: 2rem;
 	margin-bottom: 2rem;
 	text-align: left;
 }
@@ -484,8 +488,8 @@ footer {
 	}
 	
 	.greeting {
-		margin-top: 5rem;
-		margin-bottom: 5rem;
+		margin-top: 3rem;
+		margin-bottom: 3rem;
 	}
 	
 	.secondary-nav a {

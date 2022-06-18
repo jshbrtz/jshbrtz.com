@@ -1,5 +1,5 @@
 ---
-title: "Playlists | Joshua Bartz"
+title: "Playlists"
 layout: 'layouts/base.html'
 permalink: "playlists/"
 ---
@@ -18,7 +18,7 @@ permalink: "playlists/"
 <section id="heading" class="greeting">
 	<div class="container-narrow">
 		<header>
-			<h1>Playlists</h1>
+			<h1>{{ title }}</h1>
 			<p>Music is one of my most important social bridges. I concatenate songs throughout a season to remind me of a moment, place or mood.</p>
 		</header>
 	</div>

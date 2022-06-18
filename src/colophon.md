@@ -1,5 +1,5 @@
 ---
-title: "Colophon | Joshua Bartz"
+title: "Colophon"
 layout: 'layouts/base.html'
 permalink: "colophon/"
 ---
@@ -9,7 +9,7 @@ permalink: "colophon/"
 <div class="container-narrow">
 	<div class="row">
 		<header class="greeting">
-			<h1>Colophon</h1>
+			<h1>{{ title }}</h1>
 		</header>
 	</div>
 </div>
@@ -29,7 +29,7 @@ permalink: "colophon/"
 	</div>
 </section>
 
-<section id="style">
+<section id="design-tech">
 	<div class="container-narrow">
 		<div class="row">
 			<div class="column">
@@ -41,7 +41,7 @@ permalink: "colophon/"
 				<p>Designed and built by yours truly in Minneapolis, Minnesota and Charlotte, North Carolina.</p>
 				<p>Coded in HTML5, CSS3, Markdown and Javascript using <a href="https://nova.app">Panic Nova</a>, and generated with <a href="https://www.11ty.dev">Eleventy</a>. Code hosted publicly on <a href="https://github.com/jshbrtz/jshbrtz.com">Github</a> and deployed automatically with <a href="https://www.netlify.com">Netlify</a>.</p>
 				<p>Iconography made on <a href="https://www.sketch.com">Sketch</a> and converted into a font with <a href="https://fontello.com">Fontello</a>. Typeface is <a href="https://www.daltonmaag.com/library/effra">Effra</a>, designed by Jonas Schudel for Dalton Maag, and hosted through <a href="https://fonts.adobe.com">Adobe Fonts</a>.</p>
-				<p>Profile &#128248; by Molly Rowan, at the <a href="https://whitewater.org">National Whitewater Center</a>.</p>
+				<p>Profile &#128248; by Molly Rowan.</p>
 		</div>
 	</div>
 </section>

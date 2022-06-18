@@ -1,0 +1,24 @@
+---
+layout: layouts/base.html
+---
+
+{% include "partials/primary-nav.html" %}
+
+<section id="heading" class="greeting">
+	<div class="container-narrow">
+			<header>
+				<h1>{{ title }}</h1>
+				<p class="small-caps">Posted on <time datetime={{ page.date }}">{{ page.date | readableDate }}</time></p>
+			</header>
+	</div>
+</section>
+
+<section id="post-body">
+	<div class="row container-narrow">
+		<div class="double-column">
+			
+			{{ content | safe }}
+			
+		</div>
+	</div>
+</section>

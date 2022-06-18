@@ -1,5 +1,7 @@
 //== Eleventy Config File ==//
 
+const { DateTime } = require('luxon');
+
 module.exports = function (eleventyConfig) {
 	// Add passthrough directories & files
 	
@@ -10,12 +12,19 @@ module.exports = function (eleventyConfig) {
 		}
 		else if (env === "dev") {
 			eleventyConfig.addPassthroughCopy({ "./src/img/favicons_dev": "/" });
-		}
+	}
 		
 	eleventyConfig.addPassthroughCopy("./src/style/");
 	eleventyConfig.addPassthroughCopy("./src/img/");
 	eleventyConfig.addPassthroughCopy("./src/font/");
 	eleventyConfig.addPassthroughCopy("./_headers");
+	
+	// Luxon date parser filter source: moment.github.io/luxon/
+	eleventyConfig.addFilter('readableDate', (dateObj) => {
+		return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat(
+		  'DDD'
+		);
+	  });
 	
 	// Markdown-It 'markdownify' filter source: BradCoffield/kidlitconnection@e42a6de)
 	const md = require("markdown-it")({

@@ -1,5 +1,5 @@
 ---
-title: "Jamf Now App Deployment Joshua Bartz"
+title: "Jamf Now App Deployment"
 layout: 'layouts/base.html'
 permalink: "jamf-now-blueprint-apps/"
 ---
@@ -17,7 +17,7 @@ permalink: "jamf-now-blueprint-apps/"
 <section id="intro" class="greeting">
 	<div class="container">
 		<header>
-			<h1>Redesigning app deployment</h1>
+			<h1>{{ title }}</h1>
 			<p>Creating a better, future-proofed workflow that empowers administrators to view and choose the apps their co-workers need. Leaning on partnerships with Engineering, Product, and Support to build something customers will love.</p>
 			<div class="row">
 				<div class="double-column">
