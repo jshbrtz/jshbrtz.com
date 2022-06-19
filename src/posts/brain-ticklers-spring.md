@@ -1,5 +1,5 @@
 ---
-title: Great internet finds for Spring
+title: Things that tickle my brain, Spring 2022 Edition
 tags: post
 date: 2022-05-14
 layout: layouts/post.html
