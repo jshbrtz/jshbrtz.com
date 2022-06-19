@@ -12,6 +12,9 @@ iv. layouts
 i. global styles
 =================== */
 
+@import '/style/jshbrtz.css';
+@import 'https://use.typekit.net/pnx3xoi.css';
+
 :root {
 	--font-accent: 'effra', sans-serif;
 	/* headers, captions, footers */
