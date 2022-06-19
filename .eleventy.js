@@ -34,6 +34,14 @@ module.exports = function (eleventyConfig) {
 		);
 	});
 	
+	// cache busting filter source: https://rob.cogit8.org/posts/2020-10-28-simple-11ty-cache-busting/
+	eleventyConfig.addFilter("bust", (url) => {
+	  const [urlPart, paramPart] = url.split("?");
+	  const params = new URLSearchParams(paramPart || "");
+	  params.set("v", DateTime.local().toFormat("X"));
+	  return `${urlPart}?${params}`;
+	});
+	
 	// Markdown-It 'markdownify' filter source: BradCoffield/kidlitconnection@e42a6de)
 	const md = require("markdown-it")({
 		html: true,
