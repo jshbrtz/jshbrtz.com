@@ -12,11 +12,22 @@ iv. layouts
 i. global styles
 =================== */
 
-@import '/style/jshbrtz.css';
-@import 'https://use.typekit.net/pnx3xoi.css';
+/* browser defaults reset; setting expectations */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: auto;
+	-webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+	scroll-behavior: smooth;
+}
 
 :root {
-	--font-accent: 'effra', sans-serif;
+	--font-accent: 'Menlo Regular', 'Lucida Sans Typewriter', monospace;
 	/* headers, captions, footers */
 	--font-primary: 'effra', sans-serif;
 }
@@ -27,7 +38,7 @@ i. global styles
 		--text-hover: #000;
 		--heading-color: rgba(33, 33, 33, 1);
 		--text-color: rgba(33, 33, 33, 1);
-		--text-caption-color: rgba(33, 33, 33, 0.6);
+		--text-caption-color: rgba(33, 33, 33, 0.7);
 		--text-color-thin: rgba(33, 33, 33, 0.1);
 		--footer-color: rgba(33, 33, 33, 1);
 		--bg-color: rgb(255,255,255);
@@ -49,20 +60,6 @@ i. global styles
 	}
 }
 
-/* browser defaults reset; setting expectations */
-*,
-*::before,
-*::after {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-rendering: auto;
-	-webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
-	scroll-behavior: smooth;
-}
-
 /* continued expectations setting; establishing healthy boundaries */
 body {
 	font-family: var(--font-primary);
@@ -82,20 +79,20 @@ h3,
 h4,
 .secondary-nav,
 .no-link-decor {
-	font-family: var(--font-accent);
-	font-weight: 700;
+	font-family: var(--font-primary);
 	font-style: normal;
 	color: var(--heading-color);
 }
 
 h1 {
-	font-size: 1.9rem;
+	font-size: 2.2rem;
+	font-weight: 700;
 }
 
 h2 {
-	font-size: 1.4rem;
+	font-size: 1.5rem;
 	margin-bottom: 0.4rem;
-	margin-right: 1rem;
+	margin-right: 0.5rem;
 	line-height: 1.8rem;
 }
 
@@ -109,18 +106,6 @@ h4,
 .secondary-nav,
 .no-link-decor {
 	font-size: 0.9rem;
-}
-
-.subheading {
-	font-size: 1.2rem;
-	letter-spacing: -0.02em;
-}
-
-/* style for captions and some bylines */
-.small-caps {
-	color: var(--text-caption-color);
-	font-size: 1rem;
-	font-weight: 400;
 }
 
 p,
@@ -137,7 +122,7 @@ strong {
 
 .thickest {
 	color: var(--text-hover);
-	font-weight: 700;
+	font-weight: 900;
 }
 
 .thinnest {
@@ -210,19 +195,23 @@ a[href^="mailto"]:after {
 	border: unset;
 }
 
-footer p,
-footer a,
 .subnote,
 figcaption {
-	font-size: 0.9rem;
+	font-size: 0.8rem !important;
 	line-height: 1.3rem;
-	font-weight: 400;
 	color: var(--footer-color);
+	font-family: var(--font-accent);
 }
 
 .subnote {
 	margin-bottom: 0.1rem;
 	padding-bottom: 0.1rem !important;
+}
+
+.subheading {
+	color: var(--text-caption-color);
+	font-size: 0.9rem;
+	font-family: var(--font-accent);
 }
 
 ul {
