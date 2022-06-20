@@ -393,7 +393,7 @@ figcaption {
 iv. layouts
 =================== */
 
-/* used only on index page. save the real width for case studies. */
+/* used on non-case study pages */
 .container-narrow {
 	margin: 0 auto;
 	max-width: 42rem;
