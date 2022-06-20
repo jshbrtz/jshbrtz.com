@@ -11,6 +11,7 @@ permalink: "jamf-now-blueprint-apps/"
 		<a href="#problems" class="btn no-link-decor">Problems</a>
 		<a href="#process" class="btn no-link-decor">Process</a>
 		<a href="#outcomes" class="btn no-link-decor">Outcomes</a>
+		{% include "partials/nav-logo.html" %}
 	</nav>
 </div>
 

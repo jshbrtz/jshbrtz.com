@@ -12,6 +12,7 @@ permalink: "playlists/"
 		<a href="#2020" class="btn no-link-decor">2020</a>
 		<a href="#2019" class="btn no-link-decor">2019</a>
 		<a href="#2018" class="btn no-link-decor">2018</a>
+		{% include "partials/nav-logo.html" %}
 	</nav>
 </div>
 

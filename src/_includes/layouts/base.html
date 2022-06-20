@@ -14,6 +14,7 @@
 		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#FF0059">
 		<link rel="manifest" href="/manifest.webmanifest">
 		
+		<link rel="preconnect" href="https://use.typekit.net" crossorigin />
 		<link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="{{ '/style/style.css' | url | bust }}">
 		<noscript>
 			<link rel="stylesheet" type="text/css" href="{{ '/style/style.css' | url | bust }}">
@@ -34,7 +35,7 @@
 			<section id="footer" class="row">
 				<div class="row container-narrow">
 					<div class="column">
-						<p class="subnote">© 2022 Joshua Bartz<br>
+						<p class="subnote">© {% copyrightyear %} Joshua Bartz<br>
 						<a href="/colophon">Colophon</a></p>
 					</div>
 				</div>

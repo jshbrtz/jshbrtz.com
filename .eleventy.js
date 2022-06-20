@@ -1,6 +1,7 @@
 //== Eleventy Config File ==//
 
 const { DateTime } = require('luxon');
+const emojiReadTime = require("@11tyrocks/eleventy-plugin-emoji-readtime");
 
 module.exports = function (eleventyConfig) {
 	
@@ -27,11 +28,22 @@ module.exports = function (eleventyConfig) {
 		);
 	});
 	
-	//year-month-day date for blog post URLs
+	// year-month-day date for blog post URLs
 	eleventyConfig.addFilter('urlDate', (dateObj) => {
 		return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat(
 			'yyyy-MM-dd'
 		);
+	});
+	
+	// current year for footer copyright lol
+	eleventyConfig.addShortcode("copyrightyear", () => `${new Date().getFullYear()}`);
+	
+	// emoji read time calculator for blog posts, because why the hell not?
+	eleventyConfig.addPlugin(emojiReadTime, {
+		showEmoji: false,
+		label: "minute read",
+		wpm: 225,
+		bucketSize: 3,
 	});
 	
 	// cache busting filter source: https://rob.cogit8.org/posts/2020-10-28-simple-11ty-cache-busting/

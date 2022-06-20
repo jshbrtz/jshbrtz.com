@@ -13,6 +13,7 @@
     "@11ty/eleventy": "^1.0.1"
   },
   "dependencies": {
+    "@11tyrocks/eleventy-plugin-emoji-readtime": "^1.0.1",
     "luxon": "^2.4.0",
     "markdown-it": "^13.0.1"
   }
