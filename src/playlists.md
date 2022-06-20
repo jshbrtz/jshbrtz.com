@@ -6,13 +6,13 @@ permalink: "playlists/"
 
 <div class="secondary-nav">
 	<nav id="page-nav">
+		{% include "partials/nav-logo.html" %}
 		<a href=".." class="l-align btn-icon icon-back no-link-decor" alt="back"></a>
 		<a href="#2022" class="btn no-link-decor">2022</a>
 		<a href="#2021" class="btn no-link-decor">2021</a>
 		<a href="#2020" class="btn no-link-decor">2020</a>
 		<a href="#2019" class="btn no-link-decor">2019</a>
 		<a href="#2018" class="btn no-link-decor">2018</a>
-		{% include "partials/nav-logo.html" %}
 	</nav>
 </div>
 

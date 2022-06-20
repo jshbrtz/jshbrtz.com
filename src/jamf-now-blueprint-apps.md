@@ -6,12 +6,12 @@ permalink: "jamf-now-blueprint-apps/"
 
 <div class="secondary-nav">
 	<nav id="page-nav">
+		{% include "partials/nav-logo.html" %}
 		<a href=".." class="l-align btn-icon icon-back no-link-decor" alt="back"></a>
 		<a href="#product" class="btn no-link-decor">Product</a>
 		<a href="#problems" class="btn no-link-decor">Problems</a>
 		<a href="#process" class="btn no-link-decor">Process</a>
 		<a href="#outcomes" class="btn no-link-decor">Outcomes</a>
-		{% include "partials/nav-logo.html" %}
 	</nav>
 </div>
 
