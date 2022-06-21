@@ -35,6 +35,7 @@ i. global styles
 @media (prefers-color-scheme: light) {
 	:root {
 		--link-color: rgb(255, 0, 89);
+		--highlight-color: rgb(255, 236, 25);
 		--text-hover: #000;
 		--heading-color: rgba(33, 33, 33, 1);
 		--text-color: rgba(33, 33, 33, 1);
@@ -49,6 +50,7 @@ i. global styles
 @media (prefers-color-scheme: dark) {
 	:root {
 		--link-color: rgb(255, 0, 89);
+		--highlight-color: rgb(255, 236, 25);
 		--text-hover: #fff;
 		--heading-color: rgba(225, 225, 225, 1);
 		--text-color: rgba(226, 226, 226, 1);
@@ -197,15 +199,26 @@ a[href^="mailto"]:after {
 
 .subnote,
 figcaption {
-	font-size: 0.8rem !important;
+	font-size: 0.8rem;
 	line-height: 1.3rem;
-	color: var(--footer-color);
 	font-family: var(--font-accent);
 }
 
 .subnote {
 	margin-bottom: 0.1rem;
 	padding-bottom: 0.1rem !important;
+}
+
+.highlight {
+	color: var(--bg-color);
+	background-color: var(--link-color);
+	padding-left: 0.1rem;
+	padding-right: 0.1rem;
+	padding-top: 0.1rem;
+	padding-bottom: 0.1rem;
+	width: fit-content;
+	width: -moz-fit-content;
+	border-radius: 0px;
 }
 
 .subheading {

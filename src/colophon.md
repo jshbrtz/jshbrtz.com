@@ -56,7 +56,7 @@ permalink: "colophon/"
 			</div>
 			<div class="double-column">
 				<p>Tremendous thanks to Maggie Armstrong, Molly Rowan, <a href="https://brianchmiller.com">Brian Miller</a>, Ryan Rud, Craig Gieselman, <a href="http://www.michaelcullenbenson.com/index.html">Michael Cullen-Benson</a>, Kraig Schroth, Erin Merchant, and <a href="https://aeoneal.com/">Alex O'Neal</a> for feedback, support, troubleshooting, and inspiration.</p>
-				<p><strong>&#127873; Feedback is a gift.</strong> Can the site be improved? <a href="mailto:hello@brtz.me">Email me</a> and I will gladly reply.</p>
+				<p><strong>&#127873; Feedback is a gift.</strong> Can the site be improved? <a href="{{ site.email }}">Email me</a> and I will gladly reply.</p>
 			</div>
 		</div>
 	</div>
