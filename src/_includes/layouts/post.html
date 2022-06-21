@@ -9,7 +9,7 @@ permalink: "posts/{{ page.date | urlDate }}-{{ title | slugify }}/index.html"
 	<div class="container-narrow">
 			<header>
 				<h1>{{ title }}</h1>
-				<p class="subheading">Posted on <time datetime={{ page.date }}">{{ page.date | readableDate }}</time> &#8212; {{ content | emojiReadTime }}</p>
+				<p class="subheading">Posted on <time datetime={{ page.date }}">{{ page.date | readableDate }}</time><br>{{ content | emojiReadTime }}</p>
 			</header>
 	</div>
 </section>
