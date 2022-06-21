@@ -459,12 +459,6 @@ article {
 
 }
 
-footer {
-	margin-top: 2rem;
-	margin-bottom: 2rem;
-	text-align: left;
-}
-
 /* mobile scaling will put everything into a single column */
 .column {
 	display: flex;
@@ -512,6 +506,10 @@ footer {
 		padding-right: 0.1rem;
 	}
 	
+	footer .subnote {
+		padding-bottom: 3rem !important;
+	}
+	
 }
 
 @media screen and (min-width: 40rem) {
@@ -525,6 +523,10 @@ footer {
 		padding-top: 1rem;
 		padding-bottom: 1rem;
 		scroll-margin-top: 3rem;
+	}
+	
+	footer .subnote {
+		padding-bottom: 3rem !important;
 	}
 
 	/* splits all columns in one row with equal spacing */
