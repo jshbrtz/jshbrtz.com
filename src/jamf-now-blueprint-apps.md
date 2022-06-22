@@ -2,6 +2,7 @@
 title: "Jamf Now App Deployment"
 layout: 'layouts/base.html'
 permalink: "jamf-now-blueprint-apps/"
+description: A two-year project to empower small businesses with better IT tools.
 ---
 
 <div class="secondary-nav">

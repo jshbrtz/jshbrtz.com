@@ -3,6 +3,7 @@ title: Things that tickle my brain, Spring 2022 Edition
 tags: post
 date: 2022-05-14
 layout: layouts/post.html
+description: Books, camels, music, and a relatable tweet for Spring.
 ---
 
 It's officially warm out. North Carolina's growing season started more than two months sooner than Minnesota, but we're here for it. Winter is a time to shed old skin, to look out at the world and collect yourself, and plan.

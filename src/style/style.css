@@ -34,8 +34,9 @@ i. global styles
 
 @media (prefers-color-scheme: light) {
 	:root {
-		--link-color: rgb(255, 0, 89);
-		--highlight-color: rgb(255, 236, 25);
+		--magenta-color: rgb(255, 0, 89);
+		--yellow-color: rgb(255, 236, 25);
+		--cyan-color: rgb(25, 209, 255);
 		--text-hover: #000;
 		--heading-color: rgba(33, 33, 33, 1);
 		--text-color: rgba(33, 33, 33, 1);
@@ -49,8 +50,9 @@ i. global styles
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--link-color: rgb(255, 0, 89);
-		--highlight-color: rgb(255, 236, 25);
+		--magenta-color: rgb(255, 0, 89);
+		--yellow-color: rgb(255, 236, 25);
+		--cyan-color: rgb(25, 209, 255);
 		--text-hover: #fff;
 		--heading-color: rgba(225, 225, 225, 1);
 		--text-color: rgba(226, 226, 226, 1);
@@ -168,7 +170,7 @@ a {
 	color: inherit;
 	text-decoration: none;
 	transition: background .15s cubic-bezier(.33,.66,.66,1);
-	border-bottom: 0.177rem solid var(--link-color);
+	border-bottom: 0.177rem solid var(--magenta-color);
 	transition: 0.2s ease-in-out;
 }
 
@@ -211,7 +213,7 @@ figcaption {
 
 .highlight {
 	color: var(--bg-color);
-	background-color: var(--link-color);
+	background-color: var(--magenta-color);
 	padding-left: 0.1rem;
 	padding-right: 0.1rem;
 	padding-top: 0.1rem;
