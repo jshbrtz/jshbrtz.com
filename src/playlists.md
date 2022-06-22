@@ -2,6 +2,7 @@
 title: "Playlists"
 layout: 'layouts/base.html'
 permalink: "playlists/"
+description: Curated playlists for every season going back to 2018.
 ---
 
 <div class="secondary-nav">
@@ -20,7 +21,7 @@ permalink: "playlists/"
 	<div class="container-narrow">
 		<header>
 			<h1>{{ title }}</h1>
-			<p>Music is one of my most important social bridges. I concatenate songs throughout a season to remind me of a moment, place or mood.</p>
+			<p class="subheading">Music is one of my most important social bridges. I concatenate songs throughout a season to remind me of a moment, place or mood.</p>
 		</header>
 	</div>
 </section>
