@@ -7,7 +7,6 @@ iii. components
 iv. layouts
 =================== */
 
-
 /* ===================
 i. global styles
 =================== */
@@ -46,6 +45,15 @@ i. global styles
 		--bg-color: rgb(255,255,255);
 		--bg-color-thin: rgba(33, 33, 33,, 0.5); /* being used on the secondary nav */
 	}
+	
+	/* a little banner ad in the footer for dark mode */
+	span.light-mode {
+		display: inline-block;
+	}
+	
+	span.dark-mode {
+		display: none;
+	}
 }
 
 @media (prefers-color-scheme: dark) {
@@ -62,6 +70,14 @@ i. global styles
 		--bg-color: rgb(12, 7, 29);
 		--bg-color-thin: rgba(12, 7, 29, 0.5); /* being used on the secondary nav */
 	}
+	
+	/* a little banner ad in the footer for light mode */
+	span.light-mode {
+		display: none;
+	}
+	span.dark-mode {
+		display: inline-block;
+	}
 }
 
 /* continued expectations setting; establishing healthy boundaries */
@@ -71,7 +87,6 @@ body {
 	color: var(--text-color);
 	background-color: var(--bg-color);
 }
-
 
 /* ===================
 ii. typography
@@ -141,11 +156,12 @@ strong {
   ol {
 	font-weight: 400;
   }
-  /* adds external link icon to all outbound links */
+  
   a[href^="http://"]:after,
   a[href^="https://"]:after,
   a[href^="mailto"]:after {
   	font-size: 0.65rem;
+  	font-style: normal;
   }
 }
 
@@ -156,12 +172,13 @@ strong {
   ol {
 	font-weight: 400;
   }
-  /* adds external link icon to all outbound links */
+  
 	a[href^="http://"]:after,
 	a[href^="https://"]:after,
 	a[href^="mailto"]:after {
 		font-size: 0.6rem;
 		font-weight: 300;
+		font-style: normal;
 	}
 }
 
@@ -454,11 +471,6 @@ header {
 section {
 	padding-top: 1rem;
 	margin-bottom: 1rem;
-}
-
-article {
-	margin-bottom: 2.5rem;
-
 }
 
 /* mobile scaling will put everything into a single column */
