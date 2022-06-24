@@ -251,7 +251,7 @@ figcaption {
 	color: var(--bg-color);
 	background-size: 5000%;
 	background-image: var(--gradient);
-	animation: background-animation 60s infinite;
+	animation: background-animation 120s infinite;
 }
 
 @keyframes background-animation {
