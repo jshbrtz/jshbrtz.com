@@ -28,7 +28,7 @@ i. global styles
 :root {
 	--font-accent: 'dico-code-one', 'Menlo Regular', 'Lucida Sans Typewriter', monospace;
 	--font-primary: 'effra', 'Helvetica', 'Arial', sans-serif;
-	--gradient: linear-gradient(90deg, var(--magenta-color), var(--yellow-color), var(--text-hover), var(--cyan-color));
+	--gradient: linear-gradient(90deg, var(--magenta-color), var(--yellow-color), var(--cyan-color));
 }
 
 @media (prefers-color-scheme: light) {
@@ -251,7 +251,7 @@ figcaption {
 	color: var(--bg-color);
 	background-size: 5000%;
 	background-image: var(--gradient);
-	animation: background-animation 120s infinite;
+	animation: background-animation 60s infinite;
 }
 
 @keyframes background-animation {
