@@ -28,6 +28,7 @@ i. global styles
 :root {
 	--font-accent: 'dico-code-one', 'Menlo Regular', 'Lucida Sans Typewriter', monospace;
 	--font-primary: 'effra', 'Helvetica', 'Arial', sans-serif;
+	--gradient: linear-gradient(90deg, var(--magenta-color), var(--yellow-color), var(--text-hover), var(--cyan-color));
 }
 
 @media (prefers-color-scheme: light) {
@@ -230,9 +231,8 @@ figcaption {
 	padding-bottom: 0.1rem !important;
 }
 
-.highlight {
-	color: var(--bg-color);
-	background-color: var(--magenta-color);
+.highlight,
+.highlight-anim {
 	padding-left: 0.15rem;
 	padding-right: 0.15rem;
 	padding-top: 0.1rem;
@@ -240,6 +240,24 @@ figcaption {
 	width: fit-content;
 	width: -moz-fit-content;
 	border-radius: 0px;
+}
+
+.highlight {
+	color: var(--bg-color);
+	background-color: var(--magenta-color);
+}
+
+.highlight-anim {
+	color: var(--bg-color);
+	background-size: 5000%;
+	background-image: var(--gradient);
+	animation: background-animation 60s infinite;
+}
+
+@keyframes background-animation {
+  0% {background-position: left}
+  50% {background-position: right}
+  100% {background-position: left}
 }
 
 .subheading {
