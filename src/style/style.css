@@ -26,9 +26,8 @@ i. global styles
 }
 
 :root {
-	--font-accent: 'Menlo Regular', 'Lucida Sans Typewriter', monospace;
+	--font-accent: 'dico-code-one', 'Menlo Regular', 'Lucida Sans Typewriter', monospace;
 	--font-primary: 'effra', 'Helvetica', 'Arial', sans-serif;
-	--font-headings: 'utopia-std-display', serif;
 }
 
 @media (prefers-color-scheme: light) {
@@ -96,7 +95,7 @@ h3,
 h4,
 .secondary-nav,
 .no-link-decor {
-	font-family: var(--font-headings);
+	font-family: var(--font-primary);
 	font-style: normal;
 	color: var(--heading-color);
 	font-weight: 600;
@@ -115,7 +114,7 @@ h2 {
 }
 
 h3 {
-	font-family: var(--font-headings);
+	font-family: var(--font-primary);
 	font-size: 1.2rem;
 	margin-bottom: 0.5rem;
 }
@@ -141,6 +140,7 @@ strong {
 .thickest {
 	color: var(--text-hover);
 	font-weight: 900;
+	letter-spacing: -0.05rem;
 }
 
 .thinnest {
@@ -218,7 +218,7 @@ a[href^="mailto"]:after {
 
 .subnote,
 figcaption {
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 	line-height: 1.3rem;
 	font-family: var(--font-accent);
 }
@@ -241,7 +241,6 @@ figcaption {
 }
 
 .subheading {
-	color: var(--text-color-thin);
 	font-size: 0.9rem;
 	font-family: var(--font-accent);
 	line-height: 1.4rem;
