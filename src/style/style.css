@@ -27,8 +27,8 @@ i. global styles
 
 :root {
 	--font-accent: 'Menlo Regular', 'Lucida Sans Typewriter', monospace;
-	/* headers, captions, footers */
 	--font-primary: 'effra', 'Helvetica', 'Arial', sans-serif;
+	--font-headings: 'utopia-std-display', serif;
 }
 
 @media (prefers-color-scheme: light) {
@@ -39,8 +39,7 @@ i. global styles
 		--text-hover: #000;
 		--heading-color: rgba(33, 33, 33, 1);
 		--text-color: rgba(33, 33, 33, 1);
-		--text-caption-color: rgba(33, 33, 33, 0.7);
-		--text-color-thin: rgba(33, 33, 33, 0.1);
+		--text-color-thin: rgba(104, 104, 104, 1);
 		--footer-color: rgba(33, 33, 33, 1);
 		--bg-color: rgb(255,255,255);
 		--bg-color-thin: rgba(33, 33, 33,, 0.5); /* being used on the secondary nav */
@@ -64,8 +63,7 @@ i. global styles
 		--text-hover: #fff;
 		--heading-color: rgba(225, 225, 225, 1);
 		--text-color: rgba(226, 226, 226, 1);
-		--text-caption-color: rgba(185, 185, 185, 1);
-		--text-color-thin: rgba(219, 219, 219, 0.1);
+		--text-color-thin: rgba(164, 164, 164, 1);
 		--footer-color: rgba(203, 203, 203, 1);
 		--bg-color: rgb(12, 7, 29);
 		--bg-color-thin: rgba(12, 7, 29, 0.5); /* being used on the secondary nav */
@@ -98,9 +96,10 @@ h3,
 h4,
 .secondary-nav,
 .no-link-decor {
-	font-family: var(--font-primary);
+	font-family: var(--font-headings);
 	font-style: normal;
 	color: var(--heading-color);
+	font-weight: 600;
 }
 
 h1 {
@@ -116,7 +115,7 @@ h2 {
 }
 
 h3 {
-	font-family: var(--font-primary);
+	font-family: var(--font-headings);
 	font-size: 1.2rem;
 	margin-bottom: 0.5rem;
 }
@@ -187,14 +186,14 @@ a {
 	color: inherit;
 	text-decoration: none;
 	transition: background .15s cubic-bezier(.33,.66,.66,1);
-	border-bottom: 0.177rem solid var(--magenta-color);
-	transition: 0.2s ease-in-out;
+	border-bottom: 0.1rem solid var(--magenta-color);
+	transition: 0.1s ease-in-out;
 }
 
 a:hover {
 	color: var(--text-hover);
-	border-bottom: 0.05rem solid var(--text-hover);
-	transition: 0.2s ease-in-out;
+	border-bottom: 0.2rem solid var(--magenta-color);
+	transition: 0.1s ease-in-out;
 }
 
 /* adds external link icon to all outbound links */
@@ -206,6 +205,7 @@ a[href^="mailto"]:after {
 	align-content: center;
 	vertical-align: top;
 	padding-left: 0.25rem;
+	color: var(--text-color-thin);
 }
 
 /* created to override link styles on buttons and button-like accessories */
@@ -241,7 +241,7 @@ figcaption {
 }
 
 .subheading {
-	color: var(--text-caption-color);
+	color: var(--text-color-thin);
 	font-size: 0.9rem;
 	font-family: var(--font-accent);
 	line-height: 1.4rem;
