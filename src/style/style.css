@@ -68,7 +68,7 @@ i. global styles
 		--btn-bg-color: rgba(229, 229, 229, 0.1);
 		--footer-color: rgba(203, 203, 203, 1);
 		--bg-color: rgb(12, 7, 29);
-		--bg-color-thin: rgba(12, 7, 29, 0.5); /* being used on the secondary nav */
+		--bg-color-thin: rgba(12, 7, 29, 0.5);
 	}
 	
 	/* a little banner ad in the footer for light mode */
@@ -248,10 +248,21 @@ figcaption {
 }
 
 .highlight-anim {
-	color: var(--bg-color);
+	color: var(--text-color);
 	background-size: 5000%;
+	background-color: var(--text-color);
 	background-image: var(--gradient);
 	animation: background-animation 60s infinite;
+}
+
+@media (prefers-color-scheme: dark) {
+	.highlight {
+		color: var(--text-color);
+	}
+	
+	.highlight-anim {
+		color: var(--bg-color);
+	}
 }
 
 @keyframes background-animation {
@@ -359,6 +370,20 @@ iii. components
 	transition: 0.1s ease-in;
 	vertical-align: center;
 	text-align: center;
+}
+
+code {
+	font-family: var(--font-accent);
+	font-size: 0.8rem;
+	color: var(--text-hover);
+	background-color: var(--btn-bg-color);
+	border-radius: 0.188rem;
+	border: 0.07rem solid var(--text-color-thin);
+	padding: 0.2rem 0.3rem;
+	transition: 0.1s ease-in;
+	width: fit-content;
+	margin-left: 0.1rem;
+	margin-right: 0.1rem;
 }
 
 .icon-back:before,
