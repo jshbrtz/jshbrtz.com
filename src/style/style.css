@@ -35,23 +35,21 @@ i. global styles
 	--font-sm: 1.125rem; /* p */
 	--font-xs: 1rem; /* subnote, figcaption, subheading */
 	--font-xxs: 0.889rem; /* code, a-icons */
-	--gradient: linear-gradient(90deg, var(--magenta-color), var(--yellow-color), var(--cyan-color));
+	--gradient: linear-gradient(217deg, var(--yellow-color), rgba(255, 236, 25, 0) 70.71%),
+		linear-gradient(127deg, var(--magenta-color), rgba(255, 0, 89, 0) 70.71%),
+		linear-gradient(336deg, var(--cyan-color), rgba(25, 209, 255, 0) 70.71%);
+	--magenta-color: rgb(255, 0, 89);
+	--yellow-color: rgb(255, 236, 25);
+	--cyan-color: rgb(25, 209, 255);
+	--text-hover: #000;
+	--heading-color: rgba(33, 33, 33, 1);
+	--text-color: rgba(33, 33, 33, 1);
+	--text-color-thin: rgba(58, 58, 58, 1);
+	--btn-bg-color: rgba(104, 104, 104, 0.1);
+	--footer-color: rgba(33, 33, 33, 1);
+	--bg-color: rgb(255,255,255);
+	--bg-color-thin: rgba(33, 33, 33,, 0.5); /* being used on the secondary nav */
 }
-
-@media (prefers-color-scheme: light) {
-	:root {
-		--magenta-color: rgb(255, 0, 89);
-		--yellow-color: rgb(255, 236, 25);
-		--cyan-color: rgb(25, 209, 255);
-		--text-hover: #000;
-		--heading-color: rgba(33, 33, 33, 1);
-		--text-color: rgba(33, 33, 33, 1);
-		--text-color-thin: rgba(58, 58, 58, 1);
-		--btn-bg-color: rgba(104, 104, 104, 0.1);
-		--footer-color: rgba(33, 33, 33, 1);
-		--bg-color: rgb(255,255,255);
-		--bg-color-thin: rgba(33, 33, 33,, 0.5); /* being used on the secondary nav */
-	}
 	
 	/* a little banner ad in the footer for dark mode */
 	span.light-mode {
@@ -61,21 +59,17 @@ i. global styles
 	span.dark-mode {
 		display: none;
 	}
-}
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--magenta-color: rgb(255, 0, 89);
-		--yellow-color: rgb(255, 236, 25);
-		--cyan-color: rgb(25, 209, 255);
 		--text-hover: #fff;
 		--heading-color: rgba(225, 225, 225, 1);
 		--text-color: rgba(226, 226, 226, 1);
 		--text-color-thin: rgba(188, 188, 188, 1);
 		--btn-bg-color: rgba(229, 229, 229, 0.1);
 		--footer-color: rgba(203, 203, 203, 1);
-		--bg-color: rgb(12, 7, 29);
-		--bg-color-thin: rgba(12, 7, 29, 0.5);
+		--bg-color: rgb(8, 5, 21);
+		--bg-color-thin: rgba(8, 5, 21, 0.5);
 	}
 	
 	/* a little banner ad in the footer for light mode */
@@ -155,45 +149,12 @@ strong {
 	font-weight: 400;
 }
 
-/* accessibility accommodation to deliver a heavier weight for body text on low-dpi displays. */
-@media (-webkit-max-device-pixel-ratio: 1.24),
-(max-resolution: 123dpi) {
-  p,
-  ul,
-  ol {
-	font-weight: 400;
-  }
-  
-  a[href^="http://"]:after,
-  a[href^="https://"]:after,
-  a[href^="mailto"]:after {
-  	font-size: var(--font-xxs);
-  	font-style: normal;
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 124dpi) {
-  p,
-  ul,
-  ol {
-	font-weight: 400;
-  }
-  
-	a[href^="http://"]:after,
-	a[href^="https://"]:after,
-	a[href^="mailto"]:after {
-		font-size: var(--font-xxs);
-		font-weight: 300;
-		font-style: normal;
-	}
-}
-
 /* adds external link icon to all outbound links */
 a[href^="http://"]:after,
 a[href^="https://"]:after,
 a[href^="mailto"]:after {
 	font-family: jshbrtz;
+	font-size: 0.65rem;
 	content: '\e803';
 	align-content: center;
 	vertical-align: top;
@@ -238,13 +199,13 @@ figcaption {
 
 .highlight,
 .highlight-anim {
-	padding-left: 0.2rem;
-	padding-right: 0.2rem;
+	padding-left: 0.25rem;
+	padding-right: 0.25rem;
 	padding-top: 0.1rem;
 	padding-bottom: 0.1rem;
 	width: fit-content;
 	width: -moz-fit-content;
-	border-radius: 0px;
+	border-radius: 1px;
 }
 
 .highlight {
@@ -255,7 +216,7 @@ figcaption {
 .highlight-anim {
 	color: var(--text-color);
 	background-size: 400%;
-	background-color: var(--text-color);
+	background-color: var(--bg-color);
 	background-image: var(--gradient);
 	animation: background-animation 60s infinite;
 }
@@ -267,6 +228,7 @@ figcaption {
 	
 	.highlight-anim {
 		color: var(--bg-color);
+		background-color: var(--text-color);
 	}
 }
 
