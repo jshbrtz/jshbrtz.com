@@ -145,19 +145,6 @@ strong {
 	letter-spacing: -0.05rem;
 }
 
-/* adds external link icon to all outbound links */
-a[href^="http://"]:after,
-a[href^="https://"]:after,
-a[href^="mailto"]:after {
-	font-family: jshbrtz;
-	font-size: 0.65rem;
-	content: '\e803';
-	align-content: center;
-	vertical-align: top;
-	padding-left: 0.25rem;
-	color: var(--text-color-thin);
-}
-
 a {
 	background-color: transparent;
 	color: inherit;
@@ -171,6 +158,20 @@ a:hover {
 	color: var(--text-hover);
 	border-bottom: 0.17rem solid var(--magenta-color);
 	transition: 0.1s ease-in-out;
+}
+
+/* adds external link icon to all outbound links */
+a[href^="http://"]:after,
+a[href^="https://"]:after,
+a[href^="mailto"]:after {
+	content: '\e803';
+	display: inline-block;
+	font-family: jshbrtz;
+	font-size: 0.65rem;
+	color: var(--text-color-thin);
+	vertical-align: middle;
+	padding-left: 0.25rem;
+	padding-bottom: 0.28rem;
 }
 
 /* created to override link styles on buttons and button-like accessories */
@@ -349,9 +350,9 @@ code {
 	margin-right: 0.1rem;
 }
 
-.icon-back:before,
-.icon-external:before,
-.icon-forward:before {
+.icon-back,
+.icon-external,
+.icon-forward {
 	align-content: center;
 	vertical-align: middle;
 	font-size: 0.6rem;
