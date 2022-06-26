@@ -145,10 +145,6 @@ strong {
 	letter-spacing: -0.05rem;
 }
 
-.thinnest {
-	font-weight: 400;
-}
-
 /* adds external link icon to all outbound links */
 a[href^="http://"]:after,
 a[href^="https://"]:after,
@@ -199,13 +195,13 @@ figcaption {
 
 .highlight,
 .highlight-anim {
-	padding-left: 0.25rem;
-	padding-right: 0.25rem;
-	padding-top: 0.1rem;
-	padding-bottom: 0.1rem;
 	width: fit-content;
 	width: -moz-fit-content;
-	border-radius: 1px;
+	border-radius: 2px;
+	padding-left: 0.2rem;
+	padding-right: 0.2rem;
+	padding-top: 0.1rem;
+	padding-bottom: 0.1rem;
 }
 
 .highlight {
@@ -218,7 +214,7 @@ figcaption {
 	background-size: 400%;
 	background-color: var(--bg-color);
 	background-image: var(--gradient);
-	animation: background-animation 60s infinite;
+	animation: background-animation 45s infinite;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -358,7 +354,7 @@ code {
 .icon-forward:before {
 	align-content: center;
 	vertical-align: middle;
-	font-size: 0.5rem;
+	font-size: 0.6rem;
 }
 
 .icon-back:before {
