@@ -28,6 +28,13 @@ i. global styles
 :root {
 	--font-accent: 'dico-code-one', 'Menlo Regular', 'Lucida Sans Typewriter', monospace;
 	--font-primary: 'effra', 'Helvetica', 'Arial', sans-serif;
+	--font-xxl: 2.074rem; /* h1 */
+	--font-xl: 1.728rem; /* h2 */
+	--font-lg: 1.44rem; /* h3 */
+	--font-md: 1.2rem; /* h4 */
+	--font-sm: 1.125rem; /* p */
+	--font-xs: 1rem; /* subnote, figcaption, subheading */
+	--font-xxs: 0.889rem; /* code, a-icons */
 	--gradient: linear-gradient(90deg, var(--magenta-color), var(--yellow-color), var(--cyan-color));
 }
 
@@ -83,7 +90,8 @@ i. global styles
 /* continued expectations setting; establishing healthy boundaries */
 body {
 	font-family: var(--font-primary);
-	font-size: 1.1rem;
+	font-size: var(--font-md);
+	line-height: 1.75;
 	color: var(--text-color);
 	background-color: var(--bg-color);
 }
@@ -101,38 +109,35 @@ h4,
 	font-family: var(--font-primary);
 	font-style: normal;
 	color: var(--heading-color);
-	font-weight: 600;
+	line-height: 1.3;
 }
 
 h1 {
-	font-size: 2.2rem;
-	font-weight: 900;
+	font-size: var(--font-xxl);
 }
 
 h2 {
-	font-size: 1.5rem;
+	font-size: var(--font-xl);
 	margin-bottom: 0.4rem;
 	margin-right: 0.5rem;
-	line-height: 1.8rem;
 }
 
 h3 {
 	font-family: var(--font-primary);
-	font-size: 1.2rem;
+	font-size: var(--font-lg);
 	margin-bottom: 0.5rem;
-}
-
-h4,
-.secondary-nav,
-.no-link-decor {
-	font-size: 0.9rem;
 }
 
 p,
 ul {
-	font-size: 1.1rem;
-	line-height: 1.7rem;
+	font-size: var(--font-md);
+	line-height: 1.75rem;
 	margin-bottom: 1.4rem;
+}
+
+.secondary-nav,
+.no-link-decor {
+	font-size: var(--font-xs);
 }
 
 strong {
@@ -162,7 +167,7 @@ strong {
   a[href^="http://"]:after,
   a[href^="https://"]:after,
   a[href^="mailto"]:after {
-  	font-size: 0.65rem;
+  	font-size: var(--font-xxs);
   	font-style: normal;
   }
 }
@@ -178,7 +183,7 @@ strong {
 	a[href^="http://"]:after,
 	a[href^="https://"]:after,
 	a[href^="mailto"]:after {
-		font-size: 0.6rem;
+		font-size: var(--font-xxs);
 		font-weight: 300;
 		font-style: normal;
 	}
@@ -221,7 +226,7 @@ a:hover {
 
 .subnote,
 figcaption {
-	font-size: 0.9rem;
+	font-size: var(--font-xxs);
 	line-height: 1.3rem;
 	font-family: var(--font-accent);
 }
@@ -249,7 +254,7 @@ figcaption {
 
 .highlight-anim {
 	color: var(--text-color);
-	background-size: 5000%;
+	background-size: 400%;
 	background-color: var(--text-color);
 	background-image: var(--gradient);
 	animation: background-animation 60s infinite;
@@ -272,7 +277,7 @@ figcaption {
 }
 
 .subheading {
-	font-size: 0.9rem;
+	font-size: var(--font-xs);
 	font-family: var(--font-accent);
 	line-height: 1.4rem;
 }
@@ -374,7 +379,7 @@ iii. components
 
 code {
 	font-family: var(--font-accent);
-	font-size: 0.8rem;
+	font-size: var(--font-xxs);
 	color: var(--text-hover);
 	background-color: var(--btn-bg-color);
 	border-radius: 0.188rem;

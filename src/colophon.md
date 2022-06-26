@@ -20,7 +20,7 @@ description: Giving credit and saying thanks are integral to reminding ourselves
 		<div class="row">
 			<div class="column">
 				<header>
-					<h2>Land acknowledgement</h2>
+					<h2>Colonialism is genocide</h2>
 				</header>
 			</div>
 			<div class="double-column">
