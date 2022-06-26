@@ -35,9 +35,9 @@ i. global styles
 	--font-sm: 1.125rem; /* p */
 	--font-xs: 1rem; /* subnote, figcaption, subheading */
 	--font-xxs: 0.889rem; /* code, a-icons */
-	--gradient: linear-gradient(217deg, var(--yellow-color), rgba(255, 236, 25, 0) 70.71%),
+	--gradient: linear-gradient(217deg, var(--cyan-color), rgba(25, 209, 255, 0) 70.71%),
 		linear-gradient(127deg, var(--magenta-color), rgba(255, 0, 89, 0) 70.71%),
-		linear-gradient(336deg, var(--cyan-color), rgba(25, 209, 255, 0) 70.71%);
+		linear-gradient(336deg, var(--yellow-color), rgba(255, 236, 25, 0) 70.71%);
 	--magenta-color: rgb(255, 0, 89);
 	--yellow-color: rgb(255, 236, 25);
 	--cyan-color: rgb(25, 209, 255);
