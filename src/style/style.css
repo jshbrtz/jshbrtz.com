@@ -171,7 +171,7 @@ a[href^="mailto"]:after {
 	color: var(--text-color-thin);
 	vertical-align: middle;
 	padding-left: 0.25rem;
-	padding-bottom: 0.28rem;
+	padding-bottom: 0.26rem;
 }
 
 /* created to override link styles on buttons and button-like accessories */
