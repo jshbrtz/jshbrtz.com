@@ -56,7 +56,7 @@ description: Giving credit and saying thanks are integral to reminding ourselves
 				</header>
 			</div>
 			<div class="double-column">
-				<p>Tremendous thanks to Maggie Armstrong, Molly Rowan, <a href="https://brianchmiller.com">Brian Miller</a>, Ryan Rud, Craig Gieselman, <a href="http://www.michaelcullenbenson.com/index.html">Michael Cullen-Benson</a>, Kraig Schroth, Erin Merchant, Betty Rowan, and <a href="https://aeoneal.com/">Alex O'Neal</a> for feedback, support, troubleshooting, and inspiration.</p>
+				<p>A personal website, in the best of conditions, is still a collaborative project. Tremendous thanks to Maggie Armstrong, Molly Rowan, <a href="https://brianchmiller.com">Brian Miller</a>, Ryan Rud, Craig Gieselman, <a href="http://www.michaelcullenbenson.com/index.html">Michael Cullen-Benson</a>, Kraig Schroth, Erin Merchant, Betty Rowan, and <a href="https://aeoneal.com/">Alex O'Neal</a> for feedback, support, troubleshooting, and inspiration.</p>
 				<p>&#127873; Feedback is a gift. Can the site be improved?<br><a href="{{ site.email }}">Email me</a>. I'd be happy to hear from you.</p>
 			</div>
 		</div>

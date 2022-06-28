@@ -10,7 +10,7 @@ description: "{{ description }}"
 	<div class="container-narrow">
 			<header>
 				<h1>{{ title }}</h1>
-				<p class="subheading">Posted on <time datetime={{ page.date }}">{{ page.date | readableDate }}</time><br>{{ content | emojiReadTime }}</p>
+				<p class="subheading"><time datetime={{ page.date }}">{{ page.date | readableDate }}</time> &#8212; {{ content | emojiReadTime }}</p>
 			</header>
 	</div>
 </section>
