@@ -306,9 +306,11 @@ iii. components
 }
 
 .avatar {
-	border-radius: 50%;
+	border-radius: 25% 2px 25% 2px;
 	width: 8rem;
 	height: 8rem;
+	padding: 0.25rem;
+	/* filter: drop-shadow(0 3px 1px var(--btn-bg-color)) */
 }
 
 .btn,
