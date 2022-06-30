@@ -7,20 +7,35 @@ description: "{{ description }}"
 {% include "partials/primary-nav.html" %}
 
 <section id="heading" class="greeting">
-	<div class="container-narrow">
+	<div class="row container-narrow">
 			<header>
 				<h1>{{ title }}</h1>
-				<p class="subheading">Posted on <time datetime={{ page.date }}">{{ page.date | readableDate }}</time><br>{{ content | emojiReadTime }}</p>
+				<p class="subheading"><time datetime={{ page.date }}">{{ page.date | readableDate }}</time> &#8212; {{ content | emojiReadTime }}</p>
 			</header>
 	</div>
 </section>
-
 <section id="post-body">
 	<div class="row container-narrow">
 		<div class="double-column">
 			
 			{{ content | safe }}
 			
+		</div>
+	</div>
+</section>
+<section id="recent-posts">
+	<div class="row container-narrow">
+		<div class="double-column">
+			<h2>Recent posts</h2>
+			<ul class="no-list-decor">
+				{% for post in collections.releasedPosts %}
+					{% if loop.index0 < 5 %}
+						<article>
+							<li><span class="subheading">{{ post.data.date | readableDate }} &#8212; </span><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+						</article>
+					{% endif %}
+				{% endfor %}
+	 		</ul>
 		</div>
 	</div>
 </section>

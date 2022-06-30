@@ -31,8 +31,8 @@ i. global styles
 	--font-xxl: 2.074rem; /* h1 */
 	--font-xl: 1.728rem; /* h2 */
 	--font-lg: 1.44rem; /* h3 */
-	--font-md: 1.2rem; /* h4 */
-	--font-sm: 1.125rem; /* p */
+	--font-md: 1.2rem; /* p */
+	--font-sm: 1.125rem; 
 	--font-xs: 1rem; /* subnote, figcaption, subheading */
 	--font-xxs: 0.889rem; /* code, a-icons */
 	--gradient: linear-gradient(217deg, var(--cyan-color), rgba(25, 209, 255, 0) 70.71%),
@@ -45,8 +45,7 @@ i. global styles
 	--heading-color: rgba(33, 33, 33, 1);
 	--text-color: rgba(33, 33, 33, 1);
 	--text-color-thin: rgba(58, 58, 58, 1);
-	--btn-bg-color: rgba(104, 104, 104, 0.1);
-	--footer-color: rgba(33, 33, 33, 1);
+	--btn-bg-color: rgba(104, 104, 104, 0.15);
 	--bg-color: rgb(255,255,255);
 	--bg-color-thin: rgba(33, 33, 33,, 0.5); /* being used on the secondary nav */
 }
@@ -66,7 +65,7 @@ i. global styles
 		--heading-color: rgba(225, 225, 225, 1);
 		--text-color: rgba(226, 226, 226, 1);
 		--text-color-thin: rgba(188, 188, 188, 1);
-		--btn-bg-color: rgba(229, 229, 229, 0.1);
+		--btn-bg-color: rgba(229, 229, 229, 0.15);
 		--footer-color: rgba(203, 203, 203, 1);
 		--bg-color: rgb(8, 5, 21);
 		--bg-color-thin: rgba(8, 5, 21, 0.5);
@@ -97,7 +96,6 @@ ii. typography
 h1,
 h2,
 h3,
-h4,
 .secondary-nav,
 .no-link-decor {
 	font-family: var(--font-primary);
@@ -169,9 +167,8 @@ a[href^="mailto"]:after {
 	font-family: jshbrtz;
 	font-size: 0.65rem;
 	color: var(--text-color-thin);
-	vertical-align: middle;
+	vertical-align: top;
 	padding-left: 0.25rem;
-	padding-bottom: 0.26rem;
 }
 
 /* created to override link styles on buttons and button-like accessories */
@@ -180,6 +177,12 @@ a[href^="mailto"]:after {
 	text-decoration: none;
 	background-image: none;
 	border: unset;
+}
+
+.no-link-decor:after {
+	content: '' !important;
+	padding: 0;
+	font-size: inherit;
 }
 
 .subnote,
@@ -342,7 +345,7 @@ code {
 	color: var(--text-hover);
 	background-color: var(--btn-bg-color);
 	border-radius: 0.188rem;
-	border: 0.07rem solid var(--text-color-thin);
+	/* border: 0.07rem solid var(--text-color-thin); */
 	padding: 0.2rem 0.3rem;
 	transition: 0.1s ease-in;
 	width: fit-content;

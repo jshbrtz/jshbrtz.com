@@ -5,6 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="{{ site.author }}">
 	<meta name="description" content="{{ description }}">
+	<meta property="og:title" content="{{ title }}, by {{ site.author }}" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+	<!-- <meta property="og:image" content="" /> -->
 	<title>{{ title }} | {{ site.title }}</title>
 	<link rel="icon" href="/favicon.ico" sizes="any">
 	<link rel="icon" href="/icon.svg" type="image/svg+xml">
@@ -25,7 +29,7 @@
 	</main>
 	<footer class="row container-narrow">
 		<div class="column">
-			<p class="subnote">© {% copyrightyear %} {{ site . author }}<br>
+			<p class="subnote">© {% copyrightyear %} {{ site.author }}<br>
 			<a href="/colophon">Colophon</a></p>
 		</div>
 		<!-- <div class="r-align">
