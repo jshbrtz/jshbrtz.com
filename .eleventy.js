@@ -2,6 +2,11 @@
 
 const { DateTime } = require('luxon');
 const emojiReadTime = require("@11tyrocks/eleventy-plugin-emoji-readtime");
+const hideFutureItems = (post) => {
+  let now = new Date().getTime();
+  if (now < post.date.getTime()) return false;
+  return true;
+}
 
 module.exports = function (eleventyConfig) {
 	
@@ -52,6 +57,13 @@ module.exports = function (eleventyConfig) {
 	  const params = new URLSearchParams(paramPart || "");
 	  params.set("v", DateTime.local().toFormat("X"));
 	  return `${urlPart}?${params}`;
+	});
+	
+	// ignore blog posts from the future source: https://www.maxwellantonucci.com/posts/2020/10/27/scheduled-eleventy-posts/
+	eleventyConfig.addCollection("releasedPosts", function (collection) {
+	 return collection.getFilteredByGlob("./src/posts/*.md")
+	   .filter(hideFutureItems)
+	   .reverse();
 	});
 	
 	// Markdown-It 'markdownify' filter source: BradCoffield/kidlitconnection@e42a6de)

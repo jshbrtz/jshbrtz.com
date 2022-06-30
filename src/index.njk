@@ -66,7 +66,7 @@ description: "Joshua Bartz is a curious person with too many hobbies, specializi
 			<h2>And I write on occasion. &nbsp;&#9997;&#65039;</h2>
 			<p>Expect links from across the web, updates on real-world projects, and design and ethics talk &#8212; with an infrequent hot take on music, books, and cooking.</p>
 			<ul class="no-list-decor">
-				{% for post in collections.post | reverse %}
+				{% for post in collections.releasedPosts %}
 					{% if loop.index0 < 5 %}
 						<article>
 							<li><span class="subheading">{{ post.data.date | readableDate }} &#8212; </span><a href="{{ post.url }}">{{ post.data.title }}</a></li>

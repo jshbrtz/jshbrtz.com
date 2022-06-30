@@ -167,9 +167,8 @@ a[href^="mailto"]:after {
 	font-family: jshbrtz;
 	font-size: 0.65rem;
 	color: var(--text-color-thin);
-	vertical-align: middle;
+	vertical-align: top;
 	padding-left: 0.25rem;
-	padding-bottom: 0.26rem;
 }
 
 /* created to override link styles on buttons and button-like accessories */
