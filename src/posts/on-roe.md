@@ -1,5 +1,5 @@
 ---
-title: "On Roe, and the duplicity of business"
+title: "On human rights, and the duplicity of business"
 tags: post
 date: 2022-06-30
 layout: layouts/post.html
