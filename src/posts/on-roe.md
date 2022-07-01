@@ -19,13 +19,13 @@ The opening keynote video at our customer conference that year used the rubble o
 In a meeting on January 6th, 2021, I was told that I can watch the recording of the insurrection at the US Capitol later on YouTube. The meeting &#8212; the business &#8212; was more important. Following company-wide pressure to increase workloads and raise prices on our customers despite the already favorable earnings reports, and as the major news outlets shifted away from our protests, the company's meager interest in social causes and the welfare of their workforce faded. I left the job several months later.
 
 ### On Roe's overturn and the deafening silence of Tech
-This month, under the guise of religious righteousness, five people in our highest court have determined that the women of the United States are no longer entitled to their own life story, that they do not deserve the kinds of protections and autonomy afforded to men.
+This month, under the guise of religious righteousness, five people in our highest court have determined that people with uteruses in the United States are no longer entitled to their own life story, that they do not deserve the kinds of protections and autonomy afforded to the other half of the population.
 
-In the coming months, we will see stories about women sent to prison, "caught" in attempt to abort a pregnancy conceived through rape. Abusive men are more emboldened than ever. Their anatomy can be weaponized to force lifelong suffering on their victims. <a href="https://news.gallup.com/poll/1576/abortion.aspx">Less than 13% of Americans</a> will be openly celebrating this cruelty while half of Congress will block efforts to codify reproductive care into law. 
+We will see stories about people sent to prison for attempting to terminate a pregnancy in the coming months. <a href="https://news.gallup.com/poll/1576/abortion.aspx">Less than 13% of Americans</a> celebrate this cruelty, while half of Congress will block efforts to codify reproductive care into law.
 
 Our most powerful industries have already turned a blind eye. Businesses now have more control over their workforce. In the United States, now more than ever, maintaining a job is now the requirement to spare us not just bankruptcy, but risk of death from the complications of pregnancy. We are at the mercy of the benefits and salaries of the jobs we manage to get. The companies that push against these oppressive rulings are becoming oases, mirroring political effects happening with <a href="https://www.facingsouth.org/2015/11/urban-oasis-democrats-lead-souths-major-cities">many major cities in the US</a>.
 
-My previous employer attempted to silence the anguish on their internal Slack with an "all sides matter" message, again out of fear of alienating those few who were decidedly celebrating the overturn, while unwittingly alienating the majority. They issued a mandate to managers to police and shut down the discussions. Silencing and subjugating women for their justifiable anger is not a great look.
+My previous employer attempted to silence the anguish on their internal Slack with an "all sides matter" message, again out of fear of alienating those few who were decidedly celebrating the overturn, while unwittingly alienating the majority. They issued a mandate to managers to police and shut down the discussions. Silencing and subjugating people for their justifiable anger is not a great look.
 
 What my former co-workers are witnessing is not isolated. Big tech companies are <a href="https://www.theverge.com/2022/6/30/23189810/abortion-rights-activism-big-tech-employees">expanding their footprint</a> in the most oppressive states like Florida and Texas, where their political influence could create great change. Instead, they've chosen to invest in union-busting efforts while sending lobbyists to Congress to promote laws that block or slow industry regulation and protect their power to harvest personal data for profit.
 
@@ -36,7 +36,7 @@ Design also has the immense power to change the world for the better. We have th
 
 <span class="highlight">Human rights cannot be just another seasonal marketing refresh opportunity.</span>
 
-If you and your organization are working to bring tools to the world that help women seek passage to safe reproductive care, access to safe housing if the nearest provider is too far from home, I want to help. The Court has forced a tremendous burden on women, but we in Tech and Design have an ethical and moral responsibility to ease that as much as possible.
+If you and your organization are working to bring tools to the world that help people seek passage to safe reproductive care, access to safe housing if the nearest provider is too far from home, I want to help. The Court has forced a tremendous burden on us, but we in Tech and Design have an ethical and moral responsibility to ease that as much as possible.
 
 DM me <a href="https://www.twitter.com/jshbrtz">@jshbrtz</a> on Twitter or <a href="{{ site.email }}">email me</a>. Let's talk.
 
