@@ -146,15 +146,16 @@ strong {
 a {
 	background-color: transparent;
 	color: inherit;
-	text-decoration: none;
-	transition: background .15s cubic-bezier(.33,.66,.66,1);
-	border-bottom: 0.1rem solid var(--magenta-color);
+	text-decoration: underline;
+	text-decoration-thickness: 0.1rem;
+	text-decoration-color:  var(--magenta-color);
+	text-underline-offset: 0.17rem;
 	transition: 0.1s ease-in-out;
 }
 
 a:hover {
 	color: var(--text-hover);
-	border-bottom: 0.17rem solid var(--magenta-color);
+	text-decoration-thickness: 0.17rem;
 	transition: 0.1s ease-in-out;
 }
 
