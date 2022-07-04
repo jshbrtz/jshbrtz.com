@@ -35,12 +35,12 @@ i. global styles
 	--font-sm: 1.125rem; 
 	--font-xs: 1rem; /* subnote, figcaption, subheading */
 	--font-xxs: 0.889rem; /* code, a-icons */
-	--gradient: linear-gradient(217deg, var(--cyan-color), rgba(25, 209, 255, 0) 70.71%),
-		linear-gradient(127deg, var(--magenta-color), rgba(255, 0, 89, 0) 70.71%),
-		linear-gradient(336deg, var(--yellow-color), rgba(255, 236, 25, 0) 70.71%);
-	--magenta-color: rgb(255, 0, 89);
-	--yellow-color: rgb(255, 236, 25);
-	--cyan-color: rgb(25, 209, 255);
+	--gradient: linear-gradient(217deg, var(--cyan-color), hsla(192, 100%, 55%, 0) 70.71%),
+		linear-gradient(127deg, var(--magenta-color), hsla(339, 100%, 50%, 0) 70.71%),
+		linear-gradient(336deg, var(--yellow-color), hsla(55, 100%, 55%, 0) 70.71%);
+	--magenta-color: hsl(339, 100%, 50%);
+	--yellow-color: hsl(55, 100%, 55%);
+	--cyan-color: hsl(192, 100%, 55%);
 	--text-hover: #000;
 	--heading-color: rgba(33, 33, 33, 1);
 	--text-color: rgba(33, 33, 33, 1);
@@ -156,7 +156,7 @@ a {
 a:hover {
 	color: var(--text-hover);
 	text-decoration-thickness: 0.17rem;
-	transition: 0.1s ease-in-out;
+	transition: 0.05s ease-in-out;
 }
 
 /* adds external link icon to all outbound links */
@@ -184,6 +184,7 @@ a[href^="mailto"]:after {
 	content: '' !important;
 	padding: 0;
 	font-size: inherit;
+	vertical-align: revert;
 }
 
 .subnote,
