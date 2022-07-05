@@ -171,11 +171,11 @@ a[href^="mailto"]:after {
 	content: '\e803';
 	display: inline-block;
 	font-family: jshbrtz;
-	font-size: 0.65rem;
+	font-size: 0.7rem;
 	color: var(--text-color-thin);
 	vertical-align: middle;
 	padding-left: 0.25rem;
-	transform: translateY(-0.1rem);
+	transform: translateY(-0.05rem);
 }
 
 /* created to override link styles on buttons and button-like accessories */
@@ -222,11 +222,7 @@ figcaption {
 
 *::selection {
 	color: var(--text-hover);
-	background-color: var(--yellow-color);
-}
-
-em {
-	color: var(--magenta-color);
+	background-color: var(--cyan-color);
 }
 
 .highlight-anim {
@@ -376,10 +372,10 @@ code {
 .icon-back,
 .icon-external,
 .icon-forward {
+	display: inline-block;
 	align-content: center;
 	vertical-align: middle;
 	font-size: 0.6rem;
-	transform: translateY(-0.1rem);
 }
 
 .icon-back:before {
@@ -392,6 +388,11 @@ code {
 
 .icon-external2:before {
 	content: '\e803';
+}
+
+p .icon-forward {
+	color: var(--text-color-thin);
+	transform: translateY(-0.1rem);
 }
 
 .icon-forward:before {
