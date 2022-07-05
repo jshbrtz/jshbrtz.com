@@ -84,7 +84,7 @@ i. global styles
 body {
 	font-family: var(--font-primary);
 	font-size: var(--font-md);
-	line-height: 1.75;
+	line-height: 1.5;
 	color: var(--text-color);
 	background-color: var(--bg-color);
 }
@@ -92,6 +92,11 @@ body {
 /* ===================
 ii. typography
 =================== */
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
 
 h1,
 h2,
@@ -123,7 +128,7 @@ h3 {
 p,
 ul {
 	font-size: var(--font-md);
-	line-height: 1.75rem;
+	line-height: 1.75;
 	margin-bottom: 1.4rem;
 }
 
@@ -149,14 +154,14 @@ a {
 	text-decoration: underline;
 	text-decoration-thickness: 0.1rem;
 	text-decoration-color:  var(--magenta-color);
-	text-underline-offset: 0.17rem;
-	transition: 0.1s ease-in-out;
+	text-underline-offset: 0.14rem;
+	transition: 0.1s ease;
 }
 
 a:hover {
 	color: var(--text-hover);
-	text-decoration-thickness: 0.17rem;
-	transition: 0.05s ease-in-out;
+	text-decoration-thickness: 0.15rem;
+	transition: 0.05s ease;
 }
 
 /* adds external link icon to all outbound links */
@@ -168,8 +173,9 @@ a[href^="mailto"]:after {
 	font-family: jshbrtz;
 	font-size: 0.65rem;
 	color: var(--text-color-thin);
-	vertical-align: top;
+	vertical-align: middle;
 	padding-left: 0.25rem;
+	transform: translateY(-0.1rem);
 }
 
 /* created to override link styles on buttons and button-like accessories */
@@ -177,7 +183,6 @@ a[href^="mailto"]:after {
 .no-link-decor:hover {
 	text-decoration: none;
 	background-image: none;
-	border: unset;
 }
 
 .no-link-decor:after {
@@ -215,6 +220,15 @@ figcaption {
 	background-color: var(--magenta-color);
 }
 
+*::selection {
+	color: var(--text-hover);
+	background-color: var(--yellow-color);
+}
+
+em {
+	color: var(--magenta-color);
+}
+
 .highlight-anim {
 	color: var(--text-color);
 	background-size: 400%;
@@ -226,6 +240,11 @@ figcaption {
 @media (prefers-color-scheme: dark) {
 	.highlight {
 		color: var(--text-color);
+	}
+	
+	*::selection {
+		color: var(--bg-color);
+		background-color: var(--cyan-color);
 	}
 	
 	.highlight-anim {
@@ -347,7 +366,6 @@ code {
 	color: var(--text-hover);
 	background-color: var(--btn-bg-color);
 	border-radius: 0.188rem;
-	/* border: 0.07rem solid var(--text-color-thin); */
 	padding: 0.2rem 0.3rem;
 	transition: 0.1s ease-in;
 	width: fit-content;
@@ -361,6 +379,7 @@ code {
 	align-content: center;
 	vertical-align: middle;
 	font-size: 0.6rem;
+	transform: translateY(-0.1rem);
 }
 
 .icon-back:before {
@@ -407,10 +426,14 @@ code {
 	float: right;
 }
 
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
 .img-row img,
 .img-row video {
 	max-height: 25rem;
-	max-width: 100%;
 	object-fit: contain;
 }
 
