@@ -84,7 +84,7 @@ i. global styles
 body {
 	font-family: var(--font-primary);
 	font-size: var(--font-md);
-	line-height: 1.5;
+	line-height: 1.6;
 	color: var(--text-color);
 	background-color: var(--bg-color);
 }
@@ -128,7 +128,7 @@ h3 {
 p,
 ul {
 	font-size: var(--font-md);
-	line-height: 1.75;
+	line-height: 1.6;
 	margin-bottom: 1.4rem;
 }
 
