@@ -27,15 +27,7 @@ description: "{{ description }}"
 	<div class="row container-narrow">
 		<div class="double-column">
 			<h2>Recent posts</h2>
-			<ul class="no-list-decor">
-				{% for post in collections.releasedPosts %}
-					{% if loop.index0 < 5 %}
-						<article>
-							<li><span class="subheading">{{ post.data.date | readableDate }} &#8212; </span><a href="{{ post.url }}">{{ post.data.title }}</a></li>
-						</article>
-					{% endif %}
-				{% endfor %}
-	 		</ul>
+			{% include "partials/blogroll.html" %}
 		</div>
 	</div>
 </section>

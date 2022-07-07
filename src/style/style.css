@@ -26,15 +26,16 @@ i. global styles
 }
 
 :root {
-	--font-accent: 'dico-code-one', 'Menlo Regular', 'Lucida Sans Typewriter', monospace;
+	--font-heading: 'effra', sans-serif;
 	--font-primary: 'effra', 'Helvetica', 'Arial', sans-serif;
-	--font-xxl: 2.074rem; /* h1 */
-	--font-xl: 1.728rem; /* h2 */
-	--font-lg: 1.44rem; /* h3 */
-	--font-md: 1.2rem; /* p */
-	--font-sm: 1.125rem; 
-	--font-xs: 1rem; /* subnote, figcaption, subheading */
-	--font-xxs: 0.889rem; /* code, a-icons */
+	--font-accent: 'dico-code-one', 'Menlo Regular', 'Lucida Sans Typewriter', monospace;
+	--size-xxl: 2.074rem; /* h1 */
+	--size-xl: 1.728rem; /* h2 */
+	--size-lg: 1.44rem; /* h3 */
+	--size-md: 1.2rem; /* p */
+	--size-sm: 1.125rem; 
+	--size-xs: 1rem; /* subnote, figcaption, subheading */
+	--size-xxs: 0.889rem; /* code, a-icons */
 	--gradient: linear-gradient(217deg, var(--cyan-color), hsla(192, 100%, 55%, 0) 70.71%),
 		linear-gradient(127deg, var(--magenta-color), hsla(339, 100%, 50%, 0) 70.71%),
 		linear-gradient(336deg, var(--yellow-color), hsla(55, 100%, 55%, 0) 70.71%);
@@ -83,7 +84,7 @@ i. global styles
 /* continued expectations setting; establishing healthy boundaries */
 body {
 	font-family: var(--font-primary);
-	font-size: var(--font-md);
+	font-size: var(--size-md);
 	line-height: 1.6;
 	color: var(--text-color);
 	background-color: var(--bg-color);
@@ -93,7 +94,7 @@ body {
 ii. typography
 =================== */
 
-p, h1, h2, h3, h4, h5, h6 {
+p, h1, h2, h3 {
   overflow-wrap: break-word;
   hyphens: auto;
 }
@@ -103,38 +104,35 @@ h2,
 h3,
 .secondary-nav,
 .no-link-decor {
-	font-family: var(--font-primary);
+	font-family: var(--font-heading);
 	font-style: normal;
 	color: var(--heading-color);
 	line-height: 1.3;
 }
 
 h1 {
-	font-size: var(--font-xxl);
+	font-size: var(--size-xxl);
 }
 
 h2 {
-	font-size: var(--font-xl);
+	font-size: var(--size-xl);
 	margin-bottom: 0.4rem;
 	margin-right: 0.5rem;
 }
 
 h3 {
-	font-family: var(--font-primary);
-	font-size: var(--font-lg);
-	margin-bottom: 0.5rem;
+	font-size: var(--size-lg);
+	margin-bottom: var(--xxxs);
 }
 
-p,
-ul {
-	font-size: var(--font-md);
-	line-height: 1.6;
+p {
+	font-size: var(--size-md);
 	margin-bottom: 1.4rem;
 }
 
 .secondary-nav,
 .no-link-decor {
-	font-size: var(--font-xs);
+	font-size: var(--size-xs);
 }
 
 strong {
@@ -149,7 +147,6 @@ strong {
 }
 
 a {
-	background-color: transparent;
 	color: inherit;
 	text-decoration: underline;
 	text-decoration-thickness: 0.1rem;
@@ -194,7 +191,7 @@ a[href^="mailto"]:after {
 
 .subnote,
 figcaption {
-	font-size: var(--font-xxs);
+	font-size: var(--size-xxs);
 	line-height: 1.3rem;
 	font-family: var(--font-accent);
 }
@@ -256,7 +253,7 @@ figcaption {
 }
 
 .subheading {
-	font-size: var(--font-xs);
+	font-size: var(--size-xs);
 	font-family: var(--font-accent);
 	line-height: 1.4rem;
 }
@@ -271,11 +268,11 @@ ol {
 }
 
 li {
-	margin-bottom: 0.6rem;
+	margin-bottom: var(--size-xs);
 }
 
 /* used primarily on the playlists page */
-.chrono-lists li{
+.chrono-lists li {
 	margin-bottom: 3rem;
 	height: 8rem;
 }
@@ -358,7 +355,7 @@ iii. components
 
 code {
 	font-family: var(--font-accent);
-	font-size: var(--font-xxs);
+	font-size: var(--size-xxs);
 	color: var(--text-hover);
 	background-color: var(--btn-bg-color);
 	border-radius: 0.188rem;
