@@ -6,7 +6,7 @@ description: Curated playlists for every season going back to 2018.
 ---
 
 <div class="secondary-nav">
-	<nav id="page-nav">
+	<nav class="page-nav">
 		{% include "partials/nav-logo.html" %}
 		<a href=".." class="l-align btn-icon icon-back no-link-decor" alt="back"></a>
 		<a href="#2022" class="btn no-link-decor">2022</a>
@@ -18,7 +18,7 @@ description: Curated playlists for every season going back to 2018.
 </div>
 
 <section id="heading" class="greeting">
-	<div class="container-narrow">
+	<div class="row container-narrow">
 		<header>
 			<h1>{{ title }}</h1>
 			<p class="subheading">Music is one of my most important social bridges. I concatenate songs throughout a season to remind me of a moment, place or mood.</p>

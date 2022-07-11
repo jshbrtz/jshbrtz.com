@@ -3,7 +3,7 @@ title: Design and development tools
 tags: post
 date: 2022-06-26
 layout: layouts/post.html
-description: The 2022 annual update on the software and hardware in my workflow.
+description: The 2022 update on the software and hardware in my workflow.
 ---
 
 While we should always pick the right tool for the job, these are the apps and hardware I use the most.

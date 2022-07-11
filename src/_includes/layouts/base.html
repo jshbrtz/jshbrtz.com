@@ -16,8 +16,6 @@
 		<link rel="stylesheet" type="text/css" href="{{ '/style/style.css' | url | bust }}">
 	</noscript>
 	<link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="{{ '/style/jshbrtz.css' | url | bust }}">
-	<!-- <link rel="preconnect" href="https://use.typekit.net" crossorigin />
-	<link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="{{ 'https://use.typekit.net/pnx3xoi.css' | url | bust }}"> -->
 	<link rel="preconnect" href="https://fonts.googleapis.com"> 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;900&family=Noto+Serif:ital@1&family=Space+Mono&display=swap" rel="stylesheet">
@@ -27,14 +25,10 @@
 		{{ content | safe }}
 	</main>
 	<footer class="row container-narrow">
-		<div class="column">
-			<p class="subnote">Copyright {% copyrightyear %} {{ site.author }}<br>
-			<a href="/colophon">Colophon</a></p>
-		</div>
-		<!-- <div class="r-align">
-			<p class="subnote"><span class="light-mode">Also available in dark mode.</span>
-			<span class="dark-mode">Also available in light mode.</span></p>
-		</div> -->
+		<p>Copyright {% copyrightyear %} {{ site.author }}</p>
+		<p class="r-align">
+			<a href="/colophon">Colophon</a>
+		</p>
 	</footer>
 <!-- Designed and coded by {{ site.author }} -->
 </body>

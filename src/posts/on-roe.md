@@ -3,7 +3,7 @@ title: "On human rights and the duplicity of business"
 tags: post
 date: 2022-06-30
 layout: layouts/post.html
-description: Access to healthcare is simply a human right. We can create the tools for positive change.
+description: Access to healthcare is simply a human right. We have the opportunity to create tools for positive change.
 ---
 
 ### Performative social impact capitalism
@@ -30,7 +30,7 @@ My previous employer attempted to silence the anguish on their internal Slack wi
 What my former co-workers are witnessing is not isolated. Big tech companies are <a href="https://www.theverge.com/2022/6/30/23189810/abortion-rights-activism-big-tech-employees">expanding their footprint</a> in the most oppressive states like Florida and Texas, where their political influence could create great change. Instead, they've chosen to invest in union-busting efforts while sending lobbyists to Congress to promote laws that block or slow industry regulation and protect their power to harvest personal data for profit.
 
 ### Let's change things
-Design is political. Business is political. Our decisions now can have ramifications for generations. <span class="highlight">Human rights cannot be just another seasonal marketing refresh opportunity.</span> Design also has the immense power to change the world for the better. We have the most powerful tools in human history in our pockets to connect people and point them to the resources they need. Tech must choose to take a stance for human rights and the sanctity of the individual.
+Design is political. Business is political. Our decisions now can have ramifications for generations. <em>Human rights cannot be just another seasonal marketing refresh opportunity.</em> Design also has the immense power to change the world for the better. We have the most powerful tools in human history in our pockets to connect people and point them to the resources they need. Tech must choose to take a stance for human rights and the sanctity of the individual.
 
 If you and your organization are working to bring tools to the world that help people seek passage to safe reproductive care, access to safe housing if the nearest provider is too far from home, I want to help. The Court has forced a tremendous burden on us, but we in Tech and Design have an ethical and moral responsibility to ease that as much as possible.
 

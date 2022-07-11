@@ -6,7 +6,7 @@ description: A two-year project to empower small businesses with better IT tools
 ---
 
 <div class="secondary-nav">
-	<nav id="page-nav">
+	<nav class="page-nav">
 		{% include "partials/nav-logo.html" %}
 		<a href=".." class="l-align btn-icon icon-back no-link-decor" alt="back"></a>
 		<a href="#product" class="btn no-link-decor">Product</a>

@@ -36,6 +36,7 @@ i. global styles
 	--size-sm: 1.125rem; 
 	--size-xs: 1rem; /* subnote, figcaption, subheading */
 	--size-xxs: 0.889rem; /* code, a-icons */
+	--size-xxxs: 0.444rem;
 	--gradient: linear-gradient(217deg, var(--cyan-color), hsla(192, 100%, 55%, 0) 70.71%),
 		linear-gradient(127deg, var(--magenta-color), hsla(339, 100%, 50%, 0) 70.71%),
 		linear-gradient(336deg, var(--yellow-color), hsla(55, 100%, 55%, 0) 70.71%);
@@ -46,19 +47,11 @@ i. global styles
 	--heading-color: rgba(33, 33, 33, 1);
 	--text-color: rgba(33, 33, 33, 1);
 	--text-color-thin: rgba(58, 58, 58, 1);
+	--footer-color: rgba(84, 84, 84, 1);
 	--btn-bg-color: rgba(104, 104, 104, 0.15);
 	--bg-color: rgb(255,255,255);
 	--bg-color-thin: rgba(33, 33, 33,, 0.5); /* being used on the secondary nav */
 }
-	
-	/* a little banner ad in the footer for dark mode */
-	span.light-mode {
-		display: inline-block;
-	}
-	
-	span.dark-mode {
-		display: none;
-	}
 
 @media (prefers-color-scheme: dark) {
 	:root {
@@ -66,18 +59,10 @@ i. global styles
 		--heading-color: rgba(225, 225, 225, 1);
 		--text-color: rgba(226, 226, 226, 1);
 		--text-color-thin: rgba(188, 188, 188, 1);
+		--footer-color: rgba(175, 175, 175, 1);
 		--btn-bg-color: rgba(229, 229, 229, 0.15);
-		--footer-color: rgba(203, 203, 203, 1);
 		--bg-color: rgb(8, 5, 21);
 		--bg-color-thin: rgba(8, 5, 21, 0.5);
-	}
-	
-	/* a little banner ad in the footer for light mode */
-	span.light-mode {
-		display: none;
-	}
-	span.dark-mode {
-		display: inline-block;
 	}
 }
 
@@ -85,14 +70,10 @@ i. global styles
 body {
 	font-family: var(--font-primary);
 	font-size: var(--size-sm);
-	line-height: 1.6;
-	/* line-height: calc(0.5rem + 1em); */
+	line-height: 1.5;
+	line-height: calc(0.6rem + 1em);
 	color: var(--text-color);
 	background-color: var(--bg-color);
-}
-
-.flow > * + * {
-	margin-top: var(--flow-space, 1em);
 }
 
 /* ===================
@@ -112,32 +93,33 @@ h3 {
 	font-weight: 900;
 	color: var(--heading-color);
 	letter-spacing: -0.02em;
-	line-height: 1.3;
 }
 
 h1 {
 	font-size: var(--size-xxl);
+	line-height: 1;
+	margin-bottom: var(--size-xxxs); 
 }
 
 h2 {
 	font-size: var(--size-xl);
-	margin-bottom: 0.5rem;
+	margin-bottom: var(--size-xxxs);
 	margin-right: 0.5rem;
+	line-height: 1.4;
 }
 
 h3 {
 	font-size: var(--size-lg);
-	margin-bottom: var(--xxxs);
+	margin-bottom: var(--size-xxxs);
 }
 
 p {
 	font-size: var(--size-md);
-	margin-bottom: 1.4rem;
+	margin-bottom: var(--size-lg);
 }
 
-.secondary-nav,
-.no-link-decor {
-	font-size: var(--size-xs);
+.secondary-nav {
+	font-size: var(--size-xxs);
 }
 
 strong {
@@ -198,9 +180,9 @@ a[href^="mailto"]:after {
 	vertical-align: revert;
 }
 
-.secondary-nav,
 .subnote,
-figcaption {
+figcaption,
+footer p {
 	font-size: var(--size-xxs);
 	line-height: 1.3rem;
 	font-family: var(--font-accent);
@@ -223,8 +205,8 @@ figcaption {
 	border-radius: 2px;
 	padding-left: 0.2rem;
 	padding-right: 0.2rem;
-	padding-top: 0.1rem;
-	padding-bottom: 0.1rem;
+	padding-top: 0.05em;
+	padding-bottom: 0.05em;
 }
 
 .highlight {
@@ -263,9 +245,11 @@ figcaption {
 }
 
 .subheading {
-	font-size: var(--size-xs);
-	font-family: var(--font-accent);
-	line-height: 1.4rem;
+	font-size: var(--size-md);
+	font-family: var(--font-primary);
+	color: var(--footer-color);
+	font-weight: 500;
+	line-height: 1.5em;
 }
 
 ul {
@@ -318,11 +302,11 @@ iii. components
 	position: sticky;
 	top: 0px;
 	width: 100%;
-	padding-top: 0.5rem;
+	padding-top: 0.3rem;
 	padding-right: 0.75rem;
 	background-color: var(--bg-color);
 	z-index: 1000;
-	min-height: 3rem;
+	min-height: 2.4rem;
 }
 
 /* note to self: firefox 90 (unreleased) does not support this. remove once supported. */
@@ -338,19 +322,20 @@ iii. components
 	border-radius: 50%;
 	width: 8rem;
 	height: 8rem;
+	margin-bottom: 3rem;
 }
 
 .btn,
 .btn-icon {
 	background-color: none;
-	border-radius: 0.188rem;
+	border-radius: 2px;
 	border: none;
 	transition: 0.1s ease-in;
 	width: fit-content;
 }
 
 .btn {
-	padding: 0.3rem 0.5rem;
+	padding: 0.2rem 0.5rem;
 }
 
 .btn-icon {
@@ -430,9 +415,15 @@ p .icon-forward {
 	float: left;
 }
 
-.r-align{
+.r-align {
+	margin-left: auto;
+	order: 2;
+}
+
+.r-aligner {
 	float: right;
 }
+
 
 img, picture, video, canvas, svg {
   display: block;
@@ -471,6 +462,16 @@ figcaption {
 iv. layouts
 =================== */
 
+div.row.container-narrow,
+div.row.container,
+footer.row.container-narrow {
+	margin-top: 5rem;
+}
+
+footer {
+	padding-bottom: 2rem;
+}
+
 /* used on non-case study pages */
 .container-narrow {
 	margin: 0 auto;
@@ -488,24 +489,16 @@ iv. layouts
 	padding-right: 2rem;
 }
 
-#page-nav {
+.page-nav {
 	margin: 0 auto;
-	max-width: 49rem;
+	max-width: 48rem;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
 }
 
-.nav-text-center {
-	padding-top: 0.4rem;
-}
-
-.greeting {
-	margin-top: 4rem;
-	margin-bottom: 3rem;
-}
-
-.greeting .double-column {
-	margin-bottom: 3rem;
+.nav-logo {
+	font-size: var(--size-xxs);
+	align-self: center;
 }
 
 header {
@@ -555,6 +548,10 @@ section {
 
 /* mobile for iPhone ~8 and larger */
 @media screen and (max-width: 26rem) {
+	
+	.row {
+		scroll-margin-top: 4rem;
+	}
 	.container-narrow {
 		padding-left: 1rem;
 		padding-right: 1rem;
@@ -573,17 +570,12 @@ section {
 	.secondary-nav a {
 		margin-left: 0.2rem;
 		margin-right: 0.2rem;
-		line-height: 2rem;
 	}
 	
-	#page-nav {
+	.page-nav {
 		margin: 0 auto;
 		padding-left: 0.1rem;
 		padding-right: 0.1rem;
-	}
-	
-	footer .subnote {
-		padding-bottom: 3rem !important;
 	}
 	
 	.logo-row img {
@@ -605,13 +597,7 @@ section {
 		flex-direction: row;
 		flex-wrap: wrap;
 		width: 100%;
-		padding-top: 1rem;
-		padding-bottom: 1rem;
 		scroll-margin-top: 3rem;
-	}
-	
-	footer .subnote {
-		padding-bottom: 3rem !important;
 	}
 
 	/* splits all columns in one row with equal spacing */

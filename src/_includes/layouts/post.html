@@ -8,26 +8,21 @@ description: "{{ description }}"
 
 <section id="heading" class="greeting">
 	<div class="row container-narrow">
-			<header>
-				<h1>{{ title }}</h1>
-				<p class="subheading"><time datetime={{ page.date }}">{{ page.date | readableDate }}</time> &#8212; {{ content | emojiReadTime }}</p>
-			</header>
+		<header>
+			<h1>{{ title }}</h1>
+			<p><span class="subheading">{{ description }}</span><br />
+			<span class="subnote"><time datetime={{ page.date }}">{{ page.date | readableDate }}</time> • {{ content | emojiReadTime }}</span></p>
+		</header>
 	</div>
 </section>
 <section id="post-body">
 	<div class="row container-narrow">
-		<div class="double-column">
-			
-			{{ content | safe }}
-			
-		</div>
+		{{ content | safe }}
 	</div>
 </section>
 <section id="recent-posts">
 	<div class="row container-narrow">
-		<div class="double-column">
-			<h2>Recent posts</h2>
-			{% include "partials/blogroll.html" %}
-		</div>
+		<h2>Recent posts</h2>
+		{% include "partials/blogroll.html" %}
 	</div>
 </section>
