@@ -43,10 +43,10 @@ i. global styles
 	--magenta-color: hsl(339, 100%, 50%);
 	--yellow-color: hsl(55, 100%, 55%);
 	--cyan-color: hsl(192, 100%, 55%);
-	--text-hover: #000;
+	--text-hover: rgba(64, 64, 64, 1);
 	--heading-color: rgba(33, 33, 33, 1);
 	--text-color: rgba(33, 33, 33, 1);
-	--text-color-thin: rgba(58, 58, 58, 1);
+	--text-color-thin: rgba(64, 64, 64, 1);
 	--footer-color: rgba(84, 84, 84, 1);
 	--btn-bg-color: rgba(104, 104, 104, 0.15);
 	--bg-color: rgb(255,255,255);
@@ -55,7 +55,7 @@ i. global styles
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--text-hover: #fff;
+		--text-hover: rgba(237, 237, 237, 1);
 		--heading-color: rgba(225, 225, 225, 1);
 		--text-color: rgba(226, 226, 226, 1);
 		--text-color-thin: rgba(188, 188, 188, 1);
@@ -114,7 +114,7 @@ h3 {
 }
 
 p {
-	font-size: var(--size-md);
+	font-size: var(--size-sm);
 	margin-bottom: var(--size-lg);
 }
 
@@ -142,13 +142,29 @@ a {
 	text-decoration: underline;
 	text-decoration-thickness: 0.1rem;
 	text-decoration-color:  var(--magenta-color);
-	text-underline-offset: 0.14rem;
+	text-underline-offset: 0.1em;
 	transition: 0.1s ease;
 }
 
 a:hover {
 	color: var(--text-hover);
-	text-decoration-thickness: 0.15rem;
+	text-decoration-thickness: 0.13rem;
+	text-underline-offset: 0.15rem;
+	transition: 0.05s ease;
+}
+
+.subnote a,
+footer a {
+	text-decoration-thickness: 0.07em;
+	text-decoration-color: var(--text-color-thin);
+	text-underline-offset: 0.1em;
+}
+
+.subnote a:hover,
+footer a:hover {
+	color: var(--text-hover);
+	text-decoration-thickness: 0.1rem;
+	text-underline-offset: 0.1rem;
 	transition: 0.05s ease;
 }
 
@@ -465,7 +481,7 @@ iv. layouts
 div.row.container-narrow,
 div.row.container,
 footer.row.container-narrow {
-	margin-top: 5rem;
+	margin-top: 4rem;
 }
 
 footer {
@@ -497,8 +513,10 @@ footer {
 }
 
 .nav-logo {
-	font-size: var(--size-xxs);
-	align-self: center;
+	padding-top: 1rem;
+	padding-bottom: 0.35rem;
+	border-radius: 4px;
+	font-family: var(--font-accent);
 }
 
 header {
@@ -590,6 +608,10 @@ section {
 
 /* tablet and desktop */
 @media screen and (min-width: 40rem) {
+	
+	.greeting {
+		margin-top: 2rem;
+	}
 
 	/* .column needs to be wrapped in .row before it works.*/
 	.row {
@@ -615,6 +637,7 @@ section {
 		flex-direction: column;
 		flex-basis: 100%;
 		flex: 2;
+		padding-top: 0.4em;
+		padding-left: 0.2rem;
 	}
-	
 }
