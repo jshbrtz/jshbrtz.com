@@ -202,6 +202,7 @@ footer p {
 	font-size: var(--size-xxs);
 	line-height: 1.3rem;
 	font-family: var(--font-accent);
+	margin-bottom: 0.1rem;
 }
 
 .subnote {
