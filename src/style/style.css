@@ -26,9 +26,9 @@ i. global styles
 }
 
 :root {
-	--font-heading: 'effra', sans-serif;
-	--font-primary: 'effra', 'Helvetica', 'Arial', sans-serif;
-	--font-accent: 'dico-code-one', 'Menlo Regular', 'Lucida Sans Typewriter', monospace;
+	--font-heading: 'Noto Sans', sans-serif;
+	--font-primary: 'Noto Sans', Helvetica, Arial, sans-serif;
+	--font-accent: 'Space Mono', Menlo Regular, Lucida Sans Typewriter, monospace;
 	--size-xxl: 2.074rem; /* h1 */
 	--size-xl: 1.728rem; /* h2 */
 	--size-lg: 1.44rem; /* h3 */
@@ -84,10 +84,15 @@ i. global styles
 /* continued expectations setting; establishing healthy boundaries */
 body {
 	font-family: var(--font-primary);
-	font-size: var(--size-md);
+	font-size: var(--size-sm);
 	line-height: 1.6;
+	/* line-height: calc(0.5rem + 1em); */
 	color: var(--text-color);
 	background-color: var(--bg-color);
+}
+
+.flow > * + * {
+	margin-top: var(--flow-space, 1em);
 }
 
 /* ===================
@@ -101,12 +106,12 @@ p, h1, h2, h3 {
 
 h1,
 h2,
-h3,
-.secondary-nav,
-.no-link-decor {
+h3 {
 	font-family: var(--font-heading);
 	font-style: normal;
+	font-weight: 900;
 	color: var(--heading-color);
+	letter-spacing: -0.02em;
 	line-height: 1.3;
 }
 
@@ -116,7 +121,7 @@ h1 {
 
 h2 {
 	font-size: var(--size-xl);
-	margin-bottom: 0.4rem;
+	margin-bottom: 0.5rem;
 	margin-right: 0.5rem;
 }
 
@@ -138,6 +143,10 @@ p {
 strong {
 	color: var(--text-hover);
 	font-weight: 500;
+}
+
+em {
+	font-family: 'Noto Serif', serif;
 }
 
 .thickest {
@@ -172,7 +181,7 @@ a[href^="mailto"]:after {
 	color: var(--text-color-thin);
 	vertical-align: middle;
 	padding-left: 0.25rem;
-	transform: translateY(-0.05rem);
+	transform: translateY(-0.07rem);
 }
 
 /* created to override link styles on buttons and button-like accessories */
@@ -189,6 +198,7 @@ a[href^="mailto"]:after {
 	vertical-align: revert;
 }
 
+.secondary-nav,
 .subnote,
 figcaption {
 	font-size: var(--size-xxs);
@@ -199,6 +209,11 @@ figcaption {
 .subnote {
 	margin-bottom: 0.1rem;
 	padding-bottom: 0.1rem !important;
+}
+
+*::selection {
+	color: var(--text-hover);
+	background-color: var(--cyan-color);
 }
 
 .highlight,
@@ -215,11 +230,6 @@ figcaption {
 .highlight {
 	color: var(--bg-color);
 	background-color: var(--magenta-color);
-}
-
-*::selection {
-	color: var(--text-hover);
-	background-color: var(--cyan-color);
 }
 
 .highlight-anim {

@@ -11,13 +11,16 @@
 	<!-- <meta property="og:image" content="" /> -->
 	<title>{{ title }} | {{ site.title }}</title>
 	<link rel="icon" href="{{ '/favicon.png' | url | bust }}" type="image/svg+xml">
-	<link rel="preconnect" href="https://use.typekit.net" crossorigin />
 	<link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="{{ '/style/style.css' | url | bust }}">
 	<noscript>
 		<link rel="stylesheet" type="text/css" href="{{ '/style/style.css' | url | bust }}">
 	</noscript>
 	<link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="{{ '/style/jshbrtz.css' | url | bust }}">
-	<link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="{{ 'https://use.typekit.net/pnx3xoi.css' | url | bust }}">
+	<!-- <link rel="preconnect" href="https://use.typekit.net" crossorigin />
+	<link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="{{ 'https://use.typekit.net/pnx3xoi.css' | url | bust }}"> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;900&family=Noto+Serif:ital@1&family=Space+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
 	<main>
@@ -25,7 +28,7 @@
 	</main>
 	<footer class="row container-narrow">
 		<div class="column">
-			<p class="subnote">© {% copyrightyear %} {{ site.author }}<br>
+			<p class="subnote">Copyright {% copyrightyear %} {{ site.author }}<br>
 			<a href="/colophon">Colophon</a></p>
 		</div>
 		<!-- <div class="r-align">
