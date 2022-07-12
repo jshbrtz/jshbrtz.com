@@ -50,7 +50,7 @@ i. global styles
 	--footer-color: rgba(84, 84, 84, 1);
 	--btn-bg-color: rgba(104, 104, 104, 0.15);
 	--bg-color: rgb(255,255,255);
-	--bg-color-thin: rgba(33, 33, 33,, 0.5); /* being used on the secondary nav */
+	--bg-color-thin: rgba(255, 255, 255, 0.7); /* being used on the secondary nav */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -71,7 +71,7 @@ body {
 	font-family: var(--font-primary);
 	font-size: var(--size-sm);
 	line-height: 1.5;
-	line-height: calc(0.6rem + 1em);
+	line-height: calc(1em + 0.5rem);
 	color: var(--text-color);
 	background-color: var(--bg-color);
 }
@@ -92,12 +92,12 @@ h3 {
 	font-style: normal;
 	font-weight: 900;
 	color: var(--heading-color);
-	letter-spacing: -0.02em;
+	letter-spacing: -0.015em;
+	line-height: 1.4;
 }
 
 h1 {
 	font-size: var(--size-xxl);
-	line-height: 1;
 	margin-bottom: var(--size-xxxs); 
 }
 
@@ -105,7 +105,6 @@ h2 {
 	font-size: var(--size-xl);
 	margin-bottom: var(--size-xxxs);
 	margin-right: 0.5rem;
-	line-height: 1.4;
 }
 
 h3 {
@@ -129,7 +128,6 @@ strong {
 
 em {
 	font-family: 'Noto Serif', serif;
-	font-weight: 600;
 	letter-spacing: -0.04em;
 }
 
@@ -188,14 +186,6 @@ a[href^="mailto"]:after {
 .no-link-decor,
 .no-link-decor:hover {
 	text-decoration: none;
-	background-image: none;
-}
-
-.no-link-decor:after {
-	content: '' !important;
-	padding: 0;
-	font-size: inherit;
-	vertical-align: revert;
 }
 
 .subnote,
@@ -224,7 +214,6 @@ footer p {
 	border-radius: 2px;
 	padding-left: 0.2rem;
 	padding-right: 0.2rem;
-	/* padding-top: 0.05em; */
 	padding-bottom: 0.05em;
 }
 
@@ -312,61 +301,6 @@ figcaption {
 	padding-left: 1rem;
 }
 
-/* ===================
-iii. components
-=================== */
-
-.secondary-nav {
-	text-align: left;
-	position: sticky;
-	top: 0px;
-	width: 100%;
-	padding-top: 0.3rem;
-	padding-right: 0.75rem;
-	background-color: var(--bg-color);
-	z-index: 1000;
-	min-height: 2.4rem;
-}
-
-/* note to self: firefox 90 (unreleased) does not support this. remove once supported. */
-@supports ((-webkit-backdrop-filter: blur(1rem)) or (backdrop-filter: blur(1rem))) {
-	.secondary-nav {
-		backdrop-filter: blur(0.4rem);
-		-webkit-backdrop-filter: blur(0.4em);
-		background-color: var(--bg-color-thin);
-	}
-}
-
-.avatar {
-	border-radius: 50%;
-	width: 8rem;
-	height: 8rem;
-	margin-bottom: 3rem;
-}
-
-.btn,
-.btn-icon {
-	background-color: none;
-	border-radius: 2px;
-	border: none;
-	transition: 0.1s ease-in;
-	width: fit-content;
-}
-
-.btn {
-	padding: 0.2rem 0.5rem;
-}
-
-.btn-icon {
-	border-radius: 50%;
-	border: none;
-	width: 2rem;
-	height: 2rem;
-	transition: 0.1s ease-in;
-	vertical-align: center;
-	text-align: center;
-}
-
 code {
 	font-family: var(--font-accent);
 	font-size: var(--size-xxs);
@@ -378,6 +312,69 @@ code {
 	width: fit-content;
 	margin-left: 0.1rem;
 	margin-right: 0.1rem;
+}
+
+/* ===================
+iii. components
+=================== */
+
+.secondary-nav {
+	position: sticky;
+	vertical-align: center;
+	top: 0px;
+	width: 100%;
+	padding-top: 0.6rem;
+	padding-right: 0.75rem;
+	z-index: 1000;
+	min-height: 2.4rem;
+}
+
+.avatar {
+	border-radius: 50%;
+	width: 8rem;
+	height: 8rem;
+	margin-bottom: 3rem;
+}
+
+.btn,
+.btn-icon {
+	background-color: var(--bg-color);
+	border-radius: 2px;
+	border: none;
+	transition: 0.1s ease-in;
+	justify-content: center;
+	text-align: center;
+}
+
+.btn {
+	background-color: var(--bg-color-thin);
+	padding: 0.2rem 0.5rem;
+	width: fit-content;
+	height: 1.5rem;
+}
+
+.btn-icon {
+	border-radius: 50%;
+	width: 2rem;
+	height: 2rem;
+	transition: 0.1s ease-in;
+}
+
+/* note to self: firefox 90 (unreleased) does not support this. remove once supported. */
+@supports ((-webkit-backdrop-filter: blur(1rem)) or (backdrop-filter: blur(1rem))) {
+	.btn-icon {
+		backdrop-filter: blur(0.4rem);
+		-webkit-backdrop-filter: blur(0.4em);
+		background-color: var(--bg-color-thin);
+	}
+}
+
+.btn:hover,
+.btn-icon:hover {
+	background-color: var(--btn-bg-color);
+	color: var(--text-hover);
+	transition: 0.1s ease-in;
+	cursor: pointer;
 }
 
 .icon-back,
@@ -419,15 +416,6 @@ p .icon-forward {
 	margin-left: 0.01rem;
 	margin-right: 0.4rem;
 	margin-bottom: 0.1rem;
-}
-
-.btn:hover,
-.btn-icon:hover,
-.available:hover {
-	background-color: var(--btn-bg-color);
-	color: var(--text-hover);
-	transition: 0.1s ease-in;
-	cursor: pointer;
 }
 
 .l-align {
@@ -517,7 +505,7 @@ footer {
 
 .nav-logo {
 	padding-top: 1rem;
-	padding-bottom: 0.35rem;
+	padding-bottom: 0.3rem;
 	border-radius: 4px;
 	font-family: var(--font-accent);
 }
