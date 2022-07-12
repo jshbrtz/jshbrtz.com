@@ -28,6 +28,7 @@ i. global styles
 :root {
 	--font-heading: 'Noto Sans', sans-serif;
 	--font-primary: 'Noto Sans', Helvetica, Arial, sans-serif;
+	--font-italic: 'Noto Serif', serif;
 	--font-accent: 'Space Mono', Menlo Regular, Lucida Sans Typewriter, monospace;
 	--size-xxl: 2.074rem; /* h1 */
 	--size-xl: 1.728rem; /* h2 */
@@ -127,8 +128,7 @@ strong {
 }
 
 em {
-	font-family: 'Noto Serif', serif;
-	letter-spacing: -0.04em;
+	font-family: var(--font-italic);
 }
 
 .thickest {
@@ -506,7 +506,9 @@ footer {
 .nav-logo {
 	padding-top: 1rem;
 	padding-bottom: 0.3rem;
-	border-radius: 4px;
+	padding-left: 0.3rem;
+	padding-right: 0.3rem;
+	border-radius: 2px;
 	font-family: var(--font-accent);
 }
 
