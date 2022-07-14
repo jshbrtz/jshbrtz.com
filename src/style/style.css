@@ -134,14 +134,14 @@ a {
 	text-decoration-thickness: 0.1rem;
 	text-decoration-color:  var(--magenta-color);
 	text-underline-offset: 0.1em;
-	transition: 0.5s ease;
+	transition: 0.1s ease;
 }
 
 a:hover {
 	color: var(--text-hover);
 	text-decoration-thickness: 0.13rem;
 	text-underline-offset: 0.15rem;
-	transition: 0.5s ease;
+	transition: 0.1s ease;
 }
 
 .subnote a,
@@ -367,7 +367,7 @@ iii. components
 .btn-icon:focus {
 	background-color: var(--btn-bg-color);
 	color: var(--text-hover);
-	box-shadow: 0.3rem 0.4rem var(--magenta-color);
+	box-shadow: 0.3rem 0.35rem var(--magenta-color);
 	transform: translateY(-0.1rem);
 	transition: 0.1s ease-in;
 	cursor: pointer;
@@ -398,7 +398,7 @@ iii. components
 }
 
 .callout {
-	box-shadow: 0.35rem 0.35rem var(--cyan-color);
+	box-shadow: 0.3rem 0.3rem var(--cyan-color);
 	font-family: var(--font-accent) !important;
 	border: 1px solid var(--text-color);
 	background-color: var(--bg-color);
@@ -585,10 +585,22 @@ section {
 		margin-bottom: 3rem;
 	}
 	
+	.sm-view {
+		display: inline;
+	}
+	
+	.lg-view {
+		display: none;
+	}
+	
 	.page-nav {
 		margin: 0 auto;
 		padding-left: 0.1rem;
 		padding-right: 0.1rem;
+	}
+	
+	.page-nav .btn {
+		margin-bottom: 0.7rem;
 	}
 	
 	.logo-row img {
@@ -602,10 +614,18 @@ section {
 }
 
 /* tablet and desktop */
-@media screen and (min-width: 40rem) {
+@media screen and (min-width: 26rem) {
 	
 	.greeting {
 		margin-top: 2rem;
+	}
+	
+	.sm-view {
+		display: none;
+	}
+	
+	.lg-view {
+		display: inline;
 	}
 
 	/* .column needs to be wrapped in .row before it works.*/
