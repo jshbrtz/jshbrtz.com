@@ -48,7 +48,7 @@ i. global styles
 	--text-color: rgba(33, 33, 33, 1);
 	--text-color-thin: rgba(64, 64, 64, 1);
 	--footer-color: rgba(84, 84, 84, 1);
-	--btn-bg-color: rgba(104, 104, 104, 0.15);
+	--btn-bg-color: hsla(0, 0%, 88%, 1);
 	--bg-color: rgb(255,255,255);
 	--bg-color-thin: rgba(255, 255, 255, 0.7); /* being used on the secondary nav */
 }
@@ -59,7 +59,7 @@ i. global styles
 		--text-color: rgba(226, 226, 226, 1);
 		--text-color-thin: rgba(188, 188, 188, 1);
 		--footer-color: rgba(175, 175, 175, 1);
-		--btn-bg-color: rgba(229, 229, 229, 0.15);
+		--btn-bg-color: hsl(251, 52%, 20%);
 		--bg-color: rgb(8, 5, 21);
 		--bg-color-thin: rgba(8, 5, 21, 0.5);
 	}
@@ -125,6 +125,7 @@ strong {
 
 em {
 	font-family: var(--font-italic);
+	color: var(--text-hover);
 }
 
 a {
@@ -132,15 +133,15 @@ a {
 	text-decoration: underline;
 	text-decoration-thickness: 0.1rem;
 	text-decoration-color:  var(--magenta-color);
-	text-underline-offset: 0.05em;
-	transition: 0.1s ease;
+	text-underline-offset: 0.1em;
+	transition: 0.5s ease;
 }
 
 a:hover {
 	color: var(--text-hover);
 	text-decoration-thickness: 0.13rem;
-	text-underline-offset: 0.07rem;
-	transition: 0.1s ease;
+	text-underline-offset: 0.15rem;
+	transition: 0.5s ease;
 }
 
 .subnote a,
@@ -155,7 +156,7 @@ footer a:hover {
 	color: var(--text-hover);
 	text-decoration-thickness: 0.1rem;
 	text-underline-offset: 0.1rem;
-	transition: 0.05s ease;
+	transition: 0.5s ease;
 }
 
 /* adds external link icon to all outbound links */
@@ -174,7 +175,8 @@ a[href^="mailto"]:after {
 
 /* override link styles on buttons and button-like accessories */
 .no-link-decor,
-.no-link-decor:hover {
+.no-link-decor:hover,
+.no-link-decor:focus {
 	text-decoration: none;
 	text-decoration-color: transparent;
 }
@@ -196,6 +198,7 @@ footer p {
 *::selection {
 	color: var(--text-hover);
 	background-color: var(--cyan-color);
+	-webkit-text-fill-color: var(--text-hover); /* overrides the "transparent" fill for .highlight-anim-text */
 }
 
 .highlight,
@@ -213,7 +216,13 @@ footer p {
 	background-color: var(--magenta-color);
 }
 
-.highlight-anim {
+.highlight-anim-text {
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.highlight-anim,
+.highlight-anim-text {
 	color: var(--text-color);
 	background-size: 400%;
 	background-color: var(--bg-color);
@@ -248,7 +257,6 @@ footer p {
 	font-family: var(--font-primary);
 	color: var(--footer-color);
 	font-weight: 500;
-	line-height: 1.5em;
 }
 
 ul {
@@ -277,7 +285,6 @@ li {
 .secondary-nav a {
 	margin-left: 0.5rem;
 	margin-right: 0.5rem;
-	line-height: 2rem;
 }
 
 .quote,
@@ -325,24 +332,25 @@ iii. components
 	width: 10rem;
 	height: 10rem;
 	margin-bottom: 2.5rem;
-	filter: drop-shadow(0.35rem 0.35rem var(--cyan-color));
+	box-shadow: 0.35rem 0.35rem var(--cyan-color);
 }
 
 .btn,
 .btn-icon {
+	display: inline-block;
+	box-shadow: 0.3rem 0.3rem var(--magenta-color), 0.2rem 0.2rem var(--magenta-color), 0.1rem 0.1rem var(--magenta-color), 0.05rem 0.05rem var(--magenta-color);
+	font-family: var(--font-accent) !important;
+	border: 1px solid var(--text-color);
 	background-color: var(--bg-color);
-	border-radius: 2px;
-	border: none;
 	transition: 0.1s ease-in;
-	justify-content: center;
 	text-align: center;
+	vertical-align: middle;
 }
 
 .btn {
-	background-color: var(--bg-color-thin);
+	border-radius: 2px;
 	padding: 0.2rem 0.5rem;
 	width: fit-content;
-	height: 1.5rem;
 }
 
 .btn-icon {
@@ -350,21 +358,17 @@ iii. components
 	width: 2rem;
 	height: 2rem;
 	transition: 0.1s ease-in;
-}
-
-/* note to self: firefox 90 (unreleased) does not support this. remove once supported. */
-@supports ((-webkit-backdrop-filter: blur(1rem)) or (backdrop-filter: blur(1rem))) {
-	.btn-icon {
-		backdrop-filter: blur(0.4rem);
-		-webkit-backdrop-filter: blur(0.4em);
-		background-color: var(--bg-color-thin);
-	}
+	padding-top: 0.1rem;
 }
 
 .btn:hover,
-.btn-icon:hover {
+.btn:focus,
+.btn-icon:hover,
+.btn-icon:focus {
 	background-color: var(--btn-bg-color);
 	color: var(--text-hover);
+	box-shadow: 0.3rem 0.4rem var(--magenta-color);
+	transform: translateY(-0.1rem);
 	transition: 0.1s ease-in;
 	cursor: pointer;
 }
@@ -372,9 +376,6 @@ iii. components
 .icon-back,
 .icon-external,
 .icon-forward {
-	display: inline-block;
-	align-content: center;
-	vertical-align: middle;
 	font-size: 0.6rem;
 }
 
@@ -390,17 +391,14 @@ iii. components
 	content: '\e803';
 }
 
-p .icon-forward {
-	color: var(--text-color-thin);
-	transform: translateY(-0.1rem);
-}
-
 .icon-forward:before {
+	display: inline-block;
 	content: '\e802';
+	transform: translateY(-0.15rem);
 }
 
 .callout {
-	filter: drop-shadow(0.35rem 0.35rem var(--magenta-color));
+	box-shadow: 0.35rem 0.35rem var(--cyan-color);
 	font-family: var(--font-accent) !important;
 	border: 1px solid var(--text-color);
 	background-color: var(--bg-color);
@@ -514,7 +512,7 @@ footer {
 
 .nav-logo {
 	padding-top: 1rem;
-	padding-bottom: 0.3rem;
+	padding-bottom: 0.5rem;
 	padding-left: 0.3rem;
 	padding-right: 0.3rem;
 	border-radius: 2px;
@@ -585,11 +583,6 @@ section {
 	.greeting {
 		margin-top: 3rem;
 		margin-bottom: 3rem;
-	}
-	
-	.secondary-nav a {
-		margin-left: 0.2rem;
-		margin-right: 0.2rem;
 	}
 	
 	.page-nav {
