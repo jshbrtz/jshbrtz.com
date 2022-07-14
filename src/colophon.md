@@ -14,10 +14,12 @@ description: Giving credit and saying thanks are integral to reminding ourselves
 </div>
 <section id="land-acknowledgement">
 	<div class="row container-narrow">
+		<div class="callout">
 			<header>
-				<h2>Land acknowledgement</h2>
+				<h3>Land acknowledgement</h3>
 			</header>
 			<p>This website was coded on <a href="https://native-land.ca">land</a> stolen from the <a href="https://www.catawba.com">Catawba Nation</a>, <a href="https://shakopeedakota.org">Sioux Nation</a>, and <a href="http://aktalakota.stjo.org">Lakota Nation</a>.</p>
+		</div>
 	</div>
 </section>
 <section id="design-tech">
