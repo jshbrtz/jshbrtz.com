@@ -7,13 +7,13 @@ description: Giving credit and saying thanks are integral to reminding ourselves
 
 {% include "partials/primary-nav.html" %}
 
-<div class="row container-narrow">
+<div class="row container">
 	<header class="greeting">
 		<h1>{{ title }}</h1>
 	</header>
 </div>
 <section id="land-acknowledgement">
-	<div class="row container-narrow">
+	<div class="row container">
 		<div class="callout">
 			<header>
 				<h3>Land acknowledgement</h3>
@@ -23,7 +23,7 @@ description: Giving credit and saying thanks are integral to reminding ourselves
 	</div>
 </section>
 <section id="design-tech">
-	<div class="row container-narrow">
+	<div class="row container">
 		<div class="column">
 			<header>
 				<h2>Design & tech</h2>
@@ -37,7 +37,7 @@ description: Giving credit and saying thanks are integral to reminding ourselves
 	</div>
 </section>
 <section id="gratitude">
-	<div class="row container-narrow">
+	<div class="row container">
 		<div class="column">
 			<header>
 				<h2>Gratitude</h2>

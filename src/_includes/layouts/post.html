@@ -7,7 +7,7 @@ description: "{{ description }}"
 {% include "partials/primary-nav.html" %}
 
 <section id="heading" class="greeting">
-	<div class="row container-narrow">
+	<div class="row container">
 		<header>
 			<h1>{{ title }}</h1>
 			<p><span class="subheading">{{ description }}</span><br />
@@ -16,12 +16,12 @@ description: "{{ description }}"
 	</div>
 </section>
 <section id="post-body">
-	<div class="row container-narrow">
+	<div class="row container">
 		{{ content | safe }}
 	</div>
 </section>
 <section id="recent-posts">
-	<div class="row container-narrow">
+	<div class="row container">
 		<h2>Recent posts</h2>
 		{% include "partials/blogroll.html" %}
 	</div>

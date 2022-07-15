@@ -1,12 +1,12 @@
 <ul class="no-list-decor">
 	{% for post in collections.releasedPosts %}
 		{% if loop.index0 < 5 %}
-			<article>
-				<li>
+			<li>
+				<article>
 					<h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
 					<p class="subnote">{{ post.data.date | readableDate }}</p>
-				</li>
-			</article>
+				</article>
+			</li>
 		{% endif %}
 	{% endfor %}
 </ul>

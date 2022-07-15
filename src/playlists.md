@@ -18,7 +18,7 @@ description: Curated playlists for every season going back to 2018.
 </div>
 
 <section id="heading" class="greeting">
-	<div class="row container-narrow">
+	<div class="row container">
 		<header>
 			<h1>{{ title }}</h1>
 			<p class="subheading">Music is one of my most important social bridges. I concatenate songs throughout a season to remind me of a moment, place or mood.</p>
@@ -27,7 +27,7 @@ description: Curated playlists for every season going back to 2018.
 </section>
 
 <section>
-	<div id="2022" class="row container-narrow">
+	<div id="2022" class="row container">
 		<div class="column">
 			<header>
 				<h2>2022</h2>
@@ -50,7 +50,7 @@ description: Curated playlists for every season going back to 2018.
 			</ul>
 		</div>
 	</div>
-	<div id="2021" class="row container-narrow">
+	<div id="2021" class="row container">
 		<div class="column">
 			<header>
 				<h2>2021</h2>
@@ -85,7 +85,7 @@ description: Curated playlists for every season going back to 2018.
 			</ul>
 		</div>
 	</div>
-	<div id="2020" class="row container-narrow">
+	<div id="2020" class="row container">
 		<div class="column">
 			<header>
 				<h2>2020</h2>
@@ -120,7 +120,7 @@ description: Curated playlists for every season going back to 2018.
 			</ul>
 		</div>
 	</div>
-	<div id="2019" class="row container-narrow">
+	<div id="2019" class="row container">
 		<div class="column">
 			<header>
 				<h2>2019</h2>
@@ -155,7 +155,7 @@ description: Curated playlists for every season going back to 2018.
 			</ul>
 		</div>
 	</div>
-	<div id="2018" class="row container-narrow">
+	<div id="2018" class="row container">
 		<div class="column">
 			<header>
 				<h2>2018</h2>
