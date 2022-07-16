@@ -142,6 +142,13 @@ a:hover {
 	transition: 0.1s ease;
 }
 
+.subheading {
+	font-size: var(--size-md);
+	font-family: var(--font-primary);
+	color: var(--footer-color);
+	font-weight: 500;
+}
+
 .subnote a,
 footer a {
 	text-decoration-thickness: 0.07em;
@@ -155,20 +162,6 @@ footer a:hover {
 	text-decoration-thickness: 0.1rem;
 	text-underline-offset: 0.1rem;
 	transition: 0.5s ease;
-}
-
-/* adds external link icon to all outbound links */
-a[href^="http://"]:after,
-a[href^="https://"]:after,
-a[href^="mailto"]:after {
-	content: '\e803';
-	display: inline-block;
-	font-family: jshbrtz;
-	font-size: 0.7rem;
-	color: var(--text-color-thin);
-	vertical-align: middle;
-	padding-left: 0.25rem;
-	transform: translateY(-0.07rem);
 }
 
 /* override link styles on buttons and button-like accessories */
@@ -250,13 +243,6 @@ footer p {
   100% {background-position: left}
 }
 
-.subheading {
-	font-size: var(--size-md);
-	font-family: var(--font-primary);
-	color: var(--footer-color);
-	font-weight: 500;
-}
-
 ul {
 	list-style-type: round;
 }
@@ -330,7 +316,7 @@ iii. components
 	width: 10rem;
 	height: 10rem;
 	margin-bottom: 2.5rem;
-	box-shadow: 0.35rem 0.35rem var(--cyan-color);
+	box-shadow: 0.3rem 0.3rem var(--cyan-color);
 }
 
 .btn,
@@ -371,22 +357,47 @@ iii. components
 	cursor: pointer;
 }
 
+/* adds external link icon to all outbound links */
+a[href^="http://"]:after,
+a[href^="https://"]:after,
+.icon-external2:before {
+	content: '\e803';
+	display: inline-block;
+	font-family: jshbrtz;
+	font-size: 0.7rem;
+	vertical-align: middle;
+	padding-left: 0.25rem;
+	transform: translateY(-0.07rem);
+}
+
+/* adds a sassy postage stamp to all mailto links */
+a[href^="mailto"]:after,
+.icon-stamp:before {
+	content: '\e804';
+	display: inline-block;
+	font-family: jshbrtz;
+	font-size: 1rem;
+	vertical-align: middle;
+	padding-left: 0.25rem;
+	transform: translateY(-0.08rem);
+}
+
+/* TODO -- figure out why the icon sizes are so amazingly inconsistent. */
 .icon-back,
 .icon-external,
 .icon-forward {
 	font-size: 0.6rem;
 }
 
+.icon-postcard:before {
+	display: inline-block;
+	content: '\e805';
+	transform: translateY(-0.15rem);
+	font-size: 0.7rem;
+}
+
 .icon-back:before {
 	content: '\e800';
-}
-
-.icon-external:before {
-	content: '\e801';
-}
-
-.icon-external2:before {
-	content: '\e803';
 }
 
 .icon-forward:before {
@@ -411,17 +422,6 @@ iii. components
 	margin-bottom: unset;
 }
 
-.status {
-	display: inline-block;
-	border-radius: 50%;
-	width: 0.4rem;
-	height: 0.4rem;
-	background-color: rgba(32, 247, 47, 0.8);
-	margin-left: 0.01rem;
-	margin-right: 0.4rem;
-	margin-bottom: 0.1rem;
-}
-
 .l-align {
 	float: left;
 }
@@ -431,6 +431,7 @@ iii. components
 	order: 2;
 }
 
+/* TODO -- ...really? "align" and "aligner!?" */
 .r-aligner {
 	float: right;
 }
@@ -552,14 +553,14 @@ section {
 	align-items: center;
 	margin: 0 auto;
 	max-width: 95rem;
-	margin-bottom: 1rem;
+	margin-top: 2rem;
+	gap: 3rem;
 }
 
 .logo-row img {
 	max-width: 8rem;
 	max-height: 4rem;
 	object-fit: contain;
-	margin: 1.5rem;
 }
 
 /* tablet and desktop */
@@ -645,12 +646,12 @@ section {
 		margin-bottom: 0.7rem;
 	}
 	
+	.logo-row {
+		gap: 2rem;
+	}
+	
 	.logo-row img {
 		max-width: 5rem;
 		max-height: 3rem;
-		object-fit: contain;
-		margin: 1rem;
-		align-self: center;
 	}
-	
 }
