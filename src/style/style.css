@@ -349,12 +349,21 @@ iii. components
 .btn:focus,
 .btn-icon:hover,
 .btn-icon:focus {
-	background-color: var(--btn-bg-color);
-	color: var(--text-hover);
+	background-color: var(--text-color);
+	color: var(--bg-color);
 	box-shadow: 0.3rem 0.4rem var(--magenta-color);
 	transform: translateY(-0.1rem);
 	transition: 0.1s ease-in;
 	cursor: pointer;
+}
+
+.secondary-nav .btn,
+.secondary-nav .btn-icon,
+.secondary-nav .btn:hover,
+.secondary-nav .btn:focus,
+.secondary-nav .btn-icon:hover,
+.secondary-nav .btn-icon:focus {
+	box-shadow: none;
 }
 
 /* adds external link icon to all outbound links */
