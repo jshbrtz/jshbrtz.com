@@ -221,6 +221,12 @@ footer p {
 	animation: background-animation 45s infinite;
 }
 
+@keyframes background-animation {
+  0% {background-position: left}
+  50% {background-position: right}
+  100% {background-position: left}
+}
+
 @media (prefers-color-scheme: dark) {
 	.highlight {
 		color: var(--text-color);
@@ -235,12 +241,11 @@ footer p {
 		color: var(--bg-color);
 		background-color: var(--text-color);
 	}
-}
-
-@keyframes background-animation {
-  0% {background-position: left}
-  50% {background-position: right}
-  100% {background-position: left}
+	
+	.highlight-anim-text {
+		color: var(--bg-color);
+		background-color: var(--text-color);
+	}
 }
 
 ul {
@@ -396,6 +401,13 @@ a[href^="mailto"]:after,
 .icon-external,
 .icon-forward {
 	font-size: 0.6rem;
+}
+
+.icon-glasses:before {
+	display: inline-block;
+	content: '\e801';
+	transform: translateY(-0.1rem);
+	font-size: 0.5rem;
 }
 
 .icon-postcard:before {
