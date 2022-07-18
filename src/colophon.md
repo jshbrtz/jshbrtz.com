@@ -14,10 +14,10 @@ description: Giving credit and saying thanks are integral to reminding ourselves
 </div>
 <section id="land-acknowledgement">
 	<div class="row container">
-			<header>
-				<h3>Land acknowledgement</h3>
-			</header>
-			<p>This website was coded on <a href="https://native-land.ca">land</a> stolen from the <a href="https://www.catawba.com">Catawba Nation</a>, <a href="https://shakopeedakota.org">Sioux Nation</a>, and <a href="http://aktalakota.stjo.org">Lakota Nation</a>.</p>
+		<header>
+			<h3>Land acknowledgement</h3>
+		</header>
+		<p>This website was coded on <a href="https://native-land.ca">land</a> stolen from the <a href="https://www.catawba.com">Catawba Nation</a>, <a href="https://shakopeedakota.org">Sioux Nation</a>, and <a href="http://aktalakota.stjo.org">Lakota Nation</a>.</p>
 	</div>
 </section>
 <section id="design-tech">
@@ -32,7 +32,7 @@ description: Giving credit and saying thanks are integral to reminding ourselves
 			<p>Coded in HTML5, CSS3, Markdown and Javascript using <a href="https://nova.app">Panic Nova</a>, and generated with <a href="https://www.11ty.dev">Eleventy</a>. Code hosted publicly on <a href="https://github.com/jshbrtz/jshbrtz.com">Github</a> and deployed automatically with <a href="https://www.netlify.com">Netlify</a>.</p>
 			<p>Iconography made on <a href="https://www.sketch.com">Sketch</a> and converted into a font with <a href="https://fontello.com">Fontello</a>. Typefaces are Noto Sans and Noto Serif by <a href="https://fonts.google.com/noto">Google</a>, and Space Mono by <a href="https://www.colophon-foundry.org">Colophon Foundry</a>.</p>
 			<p>Profile &#128248; by Molly Rowan.</p>
-	</div>
+		</div>
 </section>
 <section id="gratitude">
 	<div class="row container">
