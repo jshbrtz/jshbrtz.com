@@ -21,8 +21,7 @@ i. global styles
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: auto;
-	-webkit-text-size-adjust: 100%;
-	/* Prevent font scaling in landscape while allowing user zoom */
+	-webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
 	scroll-behavior: smooth;
 }
 
@@ -31,19 +30,13 @@ i. global styles
 	--font-primary: 'Noto Sans', Helvetica, Arial, sans-serif;
 	--font-italic: 'Noto Serif', serif;
 	--font-accent: 'Space Mono', Menlo Regular, Lucida Sans Typewriter, monospace;
-	--size-xxl: 2.074rem;
-	/* h1 */
-	--size-xl: 1.728rem;
-	/* h2 */
-	--size-lg: 1.44rem;
-	/* h3 */
-	--size-md: 1.2rem;
-	/* p */
-	--size-sm: 1.125rem;
-	--size-xs: 1rem;
-	/* subnote, figcaption, subheading */
-	--size-xxs: 0.889rem;
-	/* code, a-icons */
+	--size-xxl: 2.074rem; /* h1 */
+	--size-xl: 1.728rem; /* h2 */
+	--size-lg: 1.44rem; /* h3 */
+	--size-md: 1.2rem; /* p */
+	--size-sm: 1.125rem; 
+	--size-xs: 1rem; /* subnote, figcaption, subheading */
+	--size-xxs: 0.889rem; /* code, a-icons */
 	--size-xxxs: 0.444rem;
 	--gradient: linear-gradient(217deg, var(--cyan-color), hsla(192, 100%, 55%, 0) 70.71%),
 		linear-gradient(127deg, var(--magenta-color), hsla(339, 100%, 50%, 0) 70.71%),
@@ -56,9 +49,8 @@ i. global styles
 	--text-color-thin: rgba(64, 64, 64, 1);
 	--footer-color: rgba(84, 84, 84, 1);
 	--btn-bg-color: hsla(0, 0%, 91%, 1);
-	--bg-color: rgb(255, 255, 255);
-	--bg-color-thin: rgba(255, 255, 255, 0.7);
-	/* being used on the secondary nav */
+	--bg-color: rgb(255,255,255);
+	--bg-color-thin: rgba(255, 255, 255, 0.7); /* being used on the secondary nav */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -86,11 +78,8 @@ body {
 ii. typography
 =================== */
 
-p,
-h1,
-h2,
-h3 {
-	overflow-wrap: break-word;
+p, h1, h2, h3 {
+  overflow-wrap: break-word;
 }
 
 h1,
@@ -105,7 +94,7 @@ h3 {
 
 h1 {
 	font-size: var(--size-xxl);
-	margin-bottom: var(--size-xxxs);
+	margin-bottom: var(--size-xxxs); 
 }
 
 h2 {
@@ -141,7 +130,7 @@ a {
 	color: inherit;
 	text-decoration: underline;
 	text-decoration-thickness: 0.1rem;
-	text-decoration-color: var(--magenta-color);
+	text-decoration-color:  var(--magenta-color);
 	text-underline-offset: 0.1em;
 	transition: 0.1s ease;
 }
@@ -200,8 +189,7 @@ footer p {
 *::selection {
 	color: var(--text-hover);
 	background-color: var(--cyan-color);
-	-webkit-text-fill-color: var(--text-hover);
-	/* overrides the "transparent" fill for .highlight-anim-text */
+	-webkit-text-fill-color: var(--text-hover); /* overrides the "transparent" fill for .highlight-anim-text */
 }
 
 .highlight,
@@ -234,34 +222,26 @@ footer p {
 }
 
 @keyframes background-animation {
-	0% {
-		background-position: left
-	}
-
-	50% {
-		background-position: right
-	}
-
-	100% {
-		background-position: left
-	}
+  0% {background-position: left}
+  50% {background-position: right}
+  100% {background-position: left}
 }
 
 @media (prefers-color-scheme: dark) {
 	.highlight {
 		color: var(--text-color);
 	}
-
+	
 	*::selection {
 		color: var(--bg-color);
 		background-color: var(--cyan-color);
 	}
-
+	
 	.highlight-anim {
 		color: var(--bg-color);
 		background-color: var(--text-color);
 	}
-
+	
 	.highlight-anim-text {
 		color: var(--bg-color);
 		background-color: var(--text-color);
@@ -477,13 +457,10 @@ a[href^="mailto"]:after,
 	float: right;
 }
 
-img,
-picture,
-video,
-canvas,
-svg {
-	display: block;
-	max-width: 100%;
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
 }
 
 .img-row img,
@@ -609,15 +586,15 @@ section {
 
 /* tablet and desktop */
 @media screen and (min-width: 26rem) {
-
+	
 	.greeting {
 		margin-top: 2rem;
 	}
-
+	
 	.sm-view {
 		display: none;
 	}
-
+	
 	.lg-view {
 		display: inline;
 	}
@@ -653,48 +630,47 @@ section {
 
 /* mobile for iPhone ~8 and larger */
 @media screen and (max-width: 26rem) {
-
+	
 	.row {
 		scroll-margin-top: 4rem;
 	}
-
 	.container {
 		padding-left: 1rem;
 		padding-right: 1rem;
 	}
-
+	
 	.container {
 		padding-left: 1rem;
 		padding-right: 1rem;
 	}
-
+	
 	.greeting {
 		margin-top: 3rem;
 		margin-bottom: 3rem;
 	}
-
+	
 	.sm-view {
 		display: inline;
 	}
-
+	
 	.lg-view {
 		display: none;
 	}
-
+	
 	.page-nav {
 		margin: 0 auto;
 		padding-left: 0.1rem;
 		padding-right: 0.1rem;
 	}
-
+	
 	.page-nav .btn {
 		margin-bottom: 0.7rem;
 	}
-
+	
 	.logo-row {
 		gap: 2rem;
 	}
-
+	
 	.logo-row img {
 		max-width: 5rem;
 		max-height: 3rem;
