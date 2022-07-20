@@ -20,11 +20,11 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;900&family=Noto+Serif:ital@1&family=Space+Mono&display=swap" rel="stylesheet">
 </head>
-<body>
-	<main class="grid">
+<body class="wrapper">
+	<main>
 		{{ content | safe }}
 	</main>
-	<footer class="row container">
+	<footer>
 		<p>Copyright {% copyrightyear %} {{ site.author }}</p>
 		<p class="r-align">
 			<a href="../posts/2022-06-26-design-and-development-tools/">Uses</a> • <a href="/colophon">Colophon</a>
