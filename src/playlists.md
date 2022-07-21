@@ -6,15 +6,19 @@ description: Curated playlists for every season going back to 2018.
 ---
 
 <div class="sticky-nav">
-	<nav class="page-nav">
-		<a href="/" class="l-align btn-icon no-link-decor" alt="back"><span class="icon-back"></span></a>
-		<a href="#2022" class="btn no-link-decor">2022</a>
-		<a href="#2021" class="btn no-link-decor">2021</a>
-		<a href="#2020" class="btn no-link-decor">2020</a>
-		<a href="#2019" class="btn no-link-decor">2019</a>
-		<a href="#2018" class="btn no-link-decor">2018</a>
-	</nav>
-	{% include "partials/nav-logo.html" %}
+	<div>
+		<nav>
+			<a href="/" class="l-align btn-icon no-link-decor" alt="back"><span class="icon-back"></span></a>
+			<a href="#2022" class="btn no-link-decor">2022</a>
+			<a href="#2021" class="btn no-link-decor">2021</a>
+			<a href="#2020" class="btn no-link-decor">2020</a>
+			<a href="#2019" class="btn no-link-decor">2019</a>
+			<a href="#2018" class="btn no-link-decor">2018</a>
+		</nav>
+	</div>
+	<div>
+		{% include "partials/nav-logo.html" %}
+	</div>
 </div>
 
 <section id="heading" class="greeting">

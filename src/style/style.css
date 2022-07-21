@@ -292,11 +292,6 @@ li {
 	list-style-type: none;
 }
 
-.sticky-nav a {
-	margin-left: 0.5rem;
-	margin-right: 0.5rem;
-}
-
 .quote,
 figcaption {
 	font-style: italic;
@@ -325,17 +320,6 @@ code {
 /* ===================
 iii. components
 =================== */
-
-.sticky-nav {
-	position: sticky;
-	vertical-align: center;
-	top: 0px;
-	width: 100%;
-	padding-top: 0.6rem;
-	padding-right: 0.75rem;
-	z-index: 1000;
-	min-height: 2.4rem;
-}
 
 .avatar {
 	border-radius: 2px;
@@ -470,7 +454,7 @@ a[href^="mailto"]:after,
 }
 
 .r-align {
-	justify-self: right;
+	justify-content: right;
 }
 
 img,
@@ -573,27 +557,37 @@ footer {
 	width: 100%;
 }
 
-
 .sticky-nav {
-	display: grid;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 0.5rem;
 	position: sticky;
-	vertical-align: center;
+	align-items: baseline;
+	justify-content: space-between;
 	width: 100%;
 	margin-left: 50%;
 	transform: translate3d(-50%, 0, 0);
 	top: 0px;
+	padding-top: 0.6rem;
 	padding-right: 0.75rem;
 	z-index: 1000;
+	max-height: 2.4rem;
 }
 
-.page-nav {
-	max-width: 50rem;
-	/* padding-left: 1rem;
-	padding-right: 1rem; */
+.sticky-nav > nav > a {
+	gap: 0.5rem;
+}
+
+footer div {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	justify-content: space-between;
+	width: 100%;
 }
 
 .nav-logo {
-	justify-self: right;
 	padding-top: 1rem;
 	padding-bottom: 0.5rem;
 	padding-left: 0.3rem;
@@ -617,4 +611,31 @@ footer {
 	max-width: 8rem;
 	max-height: 4rem;
 	object-fit: contain;
+}
+
+@media screen and (min-width: 26.1rem) {
+
+	.sm-view {
+		display: none;
+	}
+	
+	.lg-view {
+		display: inline;
+	}
+}
+
+/* tablet and desktop */
+@media screen and (max-width: 26rem) {
+	
+	.greeting {
+		margin-top: 2rem;
+	}
+	
+	.sm-view {
+		display: inline;
+	}
+	
+	.lg-view {
+		display: none;
+	}
 }
