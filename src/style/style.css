@@ -574,7 +574,9 @@ footer {
 }
 
 nav {
+	display: inline-flex;
 	flex-wrap: wrap;
+	gap: 0.5rem;
 }
 
 footer div {
@@ -586,8 +588,8 @@ footer div {
 }
 
 .nav-logo {
-	white-space: nowrap;
 	display: inline-block;
+	white-space: nowrap;
 	padding-top: 1rem;
 	padding-bottom: 0.5rem;
 	padding-left: 0.3rem;
