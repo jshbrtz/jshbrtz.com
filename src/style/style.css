@@ -147,7 +147,8 @@ a {
 	transition: 0.1s ease;
 }
 
-a:hover {
+a:hover,
+a:focus {
 	color: var(--text-hover);
 	text-decoration-thickness: 0.13rem;
 	text-underline-offset: 0.15rem;
@@ -169,7 +170,9 @@ footer a {
 }
 
 .subnote a:hover,
-footer a:hover {
+.subnote a:focus,
+footer a:hover,
+footer a:focus {
 	color: var(--text-hover);
 	text-decoration-thickness: 0.1rem;
 	text-underline-offset: 0.1rem;
