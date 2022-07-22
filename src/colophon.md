@@ -4,9 +4,7 @@ layout: 'layouts/base.html'
 permalink: "colophon/"
 description: Giving credit and saying thanks are integral to reminding ourselves that we never do anything alone.
 ---
-
 {% include "partials/primary-nav.html" %}
-
 <section class="greeting">
 	<header>
 		<h1>{{ title }}</h1>

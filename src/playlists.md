@@ -4,7 +4,6 @@ layout: 'layouts/base.html'
 permalink: "playlists/"
 description: Curated playlists for every season going back to 2018.
 ---
-
 <div class="sticky-nav">
 	<div>
 		<nav>
