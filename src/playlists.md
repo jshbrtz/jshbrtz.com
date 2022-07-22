@@ -7,8 +7,8 @@ description: Curated playlists for every season going back to 2018.
 
 <div class="sticky-nav">
 	<div>
-		<a href="/" class="l-align btn-icon no-link-decor" alt="back"><span class="icon-back"></span></a>
 		<nav>
+			<a href="/" class="l-align btn-icon no-link-decor" alt="back"><span class="icon-back"></span></a>
 			<a href="#2022" class="btn no-link-decor">2022</a>
 			<a href="#2021" class="btn no-link-decor">2021</a>
 			<a href="#2020" class="btn no-link-decor">2020</a>

@@ -77,7 +77,7 @@ i. global styles
 body {
 	font-family: var(--font-primary);
 	font-size: var(--size-sm);
-	line-height: 1.5;
+	line-height: 1.6;
 	color: var(--text-color);
 	background-color: var(--bg-color);
 }
@@ -512,7 +512,7 @@ footer {
 }
 
 .greeting {
-	margin-top: 5rem;
+	margin-top: 8rem;
 }
 
 .wrapper {
@@ -568,7 +568,7 @@ footer {
 	transform: translate3d(-50%, 0, 0);
 	top: 0px;
 	padding-top: 0.6rem;
-	padding-right: 0.75rem;
+	/* padding-right: 0.5rem; */
 	z-index: 1000;
 	max-height: 2.4rem;
 }
@@ -588,7 +588,8 @@ footer div {
 }
 
 .nav-logo {
-	display: inline-block;
+	margin-top: 0px;
+	display: inline;
 	white-space: nowrap;
 	padding-top: 1rem;
 	padding-bottom: 0.5rem;
@@ -615,6 +616,7 @@ footer div {
 	object-fit: contain;
 }
 
+/* tablet and desktop */
 @media screen and (min-width: 26.1rem) {
 
 	.sm-view {
@@ -626,12 +628,11 @@ footer div {
 	}
 }
 
-/* tablet and desktop */
+/* mobile */
 @media screen and (max-width: 26rem) {
 	
-	.greeting {
-		margin-top: 2rem;
-	}
+	/* these classes toggle objects between desktop and mobile.
+	currently used to shrink .nav-logo on pages with several nav items on mobile */
 	
 	.sm-view {
 		display: inline;
