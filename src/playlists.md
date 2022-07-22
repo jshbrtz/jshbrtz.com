@@ -17,7 +17,7 @@ description: Curated playlists for every season going back to 2018.
 		</nav>
 	</div>
 	<div>
-		{% include "partials/nav-logo.html" %}
+		{% include "partials/nav-logo-shrinking.html" %}
 	</div>
 </div>
 

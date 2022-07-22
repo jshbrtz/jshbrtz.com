@@ -7,22 +7,17 @@ description: "{{ description }}"
 {% include "partials/primary-nav.html" %}
 
 <section id="heading" class="greeting">
-	<div class="row container">
-		<header>
-			<h1>{{ title }}</h1>
-			<p><span class="subheading">{{ description }}</span><br />
-			<span class="subnote"><time datetime={{ page.date }}">{{ page.date | readableDate }}</time> • <span class="icon-glasses"></span> {{ content | emojiReadTime }}</span></p>
-		</header>
-	</div>
+	<header>
+		<h1>{{ title }}</h1>
+		<p><span class="subheading">{{ description }}</span><br />
+			<span class="subnote"><time datetime={{ page.date }}">{{ page.date | readableDate }}</time> • <span class="icon-glasses"></span> {{ content | emojiReadTime }}</span>
+		</p>
+	</header>
 </section>
 <section id="post-body">
-	<div class="row container">
-		{{ content | safe }}
-	</div>
+	{{ content | safe }}
 </section>
 <section id="recent-posts">
-	<div class="row container">
-		<h2>Recent posts</h2>
-		{% include "partials/blogroll.html" %}
-	</div>
+	<h2>Recent posts</h2>
+	{% include "partials/blogroll.html" %}
 </section>

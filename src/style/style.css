@@ -579,7 +579,7 @@ nav {
 	gap: 0.5rem;
 }
 
-footer div {
+footer {
 	display: flex;
 	flex-direction: row;
 	align-items: baseline;
@@ -640,5 +640,25 @@ footer div {
 	
 	.lg-view {
 		display: none;
+	}
+	
+	.grid-thirds {
+		grid-template-columns: 1fr;
+	}
+	
+	.grid-column {
+		grid-column: 1;
+		width: 100%;
+	}
+	
+	.grid-double-column {
+		grid-column: 1;
+		width: 100%;
+	}
+	
+	footer {
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: 100%;
 	}
 }
