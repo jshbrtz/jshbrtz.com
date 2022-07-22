@@ -560,8 +560,6 @@ footer {
 .sticky-nav {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
-	gap: 0.5rem;
 	position: sticky;
 	align-items: baseline;
 	justify-content: space-between;
@@ -575,8 +573,8 @@ footer {
 	max-height: 2.4rem;
 }
 
-.sticky-nav > nav > a {
-	gap: 0.5rem;
+nav {
+	flex-wrap: wrap;
 }
 
 footer div {
@@ -588,6 +586,8 @@ footer div {
 }
 
 .nav-logo {
+	white-space: nowrap;
+	display: inline-block;
 	padding-top: 1rem;
 	padding-bottom: 0.5rem;
 	padding-left: 0.3rem;
