@@ -21,7 +21,8 @@ i. global styles
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: auto;
-	-webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+	-webkit-text-size-adjust: 100%;
+	/* Prevent font scaling in landscape while allowing user zoom */
 	scroll-behavior: smooth;
 }
 
@@ -30,13 +31,19 @@ i. global styles
 	--font-primary: 'Noto Sans', Helvetica, Arial, sans-serif;
 	--font-italic: 'Noto Serif', serif;
 	--font-accent: 'Space Mono', Menlo Regular, Lucida Sans Typewriter, monospace;
-	--size-xxl: 2.074rem; /* h1 */
-	--size-xl: 1.728rem; /* h2 */
-	--size-lg: 1.44rem; /* h3 */
-	--size-md: 1.2rem; /* p */
-	--size-sm: 1.125rem; 
-	--size-xs: 1rem; /* subnote, figcaption, subheading */
-	--size-xxs: 0.889rem; /* code, a-icons */
+	--size-xxl: 2.074rem;
+	/* h1 */
+	--size-xl: 1.728rem;
+	/* h2 */
+	--size-lg: 1.44rem;
+	/* h3 */
+	--size-md: 1.2rem;
+	/* p */
+	--size-sm: 1.125rem;
+	--size-xs: 1rem;
+	/* subnote, figcaption, subheading */
+	--size-xxs: 0.889rem;
+	/* code, a-icons */
 	--size-xxxs: 0.444rem;
 	--gradient: linear-gradient(217deg, var(--cyan-color), hsla(192, 100%, 55%, 0) 70.71%),
 		linear-gradient(127deg, var(--magenta-color), hsla(339, 100%, 50%, 0) 70.71%),
@@ -49,8 +56,9 @@ i. global styles
 	--text-color-thin: rgba(64, 64, 64, 1);
 	--footer-color: rgba(84, 84, 84, 1);
 	--btn-bg-color: hsla(0, 0%, 91%, 1);
-	--bg-color: rgb(255,255,255);
-	--bg-color-thin: rgba(255, 255, 255, 0.7); /* being used on the secondary nav */
+	--bg-color: rgb(255, 255, 255);
+	--bg-color-thin: rgba(255, 255, 255, 0.7);
+	/* being used on the secondary nav */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -69,7 +77,7 @@ i. global styles
 body {
 	font-family: var(--font-primary);
 	font-size: var(--size-sm);
-	line-height: 1.5;
+	line-height: 1.6;
 	color: var(--text-color);
 	background-color: var(--bg-color);
 }
@@ -78,8 +86,11 @@ body {
 ii. typography
 =================== */
 
-p, h1, h2, h3 {
-  overflow-wrap: break-word;
+p,
+h1,
+h2,
+h3 {
+	overflow-wrap: break-word;
 }
 
 h1,
@@ -94,7 +105,7 @@ h3 {
 
 h1 {
 	font-size: var(--size-xxl);
-	margin-bottom: var(--size-xxxs); 
+	margin-bottom: var(--size-xxxs);
 }
 
 h2 {
@@ -110,9 +121,10 @@ h3 {
 p {
 	font-size: var(--size-md);
 	margin-bottom: var(--size-lg);
+	max-width: 60ch;
 }
 
-.secondary-nav {
+.sticky-nav {
 	font-size: var(--size-xxs);
 }
 
@@ -130,12 +142,13 @@ a {
 	color: inherit;
 	text-decoration: underline;
 	text-decoration-thickness: 0.1rem;
-	text-decoration-color:  var(--magenta-color);
+	text-decoration-color: var(--magenta-color);
 	text-underline-offset: 0.1em;
 	transition: 0.1s ease;
 }
 
-a:hover {
+a:hover,
+a:focus {
 	color: var(--text-hover);
 	text-decoration-thickness: 0.13rem;
 	text-underline-offset: 0.15rem;
@@ -157,7 +170,9 @@ footer a {
 }
 
 .subnote a:hover,
-footer a:hover {
+.subnote a:focus,
+footer a:hover,
+footer a:focus {
 	color: var(--text-hover);
 	text-decoration-thickness: 0.1rem;
 	text-underline-offset: 0.1rem;
@@ -189,7 +204,8 @@ footer p {
 *::selection {
 	color: var(--text-hover);
 	background-color: var(--cyan-color);
-	-webkit-text-fill-color: var(--text-hover); /* overrides the "transparent" fill for .highlight-anim-text */
+	-webkit-text-fill-color: var(--text-hover);
+	/* overrides the "transparent" fill for .highlight-anim-text */
 }
 
 .highlight,
@@ -222,26 +238,34 @@ footer p {
 }
 
 @keyframes background-animation {
-  0% {background-position: left}
-  50% {background-position: right}
-  100% {background-position: left}
+	0% {
+		background-position: left
+	}
+
+	50% {
+		background-position: right
+	}
+
+	100% {
+		background-position: left
+	}
 }
 
 @media (prefers-color-scheme: dark) {
 	.highlight {
 		color: var(--text-color);
 	}
-	
+
 	*::selection {
 		color: var(--bg-color);
 		background-color: var(--cyan-color);
 	}
-	
+
 	.highlight-anim {
 		color: var(--bg-color);
 		background-color: var(--text-color);
 	}
-	
+
 	.highlight-anim-text {
 		color: var(--bg-color);
 		background-color: var(--text-color);
@@ -269,11 +293,6 @@ li {
 
 .no-list-decor {
 	list-style-type: none;
-}
-
-.secondary-nav a {
-	margin-left: 0.5rem;
-	margin-right: 0.5rem;
 }
 
 .quote,
@@ -304,17 +323,6 @@ code {
 /* ===================
 iii. components
 =================== */
-
-.secondary-nav {
-	position: sticky;
-	vertical-align: center;
-	top: 0px;
-	width: 100%;
-	padding-top: 0.6rem;
-	padding-right: 0.75rem;
-	z-index: 1000;
-	min-height: 2.4rem;
-}
 
 .avatar {
 	border-radius: 2px;
@@ -362,12 +370,12 @@ iii. components
 	cursor: pointer;
 }
 
-.secondary-nav .btn,
-.secondary-nav .btn-icon,
-.secondary-nav .btn:hover,
-.secondary-nav .btn:focus,
-.secondary-nav .btn-icon:hover,
-.secondary-nav .btn-icon:focus {
+.sticky-nav .btn,
+.sticky-nav .btn-icon,
+.sticky-nav .btn:hover,
+.sticky-nav .btn:focus,
+.sticky-nav .btn-icon:hover,
+.sticky-nav .btn-icon:focus {
 	box-shadow: none;
 	border: transparent;
 }
@@ -445,23 +453,20 @@ a[href^="mailto"]:after,
 }
 
 .l-align {
-	float: left;
+	justify-self: left;
 }
 
 .r-align {
-	margin-left: auto;
-	order: 2;
+	justify-content: right;
 }
 
-/* TODO -- ...really? "align" and "aligner!?" */
-.r-aligner {
-	float: right;
-}
-
-
-img, picture, video, canvas, svg {
-  display: block;
-  max-width: 100%;
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
 }
 
 .img-row img,
@@ -496,76 +501,105 @@ figcaption {
 iv. layouts
 =================== */
 
-div.row.container,
-div.row.container-wide,
-footer.row.container {
-	margin-top: 5rem;
+main > * + * {
+	margin-top: 6rem;
+}
+
+main {
+	margin-bottom: 6rem;
 }
 
 footer {
-	padding-bottom: 2rem;
+	display: flex;
+	margin-bottom: 3rem;
 }
 
-/* used on non-case study pages */
-.container {
-	margin: 0 auto;
-	/* max-width: 42rem; */
+.greeting {
+	margin-top: 8rem;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: [full-start] 1fr [wrapper-start] minmax(0, 42rem) [wrapper-end] 1fr [full-end];
+	gap: 0 var(--pad, 1rem);
+}
+
+.wrapper > * {
+	grid-column: wrapper;
+	margin-block-start: var(--pad);
+}
+
+.wrapper > :is(h1, h2) + p {
+	margin-block-start: calc(var(--pad) * 0.5);
+}
+
+.full-width {
+	grid-column: full;
+	grid-auto-columns: repeat(8, 1fr);
+	width: 85vw;
+	margin-left: 50%;
+	transform: translate3d(-50%, 0, 0);
+	justify-content: center;
+}
+
+.grid-thirds {
+	display: inline-grid;
+	grid-template-columns: repeat(3, 1fr);
 	column-gap: 0.5rem;
-	max-width: 70ch;
-	min-width: 20rem;
-	padding-left: 2rem;
-	padding-right: 2rem;
+	margin-bottom: 3;
+	width: 100%;
 }
 
-.container-wide {
-	margin: 0 auto;
-	max-width: 49rem;
-	min-width: 20rem;
-	padding-left: 2rem;
-	padding-right: 2rem;
+.grid-column {
+	grid-column: 1;
+	width: 100%;
 }
 
-.page-nav {
-	margin: 0 auto;
-	max-width: 50rem;
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
+.grid-double-column {
+	grid-column: 2 / span 2;
+	width: 100%;
+}
+
+.sticky-nav {
+	display: flex;
+	flex-direction: row;
+	position: sticky;
+	align-items: baseline;
+	justify-content: space-between;
+	width: 100%;
+	margin-left: 50%;
+	transform: translate3d(-50%, 0, 0);
+	top: 0px;
+	padding-top: 0.6rem;
+	/* padding-right: 0.5rem; */
+	z-index: 1000;
+	max-height: 2.4rem;
+}
+
+nav {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+footer {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	justify-content: space-between;
+	width: 100%;
 }
 
 .nav-logo {
+	margin-top: 0px;
+	display: inline;
+	white-space: nowrap;
 	padding-top: 1rem;
 	padding-bottom: 0.5rem;
 	padding-left: 0.3rem;
 	padding-right: 0.3rem;
 	border-radius: 2px;
 	font-family: var(--font-accent);
-}
-
-header {
-	width: 100%;
-}
-
-section {
-	padding-top: 1rem;
-	margin-bottom: 1rem;
-}
-
-/* mobile scaling will put everything into a single column */
-.column {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-}
-
-/* mobile scaling prevents images from rolling off the sides */
-.img-row {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: flex-start;
-	margin: 0 auto;
-	max-width: 100%;
 }
 
 .logo-row {
@@ -575,8 +609,7 @@ section {
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
-	max-width: 95rem;
-	margin-top: 2rem;
+	margin-top: 3rem;
 	gap: 3rem;
 }
 
@@ -587,69 +620,22 @@ section {
 }
 
 /* tablet and desktop */
-@media screen and (min-width: 26rem) {
-	
-	.greeting {
-		margin-top: 2rem;
-	}
-	
+@media screen and (min-width: 26.1rem) {
+
 	.sm-view {
 		display: none;
 	}
 	
 	.lg-view {
 		display: inline;
-	}
-
-	/* .column needs to be wrapped in .row before it works.*/
-	.row {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		width: 100%;
-		scroll-margin-top: 3rem;
-	}
-
-	/* splits all columns in one row with equal spacing */
-	.column {
-		display: flex;
-		flex-direction: column;
-		flex-basis: 100%;
-		flex: 1;
-	}
-
-	/* gives a column the width of two columns in a row */
-	.double-column {
-		display: flex;
-		position: relative;
-		flex-direction: column;
-		flex-basis: 100%;
-		flex: 2;
-		padding-top: 0.4em;
-		/* padding-left: 0.5rem; */
 	}
 }
 
-/* mobile for iPhone ~8 and larger */
+/* mobile */
 @media screen and (max-width: 26rem) {
 	
-	.row {
-		scroll-margin-top: 4rem;
-	}
-	.container {
-		padding-left: 1rem;
-		padding-right: 1rem;
-	}
-	
-	.container {
-		padding-left: 1rem;
-		padding-right: 1rem;
-	}
-	
-	.greeting {
-		margin-top: 3rem;
-		margin-bottom: 3rem;
-	}
+	/* these classes toggle objects between desktop and mobile.
+	currently used to shrink .nav-logo on pages with several nav items on mobile */
 	
 	.sm-view {
 		display: inline;
@@ -659,22 +645,23 @@ section {
 		display: none;
 	}
 	
-	.page-nav {
-		margin: 0 auto;
-		padding-left: 0.1rem;
-		padding-right: 0.1rem;
+	.grid-thirds {
+		grid-template-columns: 1fr;
 	}
 	
-	.page-nav .btn {
-		margin-bottom: 0.7rem;
+	.grid-column {
+		grid-column: 1;
+		width: 100%;
 	}
 	
-	.logo-row {
-		gap: 2rem;
+	.grid-double-column {
+		grid-column: 1;
+		width: 100%;
 	}
 	
-	.logo-row img {
-		max-width: 5rem;
-		max-height: 3rem;
+	footer {
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: 100%;
 	}
 }

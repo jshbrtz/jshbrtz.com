@@ -4,61 +4,52 @@ layout: 'layouts/base.html'
 description: "Joshua Bartz is a curious person with too many hobbies, specializing in software product experience design and consulting."
 ---
 
-<section id="about-me" class="greeting">
-	<div class="row container">
-		<div class="row">
-			<img class="avatar" src="{{ site.avatar }}" alt="avatar" />
-		</div>
-		<div class="row">
-			<p class="subnote">Oh, hello there!</p>
-		</div>
-		<h1>I'm Joshua Bartz.</h1>
-		<h2>I design & consult on <span class="highlight-anim-text">inclusive</span> products.</h2>
-		<p>Ethical research and design creates a more equitable world. I build teams, refine strategies, champion accessibility, and foster "yes-and" collaboration to breathe life into life-changing software.</p>
-		<a href="how/" class="btn no-link-decor">How I work <span class="icon-forward"></span></a>
-	</div>
-	<div class="row container">
-		<div class="row">
-			<p class="subnote">Currently</p>
-		</div>
-		<h2>I'm open for work.</h2>
-		<p>After a cross-country move, I took a hard-earned sabbatical. Now I'm excited for projects for Mac, iPadOS, and iOS apps, web apps, or websites.</p>
-		<a href="{{ site.email }}" class="btn no-link-decor">Let's talk </a>
-	</div>
-	<div class="row container">
-		<div class="row">
-			<p class="subnote">Previously
-			<br>2017 - 2021</p>
-		</div>
-		<div class="column">
+<section class="greeting" id="greeting">
+	<img class="avatar" src="{{ site.avatar }}" alt="avatar" />
+	<p class="subnote">Oh, hello there!</p>
+	<h1>I'm Joshua Bartz.</h1>
+	<h2>I design & consult on <span class="highlight-anim-text">inclusive</span> products.</h2>
+	<p>Ethical research and design creates a more equitable world. I build teams, refine strategies, champion accessibility, and foster "yes-and" collaboration to breathe life into life-changing software.</p>
+	<p><a href="how/" class="btn no-link-decor">How I work <span class="icon-forward"></span></a></p>
+</section>
+<section id="current-work">
+	<p class="subnote">Currently</p>
+	<h2>I'm open for work.</h2>
+	<p>After a cross-country move, I took a hard-earned sabbatical. Now I'm excited for projects for Mac, iPadOS, and iOS apps, web apps, or websites.</p>
+	<p><a href="{{ site.email }}" class="btn no-link-decor">Let's talk </a></p>
+</section>
+<section id="jamf-now-job">
+	<p class="subnote">Previously
+		<br>2017 - 2021
+	</p>
+	<div class="grid-thirds">
+		<div class="grid-column">
 			<h2>I led design for Jamf Now.</h2>
 		</div>
-		<div class="double-column">
+		<div class="grid-double-column">
 			<p><a href="https://www.jamf.com/support/jamf-now/">Jamf Now</a> is an Apple-centric mobile device management platform for small businesses without IT and InfoSec backgrounds. I built user experience roadmaps and shipped a new subscription tier with refreshed Mac, iOS, and web apps.</p>
 		</div>
 	</div>
-	<div class="row container">
-		<div class="row">
-			<p class="subnote">2012 - 2016</p>
-		</div>
-		<div class="column">
+</section>
+<section id="code42-job">
+	<p class="subnote">2012 - 2016</p>
+	<div class="grid-thirds">
+		<div class="grid-column">
 			<h2>I got my start at Code42.</h2>
 		</div>
-		<div class="double-column">
+		<div class="grid-double-column">
 			<p><a href="https://www.code42.com">Code42</a> protects the world's data. I established a user experience practice by leveraging customer support ticket metadata. I redesigned key data management and recovery workflows, and I co-conducted internal usability tests to protect the company's intellectual property. I am still an internal meme.</p>
 		</div>
 	</div>
-	<div class="row container">
-		<div class="row">
-			<p class="subnote">But also</p>
-		</div>
-		<h2>I devour media.</h2>
-		<p>I'm reading <a href="{{ books.currenturl }}"><em>{{ books.currenttitle }}</em></a> by {{ books.currentauthor }} and building a <em>{{ playlists.currenttitle }}</em> playlist on <a href="{{ playlists.currenturl }}">{{ playlists.playlisthost }}</a>. Also, check out the <a href="/playlists/">older playlists</a>.</p>
-		<p>Psst...Have you seen <em>The Bear</em> yet, on Hulu?</p>
-	</div>
-	<div class="row container">
-		<h2>And I write on occasion.</h2>
-		<p>Expect links from across the web, updates on real-world projects, and design and ethics talk &#8212; with an infrequent hot take on music, books, and cooking.</p>
-		{% include "partials/blogroll.html" %}
-	</div>
+</section>
+<section id="current-media">
+	<p class="subnote">But also</p>
+	<h2>I devour media.</h2>
+	<p>I'm reading <a href="{{ books.currenturl }}"><em>{{ books.currenttitle }}</em></a> by {{ books.currentauthor }} and building a <em>{{ playlists.currenttitle }}</em> playlist on <a href="{{ playlists.currenturl }}">{{ playlists.playlisthost }}</a>. Also, check out the <a href="/playlists/">older playlists</a>.</p>
+	<p>Psst...Have you seen <em>The Bear</em> yet, on Hulu?</p>
+</section>
+<section id="blogroll">
+	<h2>And I write on occasion.</h2>
+	<p>Expect links from across the web, updates on real-world projects, and design and ethics talk &#8212; with an infrequent hot take on music, books, and cooking.</p>
+	{% include "partials/blogroll.html" %}
 </section>
