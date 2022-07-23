@@ -121,10 +121,6 @@ p {
 	max-width: 61ch;
 }
 
-.sticky-nav {
-	font-size: var(--size-xxs);
-}
-
 strong {
 	color: var(--text-hover);
 	font-weight: 500;
@@ -572,14 +568,18 @@ section {
 	position: sticky;
 	align-items: baseline;
 	justify-content: space-between;
-	width: 100%;
+	width: calc(100% + 6rem);
 	margin-left: 50%;
 	transform: translate3d(-50%, 0, 0);
 	top: 0px;
 	padding-top: 0.6rem;
-	/* padding-right: 0.5rem; */
+	padding-right: 3rem;
 	z-index: 1000;
 	max-height: 2.4rem;
+}
+
+.sticky-nav .btn-icon {
+	margin-right: 0.6rem;
 }
 
 nav {
@@ -627,7 +627,7 @@ footer {
 }
 
 /* tablet and desktop */
-@media screen and (min-width: 26.1rem) {
+@media screen and (min-width: 44rem) {
 
 	.sm-view {
 		display: none;
@@ -639,7 +639,7 @@ footer {
 }
 
 /* mobile */
-@media screen and (max-width: 26rem) {
+@media screen and (max-width: 44rem) {
 	
 	/* these classes toggle objects between desktop and mobile.
 	currently used to shrink .nav-logo on pages with several nav items on mobile */
@@ -662,6 +662,15 @@ footer {
 	.grid-triple-column {
 		grid-column: 1;
 		width: 100%;
+	}
+	
+	.sticky-nav {
+		width: 100%;
+		padding-right: inherit;
+	}
+	
+	.sticky-nav .btn-icon {
+		margin-right: inherit;
 	}
 	
 	footer {
