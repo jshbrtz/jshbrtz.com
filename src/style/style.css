@@ -573,7 +573,7 @@ section {
 	transform: translate3d(-50%, 0, 0);
 	top: 0px;
 	padding-top: 0.6rem;
-	padding-right: 3rem;
+	padding-right: 2rem;
 	z-index: 1000;
 	max-height: 2.4rem;
 }
