@@ -27,13 +27,13 @@ description: Curated playlists for every season going back to 2018.
 	</header>
 </section>
 
-<section id="2022" class="grid-thirds">
+<section id="2022" class="grid-fourths">
 	<div class="grid-column">
 		<header>
 			<h2>2022</h2>
 		</header>
 	</div>
-	<div class="grid-double-column">
+	<div class="grid-triple-column">
 		<ul class="no-list-decor chrono-lists">
 			<li><img class="album" src="https://is4-ssl.mzstatic.com/image/thumb/m7qn9jC4lghgJKKg3sulKg/540x540cc.webp" />
 				<h3>2022 spring</h3>
@@ -50,13 +50,13 @@ description: Curated playlists for every season going back to 2018.
 		</ul>
 	</div>
 </section>
-<section id="2021" class="grid-thirds">
+<section id="2021" class="grid-fourths">
 	<div class="grid-column">
 		<header>
 			<h2>2021</h2>
 		</header>
 	</div>
-	<div class="grid-double-column">
+	<div class="grid-triple-column">
 		<ul class="no-list-decor chrono-lists">
 			<li><img class="album" src="https://is4-ssl.mzstatic.com/image/thumb/7wVqNzhBnAyLdXEbwavwJQ/540x540cc.webp" />
 				<h3>2021 fall - where we're going, we don't need snow</h3>
@@ -85,13 +85,13 @@ description: Curated playlists for every season going back to 2018.
 		</ul>
 	</div>
 </section>
-<section id="2020" class="grid-thirds">
+<section id="2020" class="grid-fourths">
 	<div class="grid-column">
 		<header>
 			<h2>2020</h2>
 		</header>
 	</div>
-	<div class="grid-double-column">
+	<div class="grid-triple-column">
 		<ul class="no-list-decor chrono-lists">
 			<li><img class="album" src="https://is2-ssl.mzstatic.com/image/thumb/jwRUCl303gQ6eKqhVEBUNg/540x540cc.webp" />
 				<h3>2020 fall - at least the house is coming together</h3>
@@ -120,13 +120,13 @@ description: Curated playlists for every season going back to 2018.
 		</ul>
 	</div>
 </section>
-<section id="2019" class="grid-thirds">
+<section id="2019" class="grid-fourths">
 	<div class="grid-column">
 		<header>
 			<h2>2019</h2>
 		</header>
 	</div>
-	<div class="grid-double-column">
+	<div class="grid-triple-column">
 		<ul class="no-list-decor chrono-lists">
 			<li><img class="album" src="https://is2-ssl.mzstatic.com/image/thumb/1C3gQxIinXgy0OiJsyinqQ/540x540cc.webp" />
 				<h3>2019 fall</h3>
@@ -155,13 +155,13 @@ description: Curated playlists for every season going back to 2018.
 		</ul>
 	</div>
 </section>
-<section id="2018" class="grid-thirds">
+<section id="2018" class="grid-fourths">
 	<div class="grid-column">
 		<header>
 			<h2>2018</h2>
 		</header>
 	</div>
-	<div class="grid-double-column">
+	<div class="grid-triple-column">
 		<ul class="no-list-decor chrono-lists">
 			<li><img class="album" src="https://is2-ssl.mzstatic.com/image/thumb/FTsucuJHsefBsfA4ZgqxfA/540x540cc.webp" />
 				<h3>2018 fall - the beginning</h3>
