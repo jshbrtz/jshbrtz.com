@@ -31,7 +31,7 @@ i. global styles
 	--font-primary: 'Noto Sans', Helvetica, Arial, sans-serif;
 	--font-italic: 'Noto Serif', serif;
 	--font-accent: 'Space Mono', Menlo Regular, Lucida Sans Typewriter, monospace;
-	--size-xxl: 2.441rem;
+	--size-xxl: 2.4rem;
 	/* h1 */
 	--size-xl: 1.953rem;
 	/* h2 */
@@ -309,8 +309,8 @@ iii. components
 
 .avatar {
 	border-radius: 2px;
-	width: 10rem;
-	height: 10rem;
+	width: 11rem;
+	height: 11rem;
 	margin-bottom: 2.5rem;
 	box-shadow: 0.3rem 0.3rem var(--cyan-color);
 }
@@ -495,7 +495,6 @@ main {
 }
 
 footer {
-	display: flex;
 	margin-bottom: 3rem;
 }
 
@@ -510,16 +509,12 @@ section {
 .wrapper {
 	display: grid;
 	grid-template-columns: [full-start] 1fr [wrapper-start] minmax(0, 42rem) [wrapper-end] 1fr [full-end];
-	gap: 0 var(--pad, 1rem);
+	gap: 0 1rem;
 }
 
 .wrapper > * {
 	grid-column: wrapper;
 	margin-block-start: var(--pad);
-}
-
-.wrapper > :is(h1, h2) + p {
-	margin-block-start: calc(var(--pad) * 0.5);
 }
 
 .full-width {
@@ -534,7 +529,7 @@ section {
 .grid-thirds {
 	display: inline-grid;
 	grid-template-columns: repeat(3, 1fr);
-	column-gap: var(--size-xxxs);
+	column-gap: var(--size-xs);
 	margin-bottom: 3;
 	width: 100%;
 }
@@ -542,7 +537,7 @@ section {
 .grid-fourths {
 	display: inline-grid;
 	grid-template-columns: repeat(4, 1fr);
-	column-gap: var(--size-xxxs);
+	column-gap: var(--size-xs);
 	margin-bottom: 3;
 	width: 100%;
 }
@@ -573,7 +568,7 @@ section {
 	transform: translate3d(-50%, 0, 0);
 	top: 0px;
 	padding-top: 0.6rem;
-	padding-right: 3rem;
+	padding-right: 2rem;
 	z-index: 1000;
 	max-height: 2.4rem;
 }
