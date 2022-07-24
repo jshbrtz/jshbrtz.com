@@ -54,7 +54,7 @@ i. global styles
 	--text-color-thin: rgba(64, 64, 64, 1);
 	--footer-color: rgba(84, 84, 84, 1);
 	--btn-bg-color: hsla(0, 0%, 91%, 1);
-	--bg-color: rgb(255, 255, 255);
+	--bg-color: rgb(248,248,255);
 	--bg-color-thin: rgba(255, 255, 255, 0.7);
 	/* being used on the secondary nav */
 }
